@@ -1,7 +1,6 @@
 const themeStorageKey = "chrum-theme";
 const themeToggle = document.getElementById("themeToggle");
 const themeToggleIcon = document.getElementById("themeToggleIcon");
-const langToggle = document.querySelector("[data-lang-toggle]");
 
 const getThemeLabel = (theme) => {
   if (theme === "dark") {
@@ -54,9 +53,69 @@ themeToggle?.addEventListener("click", () => {
   }
 });
 
-langToggle?.addEventListener("click", (event) => {
-  event.preventDefault();
-});
+const langSwitch = document.querySelector("[data-lang-switch]");
+
+if (langSwitch) {
+  const langToggle = langSwitch.querySelector(".lang-toggle");
+  const langMenu = langSwitch.querySelector(".lang-menu");
+  const langLinks = Array.from(langSwitch.querySelectorAll(".lang-option"));
+
+  const setMenuOpen = (open) => {
+    langSwitch.classList.toggle("is-open", open);
+
+    if (langToggle) {
+      langToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+  };
+
+  const updateLangHrefs = () => {
+    const hash = window.location.hash || "";
+
+    langLinks.forEach((link) => {
+      const base = link.getAttribute("data-base") || link.getAttribute("href");
+      link.setAttribute("href", `${base}${hash}`);
+    });
+  };
+
+  updateLangHrefs();
+  window.addEventListener("hashchange", updateLangHrefs);
+
+  if (langToggle && langMenu) {
+    langToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      setMenuOpen(!langSwitch.classList.contains("is-open"));
+    });
+
+    langLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+          setMenuOpen(false);
+          return;
+        }
+
+        event.preventDefault();
+
+        const href = link.getAttribute("href");
+        setMenuOpen(false);
+
+        if (href) {
+          window.location.href = href;
+        }
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (langSwitch.contains(event.target)) return;
+      setMenuOpen(false);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      setMenuOpen(false);
+    });
+  }
+}
 
 const reveals = document.querySelectorAll(".reveal");
 
