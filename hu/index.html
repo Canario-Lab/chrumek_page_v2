@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="A Chrumek segít a hétköznapokban megspórolt pénzből valódi megtakarítást csinálni. Egyszerű megtakarítási rituálé fiók és banki összekötés nélkül.">
+  <title>Chrumek | Megtakarítás, ami tényleg nálad marad</title>
+  <link rel="canonical" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Oldaltéma: sötét. Váltás világosra."
+  data-theme-label-light="Oldaltéma: világos. Váltás sötétre."
+  data-theme-title-dark="Oldaltéma: sötét"
+  data-theme-title-light="Oldaltéma: világos"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek a Facebookon" title="Chrumek a Facebookon">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Nyelv kiválasztása">
+            <span class="lang-toggle-icon" aria-hidden="true">HU</span>
+            <span class="lang-toggle-text">Magyar</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Nyelvválasztó">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Letöltés</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Nem egy újabb költségkövető</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Nem költötted el? Tedd félre rögtön.</p>
+
+          <p class="lead">
+            Ahelyett, hogy minden blokkot felírnál, azokat a pillanatokat rögzíted, amikor nem költöttél,
+            vagy kevesebbet költöttél. A célod, az előzményeid és a diagramjaid csak akkor nőnek,
+            ha azt a pénzt valóban átvezeted a megtakarításaidhoz.
+          </p>
+
+          <p class="supporting-copy">
+            Azoknak, akik már próbálták a „majd kevesebbet költök” módszert, és tudják, hogy valódi átvezetés nélkül
+            a pénz a fő számlán marad, aztán később észrevétlenül eltűnik.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="A Chrumek letöltése az App Store-ból">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Letöltés az App Store-ból" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Nézd meg, hogyan működik</a>
+          </div>
+
+          <p class="microcopy">
+            Nincs fiók. Nincs banki összekötés. Nincs követés. Csak az számít, amit tényleg félretettél.
+          </p>
+
+          <ul class="proof-pills" aria-label="Fő ígéretek">
+            <li>minden kihagyott költésből valódi félretett összeg lehet</li>
+            <li>a célod csak akkor nő, ha a pénz tényleg átkerült</li>
+            <li>úgy takarékoskodsz, hogy nem kell könyvelőnek érezned magad</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Egyszerű rituálé</p>
+              <h2>A döntő pillanat az, amikor a pénz kikerül a főszámládról.</h2>
+              <p>
+                Rögzíted az összeget, átteszed oda, ahol tényleg tartod a megtakarításaidat, majd egy érintéssel megerősíted.
+                A Chrumek csak azt számolja, amit tényleg félretettél.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Telefon a Chrumek alkalmazással egy Kerékpár feliratú boríték, persely és félretett pénz mellett"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>A 80 PLN nem kallódik el későbbre. Egyből a „Kerékpár” célba megy.</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Probléma</p>
+                <strong>Attól, hogy kihagytál egy vásárlást, még nem biztos, hogy a pénzt valóban megtakarítottad.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Ígéret</p>
+                <strong>A haladásod és az előzményeid csak az átutalás megerősítése után nőnek.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Az igazi probléma</p>
+          <h2>A legtöbb embernek nem az információ hiányzik a megtakarításhoz, hanem az, hogy következetesen végigvigye.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>A döntés megszületik, de a pénz továbbra is forgalomban marad.</h3>
+            <p>
+              Kihagysz egy vásárlást, az olcsóbb megoldást választod, vagy lemondasz egy felesleges előfizetést.
+              De semmi nem kényszeríti azt az összeget arra, hogy átkerüljön a megtakarításaid közé.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>A költéskövetők a múltat mutatják. Nem építenek megtakarítást.</h3>
+            <p>
+              Hónap végén látod, mire ment el a pénz, de továbbra sem tudod pontosan,
+              mennyit sikerült ténylegesen félretenned.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>A költségtervezés gyorsan plusz munkának érződik.</h3>
+            <p>
+              Minél több kategóriát, táblázatot és kézi bevitelt használsz,
+              annál nagyobb az esélye, hogy pár nap után félreteszed az egészet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Így működik a Chrumek</p>
+          <h2>Nincs szükséged teljes költségvetésre. Elég, ha elkapod azt a pillanatot, amikor elkölthetted volna a pénzt.</h2>
+          <p class="section-intro">
+            A Chrumek egyetlen dologra figyel: arra, hogy az a pénz, amit nem költöttél el,
+            később ne tűnjön el csendben a fő számládról.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Észreveszed a megtakarítást</h3>
+            <p class="step-copy">
+              Kihagysz valamit, olcsóbb verziót választasz, vagy megszüntetsz egy felesleges előfizetést.
+              A Chrumek ezt a pontos pillanatot kapja el.
+            </p>
+            <p class="step-benefit">A megtakarítás így homályos szándék helyett konkrét félretehető összeggé válik.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Azonnal átteszed</h3>
+            <p class="step-copy">
+              Az összeg átkerül egy külön számlára, borítékba, perselybe, vagy oda, ahol tényleg a megtakarításaidat tartod.
+            </p>
+            <p class="step-benefit">Így a megtakarítás nem csak a fejedben létezik.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Egy érintéssel megerősíted</h3>
+            <p class="step-copy">
+              Csak ezután kerül a bejegyzés az előzményekbe, építi a célodat, és válik a diagramok részévé.
+            </p>
+            <p class="step-benefit">Olyan haladást látsz, amiben megbízhatsz, mert valódi pénzmozgás áll mögötte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Így néz ki a valódi végigvitel</p>
+            <h2>Az első „ezt nem vettem meg” pillanattól egy olyan célhoz, ami tényleg nő.</h2>
+            <p class="section-intro">
+              Rögzíted az összeget, kiveszed a fő számládról, és csak akkor erősíted meg,
+              amikor a pénzt valóban félretetted. A napló, az előzmények, a célok és a diagramok
+              csak azt mutatják, ami tényleg eljutott a megtakarításaidhoz.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="A Chrumek alkalmazás képernyőinek előnézete">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Napló képernyő a Chrumek alkalmazásban" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Napló</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Előzmények képernyő jóváhagyott megtakarításokkal" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Előzmények</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Megtakarítási cél képernyő az alkalmazásban" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Célok</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Diagramok és naptár képernyő az alkalmazásban" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Diagramok</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Egy hét használat után</p>
+            <h2>A találgatás helyett végre látod, mennyit sikerült valóban félretenned.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Végre a valódi megtakarítást látod</h3>
+              <p>Az előzmények csak a jóváhagyott összegeket számolják. Nincs látszathaladás. Nincs felfújt összeg.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Egyszerű rituálét kapsz a nehéz büdzsézés helyett</h3>
+              <p>Három gyors mód a rögzítésre: nem vettem meg, olcsóbban vettem meg, lemondtam egy előfizetést.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Könnyebb motiváltnak maradni</h3>
+              <p>A célod csak az átutalás után nő, így minden lépés valódi változást hoz.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Nem kell a magánéletedet feladnod a pénzügyi fegyelemért</h3>
+              <p>Nincs fiók, nincsenek követők, és nem kell összekötnöd a bankodat sem.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Hétköznapi helyzetek</p>
+          <h2>A Chrumek ott működik, ahol a pénz egyébként észrevétlenül kicsúszna a kezedből.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 01</p>
+              <h3>Az olcsóbb választás a polcnál azonnal valódi félretehető összeggé válik.</h3>
+              <p>
+                Egy 15,99 PLN-es terméket választasz a 22,99 PLN-es helyett. A Chrumek még azelőtt rögzíti a különbséget,
+                hogy az a 7 PLN másra folyna el.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Telefon a Chrumek alkalmazással egy bolti polc mellett, rajta a rögzített 7 PLN különbséggel egy olcsóbb termék választása után"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Egy bolti döntés különbsége nem marad a fejedben. Bekerül a Chrumekbe.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 02</p>
+              <h3>A reggeli latte ára a pénztárcádban maradhat, és rögtön egy célodat kezdheti finanszírozni.</h3>
+              <p>
+                Ahelyett, hogy 16,99 PLN-t kifizetnél a pultnál, rögzíted a kihagyott lattét a Chrumekben.
+                Ettől a kis döntés többé nem marad láthatatlan.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Telefon a Chrumek alkalmazással egy kávézóban, a képernyőn egy kihagyott, 16,99 PLN értékű latte rögzítésével"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Kihagyod a lattét. A Chrumek konkrét összeggé alakítja ezt a döntést.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 03</p>
+              <h3>Egy lemondott előfizetés nem csúszik vissza a napi költések közé. Elkezd a célodért dolgozni.</h3>
+              <p>
+                Megszüntetsz egy 49,99 PLN-es havi szolgáltatást, és ezt az összeget rögzíted a Chrumekben.
+                Egy fix kiadásból így minden hónapban a célod felé vivő lépés lehet.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Telefon a Chrumek alkalmazással egy laptop mellett, amelyen előfizetéskezelő képernyő látszik, a telefonon pedig lemondott előfizetés bejegyzése"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Egy előfizetés lemondása rendszeres lépéssé válik a célod felé.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 04</p>
+              <h3>Egy cél azért lesz valóságos, mert nem pusztán attól nő, hogy beírsz egy számot.</h3>
+              <p>
+                A kerékpár többé nem csak egy laza ötlet. Látod az összeget, a haladást,
+                és azokat a jóváhagyott átutalásokat, amelyek tényleg közelebb visznek a vásárláshoz.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Telefon a Chrumek Kerékpár céljával, mellette sisak, kerékpárlámpa és háttérben bicikli"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Egy célnak neve, összege és valódi haladása van. Többé nem csak kívánság.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 05</p>
+              <h3>Az előzmények nem a lemondások naplója. Hanem bizonyíték arra, hogy tényleg félreteszed a pénzt.</h3>
+              <p>
+                Látod a döntéseidet és azokat az összegeket, amelyek valóban a megtakarításaid közé kerültek.
+                Egyszerű bizonyíték arra, hogy a rendszer működik.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Telefon a Chrumek előzmények képernyőjével egy Kerékpár feliratú boríték, jegyzetfüzet és félretett készpénz mellett"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>A 947 PLN nem ígéret. Valóban félretett döntések összege.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 06</p>
+              <h3>A következetesség még azelőtt láthatóvá válik, hogy újra eltűnne.</h3>
+              <p>
+                A célodhoz vezető minden átutalás nyomot hagy. A Chrumek megmutatja a sorozatodat és azokat a napokat,
+                amikor tényleg félretettél pénzt, így könnyebb másnap is visszatérni.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Telefon a Chrumek naptár képernyőjével egy átutalási tervet és emlékeztetőt tartalmazó jegyzetfüzet mellett"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Nem kell találgatnod, működik-e. Látod a sorozatot és a pontos megtakarítási napokat.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Jelenet 07</p>
+              <h3>Láthatóvá válik, melyik apró döntés hozza a legnagyobb különbséget.</h3>
+              <p>
+                Kávé, kiszállítás, játékok, elektronika. A Chrumek megmutatja, honnan jött ténylegesen a megtakarításod,
+                így könnyebb megismételni azokat a döntéseket, amelyek a legtöbbet segítik.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Telefon a Chrumek megtakarítási kategóriáit mutató diagrammal, mellette kávé, blokk, jegyzetfüzet, laptop, kontroller és bevásárlótáska"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Nem minden kiadást elemzel. Azt látod, hol sikerül ténylegesen visszanyerned pénzt.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="5 csillagos értékelés">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Először látom teljesen egyértelműen, mennyit tettem félre valóban, nem csak azt, mennyit szerettem volna."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="5 csillagos értékelés">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "A Chrumek nem a jó szándékot jutalmazza. Csak azt számolja, amit tényleg félretettem."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pillanatról pillanatra</p>
+          <h2>A megtakarítás hétköznapi helyeken indul: a boltban, egy kávézóban, a kanapén ülve.</h2>
+          <p class="section-intro">
+            A Chrumek segít elkapni azokat a kis döntéseket, amelyek egyébként nyom nélkül eltűnnének.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>A boltban</h3>
+            <p class="shot-copy">
+              Az olcsóbb terméket választod, és rögzíted a különbséget, mielőtt másra költenéd.
+            </p>
+              <p class="shot-meta">A „talán spóroltam valamennyit” helyett a pontos összeget látod.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>A kávézóban</h3>
+            <p class="shot-copy">
+              Kihagyod az útközbeni kávét, és rögtön rögzíted azt az összeget, amelynek a megtakarításaidhoz kell kerülnie.
+            </p>
+            <p class="shot-meta">Egy kis döntés többé nem marad láthatatlan.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>Előfizetéseknél</h3>
+            <p class="shot-copy">
+              Lemondasz egy olyan előfizetést, amit nem használsz, és a havi díjat rendszeres megtakarítássá alakítod.
+            </p>
+            <p class="shot-meta">Egy döntés hónapról hónapra dolgozhat érted.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>Egy célnál</h3>
+            <p class="shot-copy">
+              Minden jóváhagyott átutalás közelebb visz ahhoz, amire tényleg szeretnél félretenni.
+            </p>
+            <p class="shot-meta">A cél csak akkor nő, amikor a pénzt valóban félretetted.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>Az előzményekben</h3>
+            <p class="shot-copy">
+              Egy olyan listához térsz vissza, amely csak azokat az összegeket mutatja, amelyek tényleg a megtakarításaid közé kerültek.
+            </p>
+            <p class="shot-meta">Bizonyítékot kapsz arra, hogy a kis döntések valódi eredménnyé állnak össze.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Banki összekötés nélkül</h3>
+            <p class="shot-copy">
+              A Chrumeket fiók és banki összekötés nélkül használod. Te döntöd el, hová kerül a pénz.
+            </p>
+            <p class="shot-meta">Egyszerű rituálé, minimális adat, maximális kontroll.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Kinek való</p>
+          <h2>A Chrumek neked való, ha:</h2>
+          <ul>
+            <li>"Tudom, hogy többet is félretehetnék, de a való életben nem viszem végig."</li>
+            <li>"Nem akarok még egy alkalmazást, ahol minden kiadást külön rögzítenem kell."</li>
+            <li>"Egy egyszerű rituáléra van szükségem, ami az első naptól működik."</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Kinek nem</p>
+          <h2>A Chrumek nem neked való, ha:</h2>
+          <ul>
+            <li>automatikus bankszinkront szeretnél,</li>
+            <li>összetett pénzügyi tervezőre van szükséged,</li>
+            <li>olyan alkalmazást keresel, ami mindent helyetted akar elintézni.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GYIK</p>
+          <h2>Gyakori kérdések, mielőtt letöltenéd a Chrumeket.</h2>
+          <p class="section-intro">
+            Pontosan tudod, mit telepítesz: a Chrumek segít a valódi megtakarítás végigvitelében,
+            de nem kapcsolódik a bankodhoz, nem indít átutalást, és nem kér fiókot.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Össze kell kötnöm a bankommal?</summary>
+            <p>Nem. A Chrumek nem kapcsolódik a bankodhoz. A pénzt oda mozgatod, ahová szeretnéd: külön számlára, borítékba vagy perselybe.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>A Chrumek intézi helyettem az átutalást?</summary>
+            <p>Nem. Az alkalmazás abban segít, hogy lezárd a rituálét: rögzíted az összeget, a való életben félreteszed, majd az appban megerősíted, hogy a pénz már tényleg a te oldaladon van.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Mi van, ha rögzítek egy összeget, de végül nem teszem félre?</summary>
+            <p>Akkor nem erősíted meg az átutalást. Pont ez a lényeg: a diagramoknak, az előzményeknek és a céloknak csak azután szabad nőniük, hogy a pénzt valóban félretetted.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Elküldi az adataimat valamilyen szerverre?</summary>
+            <p>Az alkalmazásba beírt adatok helyben, a készülékeden maradnak. Nem hozol létre fiókot, és nem adod át a döntéseid történetét semmilyen külső felületnek.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Hogyan működik a Prémium és az ingyenes próbaidőszak?</summary>
+            <p>Fizetés előtt kipróbálhatod az alkalmazást. A fizetős funkciók további használatát az App Store kezeli, az esetleges próbaidőszak pedig attól függ, milyen ajánlat érhető el éppen az adott felhasználónak.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Ki tudom exportálni az adataimat?</summary>
+            <p>Igen. A Chrumek támogatja a CSV-exportot, így a jóváhagyott megtakarításaidat és céljaidat az alkalmazáson kívül is használhatod.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Az utolsó lépés</p>
+          <h2>Ne azt ígérd meg magadnak, hogy majd elkezdesz spórolni. Adj magadnak egy folyamatot, ami tényleg lezárja a kört.</h2>
+          <p>
+            A Chrumek nem a szándékot méri. Abban segít, hogy lezárd azt a pillanatot, amikor a pénz tényleg a te oldaladra kerül.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="A Chrumek letöltése az App Store-ból">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Letöltés az App Store-ból" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Nincs fiók. Nincs banki összekötés. Kezdd az első olyan összeggel, amit ma nem költöttél el.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Bizalmi jelzések">
+          <span>nincs fiók</span>
+          <span>nincsenek reklámkövetők</span>
+          <span>az adatok a készülékeden maradnak</span>
+          <span>nincs banki összekötés</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Valódi megtakarítás, nem puszta szándék. <a href="./privacy/">Adatkezelési tájékoztató</a> | <a href="./terms/">Felhasználási feltételek</a>.</p>
+  </footer>
+</body>
+</html>
