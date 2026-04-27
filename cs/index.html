@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek pomáhá proměnit každé „nekoupil jsem to“ v peníze, které si opravdu odložíš. Jednoduchý spořicí rituál bez účtu a bez propojení s bankou.">
+  <title>Chrumek | Peníze, které si opravdu odložíš</title>
+  <link rel="canonical" href="https://chrumek.app/cs/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Motiv stránky: tmavý. Přepnout na světlý."
+  data-theme-label-light="Motiv stránky: světlý. Přepnout na tmavý."
+  data-theme-title-dark="Motiv stránky: tmavý"
+  data-theme-title-light="Motiv stránky: světlý"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek na Facebooku" title="Chrumek na Facebooku">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Vyberte jazyk">
+            <span class="lang-toggle-icon" aria-hidden="true">CS</span>
+            <span class="lang-toggle-text">Čeština</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Výběr jazyka">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Stáhnout</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Ne další sledovač výdajů</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Neutrácíš je? Odlož je hned.</p>
+
+          <p class="lead">
+            Místo zapisování každé účtenky zachycuješ chvíle, kdy jsi neutratil vůbec
+            nebo jsi utratil méně. Tvůj cíl, historie i grafy rostou až poté,
+            co tyto peníze opravdu přesuneš do úspor.
+          </p>
+
+          <p class="supporting-copy">
+            Pro lidi, kteří už zkoušeli „prostě utrácet méně“ a vědí, že bez skutečného převodu
+            peníze zůstávají na hlavním účtu a později tiše zmizí.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Stáhněte si Chrumek v App Storu">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Stáhnout v App Storu" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Jak to funguje</a>
+          </div>
+
+          <p class="microcopy">
+            Bez účtu. Bez propojení s bankou. Bez sledování. Počítá se jen to, co sis opravdu odložil.
+          </p>
+
+          <ul class="proof-pills" aria-label="Hlavní přísliby">
+            <li>každý neuskutečněný výdaj se může proměnit ve skutečný převod</li>
+            <li>cíl roste až ve chvíli, kdy se peníze opravdu přesunou</li>
+            <li>spoříš bez pocitu, že si vedeš účetnictví</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Jednoduchý rituál</p>
+              <h2>Klíčový okamžik je ve chvíli, kdy peníze opustí tvůj hlavní účet.</h2>
+              <p>
+                Zapíšeš částku, přesuneš ji tam, kde své úspory skutečně držíš,
+                a pak ji jedním klepnutím potvrdíš. Chrumek počítá jen to, co sis opravdu odložil.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Telefon s aplikací Chrumek vedle obálky s nápisem Bike, prasátka a odkládaných peněz"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80 PLN nečeká na „někdy potom“. Jde rovnou do cíle „Bike“.</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Problém</p>
+                <strong>To, že sis něco nekoupil, ještě neznamená, že jsou ty peníze opravdu ušetřené.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Příslib</p>
+                <strong>Pokrok i historie rostou až po potvrzení převodu.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skutečný problém</p>
+          <h2>Většina lidí nemá problém se znalostmi o spoření. Problém je dotáhnout to do konce.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Rozhodnutí už padlo, ale peníze zůstávají v oběhu.</h3>
+            <p>
+              Vynecháš nákup, zvolíš levnější variantu nebo zrušíš zbytečné předplatné.
+              Nic ale nezajistí, že se ta částka opravdu přesune do úspor.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Sledovače výdajů ukazují minulost. Nevytvářejí úspory.</h3>
+            <p>
+              Na konci měsíce víš, kam peníze odešly, ale pořád nevidíš,
+              kolik se ti skutečně podařilo odložit.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Rozpočtování rychle začne působit jako další práce navíc.</h3>
+            <p>
+              Čím víc kategorií, tabulek a ručního vyplňování přidáš,
+              tím větší je šance, že aplikaci po pár dnech odložíš.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Jak Chrumek funguje</p>
+          <h2>Nepotřebuješ celý rozpočet. Stačí zachytit chvíli, kdy jsi ty peníze mohl utratit.</h2>
+          <p class="section-intro">
+            Chrumek se soustředí na jediné: aby peníze, které jsi neutratil,
+            později tiše nezmizely z tvého hlavního účtu.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Všimneš si úspory</h3>
+            <p class="step-copy">
+              Něco si nekoupíš, zvolíš levnější verzi nebo zrušíš zbytečné předplatné.
+              Chrumek zachytí přesně tenhle okamžik.
+            </p>
+            <p class="step-benefit">Spoření se tak promění z neurčité myšlenky v konkrétní částku k odložení.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Přesuneš ji hned</h3>
+            <p class="step-copy">
+              Částka putuje na samostatný účet, do obálky, prasátka nebo tam, kde své úspory opravdu držíš.
+            </p>
+            <p class="step-benefit">Díky tomu úspora nezůstane jen v hlavě.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Potvrdíš ji jedním klepnutím</h3>
+            <p class="step-copy">
+              Teprve pak se záznam propíše do historie, posune tvůj cíl a stane se součástí grafů.
+            </p>
+            <p class="step-benefit">Vidíš pokrok, kterému můžeš věřit, protože za ním stojí skutečný pohyb peněz.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Jak vypadá dotáhnutí do konce</p>
+            <h2>Od prvního „nekoupil jsem to“ až po cíl, který opravdu roste.</h2>
+            <p class="section-intro">
+              Zapíšeš částku, odvedeš ji z hlavního účtu a potvrdíš ji až ve chvíli,
+              kdy jsou peníze skutečně odložené. Deník, historie, cíle i grafy pak ukazují
+              jen to, co se do úspor opravdu dostalo.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Náhled obrazovek aplikace Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Obrazovka Deník v aplikaci Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Deník</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Obrazovka Historie s potvrzenými úsporami" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Historie</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Obrazovka spořicího cíle v aplikaci" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Cíle</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Obrazovka grafů a kalendáře převodů v aplikaci" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Grafy</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Po týdnu používání</p>
+            <h2>Místo odhadování vidíš, kolik se ti opravdu podařilo ušetřit.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Konečně vidíš skutečné úspory</h3>
+              <p>Historie počítá jen potvrzené částky. Žádný falešný pokrok. Žádná nafouknutá čísla.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Máš jednoduchý rituál místo těžkopádného rozpočtování</h3>
+              <p>Tři rychlé způsoby zápisu: nekoupil jsem to, koupil jsem to levněji, zrušil jsem předplatné.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Je snazší vydržet motivovaný</h3>
+              <p>Cíl roste až po převodu, takže každé potvrzení mění něco skutečného.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Nevyměňuješ soukromí za finanční disciplínu</h3>
+              <p>Bez účtu, bez trackerů a bez povinnosti propojit banku.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Každodenní situace</p>
+          <h2>Chrumek funguje přesně v těch chvílích, kdy peníze obvykle nenápadně utečou.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 01</p>
+              <h3>Levnější volba na regálu se hned promění ve skutečnou částku k odložení.</h3>
+              <p>
+                Vybereš si výrobek za 15,99 PLN místo za 22,99 PLN. Chrumek zachytí rozdíl
+                dřív, než těch 7 PLN zmizí za něco jiného.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Telefon s aplikací Chrumek vedle regálu s kávou, ukazující zaznamenaný rozdíl 7 PLN po výběru levnějšího produktu"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Rozdíl z jednoho nákupního rozhodnutí nezůstane jen v hlavě. Jde do Chrumku.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 02</p>
+              <h3>Latte po cestě může zůstat v peněžence a hned posunout tvůj cíl.</h3>
+              <p>
+                Místo zaplacení 16,99 PLN u kasy zapíšeš vynechané latte do Chrumku.
+                Tohle malé rozhodnutí přestane být neviditelné.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Telefon s aplikací Chrumek v kavárně vedle menu, ukazující vynechané latte v hodnotě 16,99 PLN"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Vynecháš latte. Chrumek promění tohle rozhodnutí v konkrétní částku.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 03</p>
+              <h3>Zrušené předplatné se nerozpustí zpátky v běžných výdajích. Začne pracovat pro tvůj cíl.</h3>
+              <p>
+                Zrušíš měsíční službu za 49,99 PLN a částku zapíšeš do Chrumku.
+                Fixní výdaj se tak může každý měsíc proměnit v krok blíž k cíli.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Telefon s aplikací Chrumek vedle notebooku s obrazovkou správy předplatného, ukazující záznam o zrušeném předplatném"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Zrušení předplatného se promění v pravidelný posun směrem k cíli.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 04</p>
+              <h3>Cíl působí skutečně, protože neroste jen z psaní.</h3>
+              <p>
+                Kolo přestane být neurčitým nápadem. Vidíš částku, pokrok
+                i potvrzené převody, které tě k nákupu opravdu přibližují.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Telefon zobrazující cíl Bike v aplikaci Chrumek vedle helmy, světla na kolo a kola v pozadí"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Cíl má jméno, částku i skutečný pokrok. Už to není jen přání.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 05</p>
+              <h3>Historie není deník odříkání. Je to důkaz, že si peníze opravdu odkládáš.</h3>
+              <p>
+                Vidíš svá rozhodnutí i částky, které se do úspor skutečně dostaly.
+                Je to jednoduchý důkaz, že systém funguje.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Telefon s obrazovkou Historie v Chrumku vedle obálky s nápisem Bike, zápisníku s vynechanými nákupy a ušetřenými penězi"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947 PLN není deklarace. Je to součet rozhodnutí, která jsi opravdu odložil.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 06</p>
+              <h3>Pravidelnost se stane viditelnou dřív, než se zase rozplyne.</h3>
+              <p>
+                Každý převod směrem k cíli zanechá stopu. Chrumek ukazuje tvoji sérii i dny,
+                kdy jsi peníze opravdu odložil, takže je snazší navázat i zítra.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Telefon s obrazovkou kalendáře v Chrumku vedle zápisníku s plánem převodů a poznámkou s připomínkou"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Nemusíš hádat, jestli to funguje. Vidíš sérii i konkrétní dny spoření.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scéna 07</p>
+              <h3>Vidíš, která malá rozhodnutí přinášejí největší rozdíl.</h3>
+              <p>
+                Káva, rozvoz, hry, elektronika. Chrumek ukazuje, odkud tvoje úspory skutečně přišly,
+                takže je snazší opakovat volby, které pomáhají nejvíc.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Telefon s grafem kategorií úspor v Chrumku vedle kávy, účtenky, zápisníku, notebooku, gamepadu a nákupní tašky"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Neanalyzuješ každý výdaj. Vidíš, kde si peníze skutečně bereš zpět na svou stranu.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Hodnocení 5 z 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Poprvé vidím černé na bílém, kolik jsem opravdu ušetřila, ne jen kolik jsem chtěla ušetřit."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Hodnocení 5 z 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek neodměňuje dobré úmysly. Počítá jen to, co jsi opravdu odložil."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Krok za krokem</p>
+          <h2>Spoření začíná na obyčejných místech: v obchodě, v kavárně, na gauči.</h2>
+          <p class="section-intro">
+            Chrumek ti pomáhá zachytit malá rozhodnutí, která jinak zmizí beze stopy.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>V obchodě</h3>
+            <p class="shot-copy">
+              Zvolíš levnější výrobek a rozdíl si zapíšeš dřív, než ho utratíš za něco jiného.
+            </p>
+            <p class="shot-meta">Místo „asi jsem něco ušetřil“ vidíš přesnou částku.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>V kavárně</h3>
+            <p class="shot-copy">
+              Vynecháš kávu po cestě a hned zapíšeš částku, která má jít do úspor.
+            </p>
+            <p class="shot-meta">Malé rozhodnutí přestane být neviditelné.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>S předplatným</h3>
+            <p class="shot-copy">
+              Zrušíš předplatné, které nevyužíváš, a měsíční poplatek proměníš v pravidelné spoření.
+            </p>
+            <p class="shot-meta">Jedno rozhodnutí může pracovat pro tebe každý měsíc.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>S cílem</h3>
+            <p class="shot-copy">
+              Každý potvrzený převod tě přibližuje k věci, na kterou opravdu chceš spořit.
+            </p>
+            <p class="shot-meta">Cíl roste jen tehdy, když jsou peníze skutečně odložené.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>V historii</h3>
+            <p class="shot-copy">
+              Vracíš se k seznamu částek, které se skutečně dostaly do úspor, ne jen k částkám, které byly v plánu.
+            </p>
+            <p class="shot-meta">Máš důkaz, že malá rozhodnutí se skládají do skutečného výsledku.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Bez propojení s bankou</h3>
+            <p class="shot-copy">
+              Používáš Chrumek bez účtu a bez propojení s bankou. Ty rozhoduješ, kam peníze půjdou.
+            </p>
+            <p class="shot-meta">Jednoduchý rituál, minimum dat, maximum kontroly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Pro koho je</p>
+          <h2>Chrumek je pro tebe, pokud:</h2>
+          <ul>
+            <li>"Vím, že bych mohl spořit víc, ale v reálném životě to nedotáhnu."</li>
+            <li>"Nechci další aplikaci na zapisování každého výdaje."</li>
+            <li>"Potřebuji jednoduchý rituál, který funguje od prvního dne."</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Ne pokud</p>
+          <h2>Chrumek není pro tebe, pokud:</h2>
+          <ul>
+            <li>chceš automatickou synchronizaci s bankou,</li>
+            <li>potřebuješ složitý finanční plánovač,</li>
+            <li>chceš aplikaci, která všechno udělá za tebe bez potvrzení.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Nejčastější otázky před stažením Chrumku.</h2>
+          <p class="section-intro">
+            Přesně víš, co si instaluješ: Chrumek ti pomáhá dotáhnout skutečné spoření do konce,
+            ale nepropojuje banku, neposílá převody a nevyžaduje účet.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Musím propojit svůj bankovní účet?</summary>
+            <p>Ne. Chrumek se s bankou nepropojuje. Peníze přesouváš tam, kam chceš: na samostatný účet, do obálky nebo do prasátka.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Udělá Chrumek převod za mě?</summary>
+            <p>Ne. Aplikace ti pomáhá uzavřít celý rituál: zapíšeš částku, v reálném světě ji odložíš a pak v aplikaci potvrdíš, že peníze už jsou na tvé straně.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Co když částku zapíšu, ale nikdy ji neodložím?</summary>
+            <p>Pak převod jednoduše nepotvrdíš. Právě o to jde: grafy, historie i cíle mají růst až ve chvíli, kdy jsou peníze opravdu odložené.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Posílají se moje data na server?</summary>
+            <p>Data, která do aplikace zadáš, zůstávají lokálně ve tvém zařízení. Nevytváříš účet a nepředáváš historii svých rozhodnutí do žádného externího dashboardu.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Jak funguje Premium a bezplatné zkušební období?</summary>
+            <p>Aplikaci si můžeš vyzkoušet ještě před platbou. Další přístup k placeným funkcím se řeší přes App Store a zkušební období závisí na nabídce, která je pro daného uživatele právě dostupná.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Můžu svá data exportovat?</summary>
+            <p>Ano. Chrumek podporuje export do CSV, takže si můžeš potvrzené úspory i cíle vzít i mimo aplikaci.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Poslední krok</p>
+          <h2>Neslibuj si, že konečně začneš spořit. Dej si proces, který opravdu uzavírá celý kruh.</h2>
+          <p>
+            Chrumek neměří úmysly. Pomáhá ti uzavřít okamžik, kdy peníze opravdu skončí na tvé straně.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Stáhněte si Chrumek v App Storu">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Stáhnout v App Storu" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Bez účtu. Bez propojení s bankou. Začni ještě dnes první částkou, kterou neutratíš.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Signály důvěry">
+          <span>bez účtu</span>
+          <span>bez reklamních trackerů</span>
+          <span>data zůstávají ve tvém zařízení</span>
+          <span>bez propojení s bankou</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Skutečné úspory, ne jen sliby. <a href="./privacy/">Zásady ochrany osobních údajů</a> | <a href="./terms/">Podmínky používání</a>.</p>
+  </footer>
+</body>
+</html>
