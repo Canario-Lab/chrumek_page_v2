@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek auttaa muuttamaan arjessa väliin jääneet ostokset rahaksi, jonka oikeasti siirrät säästöön. Yksinkertainen säästörutiini ilman tiliä ja ilman pankkiyhteyttä.">
+  <title>Chrumek | Rahaa, joka oikeasti päätyy säästöön</title>
+  <link rel="canonical" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Sivun teema: tumma. Vaihda vaaleaan."
+  data-theme-label-light="Sivun teema: vaalea. Vaihda tummaan."
+  data-theme-title-dark="Sivun teema: tumma"
+  data-theme-title-light="Sivun teema: vaalea"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek Facebookissa" title="Chrumek Facebookissa">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Valitse kieli">
+            <span class="lang-toggle-icon" aria-hidden="true">FI</span>
+            <span class="lang-toggle-text">Suomi</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Kielivalinta">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Lataa</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Ei taas yksi uusi kuluseurantasovellus</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Jäikö raha käyttämättä? Siirrä se saman tien säästöön.</p>
+
+          <p class="lead">
+            Sen sijaan että kirjaisit jokaisen kuitin, nappaat talteen hetket, jolloin et käyttänyt rahaa tai käytit vähemmän.
+            Tavoite, historia ja kaaviot kasvavat vasta sitten, kun siirrät rahat oikeasti säästöön.
+          </p>
+
+          <p class="supporting-copy">
+            Niille, jotka ovat jo yrittäneet vain ”kuluttaa vähemmän” ja tietävät,
+            että ilman oikeaa siirtoa rahat jäävät päätilille ja katoavat hiljaa myöhemmin.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Lataa Chrumek App Storesta">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Lataa App Storesta" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Katso miten se toimii</a>
+          </div>
+
+          <p class="microcopy">
+            Ei tiliä. Ei pankkiyhteyttä. Ei seurantaa. Vain se lasketaan, minkä oikeasti siirrät säästöön.
+          </p>
+
+          <ul class="proof-pills" aria-label="Tärkeimmät lupaukset">
+            <li>jokainen väliin jäänyt meno voi muuttua oikeaksi siirroksi</li>
+            <li>tavoitteesi kasvaa vasta, kun rahat oikeasti liikkuvat</li>
+            <li>säästät ilman tunnetta siitä, että tekisit kirjanpitoa</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Yksinkertainen rutiini</p>
+              <h2>Ratkaiseva hetki on se, kun rahat lähtevät päätililtäsi.</h2>
+              <p>
+                Kirjaat summan, siirrät sen sinne, missä oikeasti säilytät säästöjäsi,
+                ja vahvistat sen sitten yhdellä napautuksella. Chrumek laskee vain sen, minkä todella laitat säästöön.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Puhelin, jossa on Chrumek, kirjekuori jossa lukee Bike, säästöpossu ja rahaa siirrettävänä sivuun"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80 PLN ei jää odottamaan myöhemmäksi. Se menee suoraan ”Bike”-tavoitteeseen.</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Ongelma</p>
+                <strong>Se, että jätit ostoksen tekemättä, ei vielä tarkoita, että raha oikeasti säästyi.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Lupaus</p>
+                <strong>Edistymisesi ja historiasi kasvavat vasta, kun vahvistat siirron.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Todellinen ongelma</p>
+          <h2>Useimmilla ihmisillä ei ole tiedon puutetta säästämisestä. Ongelma on siinä, että suunnitelma ei muutu teoksi.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Päätös on tehty, mutta rahat jäävät kiertoon.</h3>
+            <p>
+              Jätät ostoksen väliin, valitset halvemman vaihtoehdon tai lopetat turhan tilauksen.
+              Mikään ei silti pakota tuota summaa siirtymään säästöön.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Kuluseurannat näyttävät menneisyyden. Ne eivät rakenna säästöä.</h3>
+            <p>
+              Kuukauden lopussa tiedät, mihin rahat menivät,
+              mutta et silti näe, kuinka paljon sait oikeasti siirrettyä säästöön.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Budjetoinnista tulee nopeasti lisävaivaa.</h3>
+            <p>
+              Mitä enemmän lisäät kategorioita, taulukoita ja käsin tehtävää kirjaamista,
+              sitä todennäköisemmin sovellus jää pois käytöstä muutamassa päivässä.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Miten Chrumek toimii</p>
+          <h2>Et tarvitse kokonaista budjettia. Riittää, että nappaat kiinni hetkestä, jolloin olisit voinut käyttää rahat.</h2>
+          <p class="section-intro">
+            Chrumek keskittyy yhteen asiaan: siihen, etteivät käyttämättä jääneet rahat katoa hiljaa myöhemmin päätililtäsi.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Huomaat säästön</h3>
+            <p class="step-copy">
+              Jätät jotain ostamatta, valitset halvemman version tai lopetat tarpeettoman tilauksen.
+              Chrumek nappaa kiinni juuri siitä hetkestä.
+            </p>
+            <p class="step-benefit">Säästäminen muuttuu epämääräisestä ajatuksesta konkreettiseksi summaksi, jonka voit siirtää säästöön.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Siirrät sen heti</h3>
+            <p class="step-copy">
+              Summa menee erilliselle tilille, kirjekuoreen, säästöpossuun tai minne tahansa, missä oikeasti säilytät säästöjäsi.
+            </p>
+            <p class="step-benefit">Näin säästö ei jää vain ajatukseksi päähäsi.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Vahvistat sen yhdellä napautuksella</h3>
+            <p class="step-copy">
+              Vasta sen jälkeen merkintä siirtyy historiaan, kasvattaa tavoitettasi ja näkyy kaavioissa.
+            </p>
+            <p class="step-benefit">Näet edistymisen, johon voit luottaa, koska sen takana on oikea rahansiirto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Miltä loppuun asti vieminen näyttää</p>
+            <h2>Ensimmäisestä ”en ostanut sitä” -hetkestä tavoitteeseen, joka oikeasti kasvaa.</h2>
+            <p class="section-intro">
+              Kirjaat summan, siirrät sen pois päätililtäsi ja vahvistat vasta sitten, kun raha on oikeasti laitettu säästöön.
+              Päiväkirja, historia, tavoitteet ja kaaviot näyttävät vain sen, mikä oikeasti päätyi säästöön.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Esikatselu Chrumek-sovelluksen näytöistä">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Päiväkirjanäkymä Chrumek-sovelluksessa" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Päiväkirja</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Historianäkymä vahvistetuilla säästöillä" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Historia</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Säästötavoitteen näkymä sovelluksessa" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Tavoitteet</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Kaavioiden ja siirtokalenterin näkymä sovelluksessa" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Kaaviot</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Viikon käytön jälkeen</p>
+            <h2>Arvailun sijaan näet, kuinka paljon sait oikeasti säästöön.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Näet vihdoin oikeat säästöt</h3>
+              <p>Historia laskee vain vahvistetut summat. Ei valheellista edistymistä. Ei paisutettuja kokonaismääriä.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Saat yksinkertaisen rutiinin raskaan budjetoinnin sijaan</h3>
+              <p>Kolme nopeaa tapaa kirjata säästö: en ostanut sitä, ostin sen halvemmalla, lopetin tilauksen.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Motivaatiosta on helpompi pitää kiinni</h3>
+              <p>Tavoitteesi kasvaa vasta siirron jälkeen, joten jokainen teko muuttaa jotain oikeaa.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Et vaihda yksityisyyttä talouskurinalaisuuteen</h3>
+              <p>Ei tiliä, ei seurantamekanismeja eikä tarvetta yhdistää pankkiasi.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Arjen tilanteita</p>
+          <h2>Chrumek toimii juuri niissä hetkissä, joissa raha tavallisesti livahtaa huomaamatta pois.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 01</p>
+              <h3>Halvempi valinta hyllyllä muuttuu heti oikeaksi summaksi, jonka voit siirtää säästöön.</h3>
+              <p>
+                Valitset tuotteen hintaan 15,99 PLN 22,99 PLN:n sijaan. Chrumek nappaa eron talteen
+                ennen kuin nuo 7 PLN katoavat johonkin muuhun.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Puhelin, jossa on Chrumek, kahvihyllyn vieressä. Näytöllä näkyy kirjattu 7 PLN ero halvemman tuotteen valinnan jälkeen"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Kaupassa tehty valinta ei jää vain mieleen. Se menee Chrumekiin.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 02</p>
+              <h3>Se matkan varrella ostettava latte voi jäädä lompakkoosi ja rahoittaa tavoitetta saman tien.</h3>
+              <p>
+                Sen sijaan että maksaisit tiskillä 16,99 PLN, kirjaat väliin jääneen latten Chrumekiin.
+                Pieni päätös lakkaa olemasta näkymätön.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Puhelin, jossa on Chrumek, kahvilassa menun vieressä. Näytöllä näkyy väliin jätetty 16,99 PLN latte"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Jätät latten ostamatta. Chrumek muuttaa päätöksen konkreettiseksi summaksi.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 03</p>
+              <h3>Lopetettu tilaus ei valu takaisin arjen menoihin. Se alkaa tehdä töitä tavoitteesi eteen.</h3>
+              <p>
+                Lopetat 49,99 PLN:n kuukausipalvelun ja kirjaat summan Chrumekiin.
+                Yksi kiinteä meno voi muuttua asiaksi, joka vie sinua lähemmäs tavoitettasi joka kuukausi.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Puhelin, jossa on Chrumek, kannettavan vieressä. Kannettavalla näkyy tilauksen hallintanäkymä ja kirjattu lopetus"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Tilauksen lopettamisesta tulee säännöllinen askel kohti tavoitettasi.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 04</p>
+              <h3>Tavoite tuntuu todelliselta, koska se ei kasva vain kirjoittamalla sitä ylös.</h3>
+              <p>
+                Polkupyörä ei ole enää epämääräinen haave. Näet summan, edistymisen
+                ja vahvistetut siirrot, jotka oikeasti tuovat hankintaa lähemmäs.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Puhelin, jossa näkyy Bike-tavoite Chrumekissa, kypärän, pyörävalon ja taustalla olevan polkupyörän vieressä"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Tavoitteella on nimi, summa ja oikea edistyminen. Se ei ole enää pelkkä toive.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 05</p>
+              <h3>Historia ei ole päiväkirja luopumisesta. Se on todiste siitä, että siirrät rahaa oikeasti säästöön.</h3>
+              <p>
+                Näet päätöksesi ja summat, jotka oikeasti päätyivät säästöön.
+                Se on yksinkertainen todiste siitä, että järjestelmä toimii.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Puhelin, jossa on Chrumekin historianäkymä, kirjekuori jossa lukee Bike, muistikirja väliin jääneistä ostoksista ja säästettyä käteistä"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947 PLN ei ole aikomus. Se on summa päätöksistä, jotka oikeasti siirsit säästöön.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 06</p>
+              <h3>Johdonmukaisuus tulee näkyväksi ennen kuin se ehtii taas hiipua.</h3>
+              <p>
+                Jokainen siirto tavoitteeseesi jättää jäljen. Chrumek näyttää putkesi ja ne päivät,
+                jolloin oikeasti laitoit rahaa säästöön, jotta siihen on helpompi palata huomenna.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Puhelin, jossa on Chrumekin kalenterinäkymä, muistikirja siirtosuunnitelmalla ja pieni muistutuslapppu"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Sinun ei tarvitse arvailla toimiiko tämä. Näet putken ja tarkat säästöpäivät.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Tilanne 07</p>
+              <h3>Näet, mitkä pienet päätökset tekevät suurimman eron.</h3>
+              <p>
+                Kahvi, kotiinkuljetus, pelit, elektroniikka. Chrumek näyttää, mistä säästösi oikeasti tulivat,
+                jotta niitä eniten auttavia valintoja on helpompi toistaa.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Puhelin, jossa näkyy Chrumekin säästökategoriakaavio kahvin, kuitin, muistikirjan, kannettavan, peliohjaimen ja ostoskassin vieressä"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Et analysoi jokaista menoa. Näet mistä oikeasti voitat rahaa takaisin.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Arvio 5/5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Ensimmäistä kertaa näen mustaa valkoisella, kuinka paljon oikeasti säästin, en vain sitä kuinka paljon ajattelin säästää."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Arvio 5/5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek ei palkitse hyvistä aikomuksista. Se laskee vain sen, minkä oikeasti laitat säästöön."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Hetki hetkeltä</p>
+          <h2>Säästäminen alkaa tavallisissa paikoissa: kaupassa, kahvilassa, sohvalla.</h2>
+          <p class="section-intro">
+            Chrumek auttaa sinua nappaamaan talteen pienet päätökset, jotka muuten katoaisivat jäljettömiin.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>Kaupassa</h3>
+            <p class="shot-copy">
+              Valitset halvemman tuotteen ja kirjaat eron ennen kuin käytät sen johonkin muuhun.
+            </p>
+            <p class="shot-meta">Sen sijaan että ajattelisit ”kai säästin vähän”, näet tarkan summan.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>Kahvilassa</h3>
+            <p class="shot-copy">
+              Jätät matkakahvin ostamatta ja kirjaat heti summan, joka pitäisi siirtää säästöön.
+            </p>
+            <p class="shot-meta">Pieni päätös ei jää enää näkymättömäksi.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>Tilausten kanssa</h3>
+            <p class="shot-copy">
+              Lopetat tilauksen, jota et käytä, ja muutat kuukausimaksun säännölliseksi säästöksi.
+            </p>
+            <p class="shot-meta">Yksi päätös voi tehdä töitä puolestasi joka kuukausi.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>Tavoitteen kanssa</h3>
+            <p class="shot-copy">
+              Jokainen vahvistettu siirto vie sinut lähemmäs sitä, mitä varten oikeasti haluat säästää.
+            </p>
+            <p class="shot-meta">Tavoite kasvaa vasta sitten, kun rahat on oikeasti laitettu säästöön.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>Historiassa</h3>
+            <p class="shot-copy">
+              Palaat listaan summista, jotka oikeasti päätyivät säästöön, et vain summista, joita olit suunnitellut.
+            </p>
+            <p class="shot-meta">Saat todisteen siitä, että pienet päätökset kasaantuvat oikeaksi tulokseksi.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Ilman pankin yhdistämistä</h3>
+            <p class="shot-copy">
+              Käytät Chrumekia ilman tiliä ja ilman pankkiyhteyttä. Sinä päätät, minne rahat menevät.
+            </p>
+            <p class="shot-meta">Yksinkertainen rutiini, minimaalisesti dataa, maksimaalinen hallinta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Kenelle tämä on</p>
+          <h2>Chrumek on sinua varten, jos:</h2>
+          <ul>
+            <li>”Tiedän, että voisin säästää enemmän, mutta en saa sitä tapahtumaan oikeassa elämässä.”</li>
+            <li>”En halua taas yhtä sovellusta jokaisen kulun kirjaamiseen.”</li>
+            <li>”Tarvitsen yksinkertaisen rutiinin, joka toimii heti ensimmäisestä päivästä.”</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Ei sinulle, jos</p>
+          <h2>Chrumek ei ole sinua varten, jos:</h2>
+          <ul>
+            <li>haluat automaattisen pankkisynkronoinnin,</li>
+            <li>tarvitset monimutkaisen talouden suunnittelutyökalun,</li>
+            <li>haluat sovelluksen, joka tekee kaiken ilman omaa vahvistustasi.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Usein kysytyt kysymykset</p>
+          <h2>Yleisimmät kysymykset ennen kuin lataat Chrumekin.</h2>
+          <p class="section-intro">
+            Tiedät tarkalleen, mitä olet asentamassa: Chrumek auttaa viemään oikean säästämisen loppuun asti,
+            mutta se ei yhdistä pankkiasi, tee siirtoja eikä vaadi tiliä.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Tarvitseeko minun yhdistää pankkini?</summary>
+            <p>Ei. Chrumek ei yhdisty pankkiisi. Siirrät rahat itse sinne minne haluat: erilliselle tilille, kirjekuoreen tai säästöpossuun.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Tekeekö Chrumek siirron puolestani?</summary>
+            <p>Ei. Sovellus auttaa sinua sulkemaan rutiinin: kirjaat summan, laitat sen oikeassa elämässä säästöön ja vahvistat sitten sovelluksessa, että rahat ovat jo sinun puolellasi.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Mitä jos kirjaan summan, mutta en koskaan siirrä sitä säästöön?</summary>
+            <p>Silloin et vahvista siirtoa. Juuri se on koko idea: kaavioiden, historian ja tavoitteiden pitäisi kasvaa vasta, kun rahat on oikeasti laitettu säästöön.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Lähetetäänkö tietoni palvelimelle?</summary>
+            <p>Sovellukseen syöttämäsi tiedot pysyvät paikallisesti laitteellasi. Et luo tiliä etkä luovuta päätöshistoriaasi mihinkään ulkoiseen hallintapaneeliin.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Miten Premium ja ilmainen kokeilujakso toimivat?</summary>
+            <p>Voit kokeilla sovellusta ennen maksamista. Maksullisten ominaisuuksien jatkuva käyttö hoidetaan App Storen kautta, ja kokeilujakso riippuu siitä tarjouksesta, joka kyseiselle käyttäjälle on kulloinkin saatavilla.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Voinko viedä tietoni ulos sovelluksesta?</summary>
+            <p>Kyllä. Chrumek tukee CSV-vientiä, joten voit ottaa vahvistetut säästösi ja tavoitteesi mukaasi myös sovelluksen ulkopuolelle.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Viimeinen askel</p>
+          <h2>Älä vain lupaa itsellesi, että alat säästää. Anna itsellesi prosessi, joka oikeasti sulkee ympyrän.</h2>
+          <p>
+            Chrumek ei mittaa aikomuksia. Se auttaa sinua sulkemaan sen hetken, jolloin raha oikeasti päätyy sinun puolellesi.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Lataa Chrumek App Storesta">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Lataa App Storesta" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Ei tiliä. Ei pankkiyhteyttä. Aloita jo tänään ensimmäisestä summasta, jota et käytä.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Luottamussignaalit">
+          <span>ei tiliä</span>
+          <span>ei mainosseurantaa</span>
+          <span>data pysyy laitteellasi</span>
+          <span>ei pankkiyhteyttä</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Oikeita säästöjä, ei pelkkiä aikomuksia. <a href="./privacy/">Tietosuojakäytäntö</a> | <a href="./terms/">Käyttöehdot</a>.</p>
+  </footer>
+</body>
+</html>
