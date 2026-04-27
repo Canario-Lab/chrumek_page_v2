@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Chrumek pomaga zamieniać codzienne 'nie kupiłem' w realnie odłożone pieniądze. Prosty rytuał oszczędzania bez konta i bez łączenia banku.">
   <title>Chrumek | Oszczędności, które naprawdę lądują po Twojej stronie</title>
   <link rel="icon" type="image/png" href="assets/chrumek-app-icon.png">
@@ -13,7 +14,23 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="main.js"></script>
 </head>
-<body>
+<body
+  data-theme-label-dark="Motyw strony: ciemny. Przełącz na jasny."
+  data-theme-label-light="Motyw strony: jasny. Przełącz na ciemny."
+  data-theme-title-dark="Motyw strony: ciemny"
+  data-theme-title-light="Motyw strony: jasny"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <div class="page-noise" aria-hidden="true"></div>
 
   <header class="site-header">
@@ -24,6 +41,16 @@
       </a>
 
       <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61588173461826" target="_blank" rel="noopener noreferrer" aria-label="Facebook Chrumek" title="Facebook Chrumek">
+          <img class="header-social-icon" src="assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <button class="lang-toggle" type="button" aria-disabled="true" data-lang-toggle title="Wersje językowe dodamy później">
+          <span class="lang-toggle-icon" aria-hidden="true">PL</span>
+          <span class="lang-toggle-text">Język</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
         <a class="btn btn-primary" href="#start">Pobierz</a>
       </div>
     </div>
@@ -424,5 +451,9 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Realne oszczędności, nie deklaracje. <a href="./privacy/">Polityka prywatności</a> | <a href="./terms/">Regulamin</a>.</p>
+  </footer>
 </body>
 </html>
