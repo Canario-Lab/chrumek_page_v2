@@ -3,7 +3,7 @@
   var base = root.dataset.redirectBase || ".";
   var suffix = root.dataset.redirectSuffix || "/";
   var defaultLocale = root.dataset.defaultLocale || "en";
-  var supportedLocales = (root.dataset.supportedLocales || "pl,en,es,de,fr,it,pt-BR,pt-PT,tr,bg,cs,da,el,fi,hr,hu,ja,ko")
+  var supportedLocales = (root.dataset.supportedLocales || "pl,en,es,de,fr,it,pt-BR,pt-PT,tr,bg,cs,da,el,fi,hr,hu,ja,ko,nl")
     .split(",")
     .map(function (locale) {
       return locale.trim();
@@ -52,6 +52,7 @@
       if (supports("hu") && lang.indexOf("hu") === 0) return "hu";
       if (supports("ja") && lang.indexOf("ja") === 0) return "ja";
       if (supports("ko") && lang.indexOf("ko") === 0) return "ko";
+      if (supports("nl") && lang.indexOf("nl") === 0) return "nl";
     }
 
     return supports(defaultLocale) ? defaultLocale : supportedLocales[0] || "en";
