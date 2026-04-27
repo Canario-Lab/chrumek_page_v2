@@ -76,8 +76,10 @@
             zostają na głównym koncie, a potem znikają bez śladu.
           </p>
 
-          <div class="hero-actions-large">
-            <a class="btn btn-primary btn-large" href="#start">Pobierz w App Store</a>
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Pobierz Chrumek w App Store">
+              <img class="app-store-badge" src="assets/app-store-badge-pl.svg" alt="Pobierz w App Store" width="180" height="60">
+            </a>
             <a class="btn btn-ghost btn-large" href="#how">Zobacz, jak to działa</a>
           </div>
 
@@ -214,6 +216,43 @@
             </p>
             <p class="step-benefit">Widzisz postęp, któremu możesz ufać, bo stoi za nim prawdziwy ruch pieniędzy.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Ekrany aplikacji</p>
+            <h2>Zdjęcia pokażą codzienne sytuacje. Te ekrany pokazują, że proces jest prosty.</h2>
+            <p class="section-intro">
+              Na stronie zostawiamy miejsce na zdjęcia używania Chrumka, ale warto też pokazać kilka prawdziwych ekranów:
+              dziennik, historię, cel i wykresy oparte na potwierdzonych przelewach.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Podgląd ekranów aplikacji Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="assets/screenshots/journal.jpg" alt="Ekran dziennika w aplikacji Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Dziennik</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="assets/screenshots/history.jpg" alt="Ekran historii potwierdzonych oszczędności" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Historia</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="assets/screenshots/goals.jpg" alt="Ekran celu oszczędnościowego" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Cele</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="assets/screenshots/calendar.jpg" alt="Ekran kalendarza transferów w aplikacji" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Wykresy</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -423,6 +462,50 @@
       </div>
     </section>
 
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Najczęstsze pytania przed pobraniem Chrumka.</h2>
+          <p class="section-intro">
+            Krótko i bez marketingowego dymu: Chrumek nie jest bankiem, nie robi przelewów za Ciebie i nie wymaga konta.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Czy muszę podłączać bank?</summary>
+            <p>Nie. Chrumek nie łączy się z bankiem. To Ty odkładasz pieniądze tam, gdzie chcesz: na osobne konto, do koperty albo do skarbonki.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Czy Chrumek wykonuje przelew?</summary>
+            <p>Nie. Aplikacja pomaga domknąć rytuał: zapisujesz kwotę, odkładasz ją realnie, a potem potwierdzasz w aplikacji, że pieniądze są już po Twojej stronie.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Co jeśli zapiszę kwotę, ale jej nie odłożę?</summary>
+            <p>Wtedy nie potwierdzasz transferu. Właśnie o to chodzi: wykresy, historia i cele mają rosnąć dopiero po realnym odłożeniu pieniędzy.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Czy dane są wysyłane na serwer?</summary>
+            <p>Dane wpisywane w aplikacji są przechowywane lokalnie na urządzeniu. Nie zakładasz konta i nie oddajesz historii swoich decyzji do zewnętrznego panelu.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Jak działa Premium i trial?</summary>
+            <p>Aplikację możesz sprawdzić przed zakupem. Dalszy dostęp do płatnych funkcji działa przez App Store, a trial zależy od oferty dostępnej dla danego użytkownika.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Czy mogę wyeksportować swoje dane?</summary>
+            <p>Tak. Chrumek ma eksport CSV, więc możesz zabrać swoje potwierdzone oszczędności i cele poza aplikację.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="section start-section" id="start">
       <div class="container start-card reveal">
         <div class="start-copy">
@@ -434,8 +517,8 @@
         </div>
 
         <div class="start-actions">
-          <a class="btn btn-primary btn-large" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">
-            Pobierz w App Store
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Pobierz Chrumek w App Store">
+            <img class="app-store-badge" src="assets/app-store-badge-pl.svg" alt="Pobierz w App Store" width="180" height="60">
           </a>
           <p class="start-note">
             Bez konta. Bez podpinania banku. Zacznij od pierwszej kwoty, której dzisiaj nie wydasz.
