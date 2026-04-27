@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Политика за поверителност на приложението Chrumek." />
+  <title>Политика за поверителност - Chrumek</title>
+  <link rel="canonical" href="https://chrumek.app/bg/privacy/" />
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/privacy/" />
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/privacy/" />
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/privacy/" />
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/privacy/" />
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/privacy/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/privacy/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/privacy/" />
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/privacy/" />
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/privacy/" />
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/privacy/" />
+  <link rel="icon" type="image/png" href="../../assets/chrumek-app-icon.png" />
+  <link rel="apple-touch-icon" href="../../assets/chrumek-app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Тема на страницата: тъмна. Превключете към светла."
+  data-theme-label-light="Тема на страницата: светла. Превключете към тъмна."
+  data-theme-title-dark="Тема на страницата: тъмна"
+  data-theme-title-light="Тема на страницата: светла"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="Chrumek">
+        <img class="brand-mark" src="../../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="legal-return" href="../">Назад</a>
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek във Facebook" title="Chrumek във Facebook">
+          <img class="header-social-icon" src="../../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Изберете език">
+            <span class="lang-toggle-icon" aria-hidden="true">BG</span>
+            <span class="lang-toggle-text">Български</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Избор на език">
+            <a class="lang-option" href="../../pl/privacy/" data-base="../../pl/privacy/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../en/privacy/" data-base="../../en/privacy/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../es/privacy/" data-base="../../es/privacy/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../de/privacy/" data-base="../../de/privacy/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../fr/privacy/" data-base="../../fr/privacy/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../it/privacy/" data-base="../../it/privacy/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-BR/privacy/" data-base="../../pt-BR/privacy/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-PT/privacy/" data-base="../../pt-PT/privacy/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../tr/privacy/" data-base="../../tr/privacy/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../../bg/privacy/" data-base="../../bg/privacy/" lang="bg" hreflang="bg" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Политика за поверителност</h1>
+
+      <section class="legal-section">
+        <h2>1) Администратор на данни</h2>
+        <p>Администраторът на личните данни е:<br />Canario-Lab / Chrumek App<br />Имейл за контакт: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Обхват и цел</h2>
+        <p>Приложението Chrumek помага да следите спестяванията си, като записва „изкушенията“ и потвърдените преводи / заделени суми.</p>
+        <p>Не поддържаме потребителски акаунти и не събираме данни, които биха ни позволили да ви идентифицираме пряко.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Данни, обработвани в приложението (локално на вашето устройство)</h2>
+        <p>Данните, които въвеждате в приложението (например записи за спестявания, суми, дати, категории, цели и настройки), се съхраняват локално на вашето устройство.</p>
+        <p>Те не се изпращат автоматично до нас или до нашите сървъри.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Функции, които изискват достъп до системата</h2>
+        <p>Приложението може да използва системни функции и свързани данни само дотолкова, доколкото това е необходимо, за да работи:</p>
+        <ul>
+          <li>Известия (UNUserNotificationCenter) - ако включите напомнянията, iOS изпраща известия според вашите настройки.</li>
+          <li>Език / регион / валута / тема - използват се за форматиране на съдържанието и изгледа на приложението, без да се изпраща нищо към нас.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Сигнали за грешки / контакт с поддръжката</h2>
+        <p>Ако използвате опцията „Докладвай грешка“ или се свържете с поддръжката:</p>
+        <ul>
+          <li>приложението може да създаде чернова на имейл във вашето приложение за поща,</li>
+          <li>съдържанието може да включва диагностична информация (например версия на приложението, версия на iOS или настройки за език / валута) - точно това, което виждате в съобщението преди изпращане,</li>
+          <li>имейлът се изпраща само ако вие самите го одобрите.</li>
+        </ul>
+        <p>Изпратеният имейл се обработва от вашия пощенски доставчик и от нас като получател единствено с цел да обработим запитването ви.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Покупки и абонаменти (Apple + RevenueCat)</h2>
+        <p>Ако в приложението са налични платени функции (абонаменти):</p>
+        <ul>
+          <li>плащанията се обработват от Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>приложението използва RevenueCat като инфраструктурен доставчик за абонаментите, включително за показване на оферти, проверка на статуса на абонамента и предоставяне на Premium достъп.</li>
+        </ul>
+        <p>Като част от обработката на абонаментите могат да се обработват технически данни, свързани с покупката, като:</p>
+        <ul>
+          <li>идентификатори на транзакции / покупки и информация за продукта,</li>
+          <li>статус на абонамента (активен / неактивен, подновявания),</li>
+          <li>технически потребителски идентификатор, използван за свързване на статуса на абонамента (например анонимен App User ID, генериран от SDK).</li>
+        </ul>
+        <p>RevenueCat обработва тези данни, за да предостави услугата по управление на абонаментите като обработващ данни, а Apple обработва данните, свързани с плащането, според собствените си правила.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Анализ и проследяване</h2>
+        <p>Приложението не използва аналитични инструменти или рекламни SDK-та за проследяване на потребителите и не продава данни.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Уебсайт</h2>
+        <p>Ако посетите нашия уебсайт, хостинг доставчикът (например GitHub Pages) може автоматично да обработва стандартни технически данни в сървърните логове, включително IP адрес, тип браузър и дата и час на заявката, за целите на сигурността, диагностиката и непрекъсваемостта на услугата. Обхватът и правилата на тази обработка следват политиките на хостинг доставчика.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Получатели на данни</h2>
+        <p>Данните могат да бъдат разкривани само на:</p>
+        <ul>
+          <li>доставчици на плащания и абонаментни услуги: Apple и RevenueCat,</li>
+          <li>публични органи, ако това се изисква по закон.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Период на съхранение</h2>
+        <ul>
+          <li>Данните, въведени в приложението, се съхраняват локално, докато не ги премахнете сами, например чрез изтриване на записи или на приложението.</li>
+          <li>Имейл кореспонденцията се съхранява толкова дълго, колкото е необходимо за обработка на запитването и за защита срещу претенции, ако е необходимо.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Права на потребителите (ЕС / ЕИП)</h2>
+        <p>Ако в конкретен случай обработваме вашите лични данни (например когато ни изпратите имейл), имате право да:</p>
+        <ul>
+          <li>получите достъп до данните, да поискате коригиране, изтриване или ограничаване на обработката,</li>
+          <li>възразите,</li>
+          <li>подадете жалба до компетентния надзорен орган.</li>
+        </ul>
+        <p>Обхватът на задълженията за информиране следва по-специално от член 13 на GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Сигурност</h2>
+        <p>Прилагаме разумни организационни и технически мерки, съобразени с естеството на услугата. Тъй като данните на приложението се съхраняват локално, защитата на устройството ви (код / Face ID) също е важна част от сигурността.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Промени в политиката</h2>
+        <p>Тази политика може да бъде актуализирана, ако функциите на приложението или законовите изисквания се променят. Актуалната версия ще бъде публикувана на уебсайта на приложението.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Реални спестявания, а не декларации. <a href="../privacy/">Политика за поверителност</a> | <a href="../terms/">Условия за ползване</a>.</p>
+  </footer>
+
+  <script src="../../main.js" defer></script>
+</body>
+</html>

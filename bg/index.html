@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek помага да превърнеш всекидневните спестени разходи в пари, които наистина заделяш. Прост ритуал за спестяване без акаунт и без връзка с банка.">
+  <title>Chrumek | Пари, които наистина успяваш да заделиш</title>
+  <link rel="canonical" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Тема на страницата: тъмна. Превключете към светла."
+  data-theme-label-light="Тема на страницата: светла. Превключете към тъмна."
+  data-theme-title-dark="Тема на страницата: тъмна"
+  data-theme-title-light="Тема на страницата: светла"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek във Facebook" title="Chrumek във Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Изберете език">
+            <span class="lang-toggle-icon" aria-hidden="true">BG</span>
+            <span class="lang-toggle-text">Български</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Избор на език">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Изтегли</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Не е поредният тракер на разходи</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Не го похарчи? Задели го веднага.</p>
+
+          <p class="lead">
+            Вместо да въвеждаш всяка касова бележка, отбелязваш моментите, в които не си похарчил
+            или си похарчил по-малко. Целта, историята и графиките растат едва след като наистина
+            преместиш тези пари в спестявания.
+          </p>
+
+          <p class="supporting-copy">
+            За хората, които вече са пробвали просто "да харчат по-малко" и знаят, че без реален
+            превод парите остават в основната сметка и тихо изчезват по-късно.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Изтеглете Chrumek от App Store">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Изтеглете от App Store" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Виж как работи</a>
+          </div>
+
+          <p class="microcopy">
+            Без акаунт. Без връзка с банка. Без проследяване. Брои се само онова, което наистина си заделил.
+          </p>
+
+          <ul class="proof-pills" aria-label="Основни обещания">
+            <li>всеки пропуснат разход може да се превърне в реален превод</li>
+            <li>целта расте едва след като парите наистина се преместят</li>
+            <li>спестяваш без усещането, че водиш счетоводство</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Прост ритуал</p>
+              <h2>Ключовият момент е, когато парите напуснат основната ти сметка.</h2>
+              <p>
+                Записваш сумата, преместваш я там, където наистина държиш спестяванията си,
+                и после я потвърждаваш с едно докосване. Chrumek брои само това, което наистина си заделил.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Телефон с приложението Chrumek до плик с надпис Bike, касичка и пари, които се заделят"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80 PLN не чакат за "някой ден". Отиват директно към целта "Bike".</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Проблем</p>
+                <strong>Да пропуснеш покупка не значи, че парите наистина са спестени.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Обещание</p>
+                <strong>Прогресът и историята растат едва след като потвърдиш превода.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Истинският проблем</p>
+          <h2>Повечето хора нямат проблем със знанието как се спестява. Проблемът е да го доведат докрай.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Решението е взето, но парите остават в обращение.</h3>
+            <p>
+              Пропускаш покупка, избираш по-евтина опция или спираш ненужен абонамент.
+              Но нищо не кара тази сума да се премести в спестявания.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Тракерите на разходи показват миналото. Не изграждат спестявания.</h3>
+            <p>
+              В края на месеца знаеш къде са отишли парите, но пак не виждаш
+              колко наистина си успял да заделиш.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Бюджетирането бързо започва да прилича на допълнителна работа.</h3>
+            <p>
+              Колкото повече категории, таблици и ръчно въвеждане добавиш,
+              толкова по-вероятно е приложението да бъде изоставено след няколко дни.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Как работи Chrumek</p>
+          <h2>Не ти трябва цял бюджет. Трябва ти само да уловиш момента, в който е можело да похарчиш тези пари.</h2>
+          <p class="section-intro">
+            Chrumek се фокусира върху едно: да не позволи на парите, които не си похарчил,
+            тихо да изчезнат по-късно от основната ти сметка.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Забелязваш спестяването</h3>
+            <p class="step-copy">
+              Пропускаш нещо, избираш по-евтина версия или спираш ненужен абонамент.
+              Chrumek улавя точно този момент.
+            </p>
+            <p class="step-benefit">Така спестяването се превръща от мъглява идея в конкретна сума за заделяне.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Преместваш я веднага</h3>
+            <p class="step-copy">
+              Сумата отива в отделна сметка, плик, касичка или където наистина държиш спестяванията си.
+            </p>
+            <p class="step-benefit">Така спестяването не остава само в главата ти.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Потвърждаваш с едно докосване</h3>
+            <p class="step-copy">
+              Едва тогава записът влиза в историята, захранва целта ти и става част от графиките.
+            </p>
+            <p class="step-benefit">Виждаш прогрес, на който можеш да вярваш, защото зад него стои реално движение на пари.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Как изглежда, когато наистина го доведеш докрай</p>
+            <h2>От първото "не го купих" до цел, която наистина расте.</h2>
+            <p class="section-intro">
+              Записваш сумата, изваждаш я от основната си сметка и я потвърждаваш
+              едва когато парите наистина са заделени. Дневникът, историята, целите и графиките
+              показват само онова, което реално е стигнало до спестяванията ти.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Преглед на екраните на приложението Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Екранът Дневник в приложението Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Дневник</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Екранът История с потвърдени спестявания" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>История</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Екранът с целите за спестяване в приложението" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Цели</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Екранът с графиките и календара на преводите" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Графики</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">След седмица използване</p>
+            <h2>Вместо да гадаеш, виждаш колко всъщност си успял да спестиш.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Най-после виждаш истинските спестявания</h3>
+              <p>Историята брои само потвърдените суми. Без фалшив прогрес. Без надути числа.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Получаваш прост ритуал вместо тежко бюджетиране</h3>
+              <p>Три бързи начина за запис: не го купих, купих го по-евтино, спрях абонамент.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>По-лесно е да запазиш мотивацията</h3>
+              <p>Целта расте едва след превода, така че всяко действие променя нещо реално.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Не разменяш личното си пространство срещу финансова дисциплина</h3>
+              <p>Без акаунт, без тракери и без изискване да свързваш банковата си сметка.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Всекидневни ситуации</p>
+          <h2>Chrumek работи точно в моментите, когато парите обикновено се изплъзват незабелязано.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 01</p>
+              <h3>По-евтиният избор на рафта веднага се превръща в реална сума за заделяне.</h3>
+              <p>
+                Избираш продукт за 15,99 PLN вместо за 22,99 PLN. Chrumek улавя разликата,
+                преди тези 7 PLN да изчезнат за нещо друго.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Телефон с приложението Chrumek до рафт с кафе, показващ записана разлика от 7 PLN след избор на по-евтин продукт"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Разликата от едно решение при пазаруване не остава само в главата ти. Влиза в Chrumek.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 02</p>
+              <h3>Латето по пътя може да остане в портфейла ти и веднага да отиде към някоя цел.</h3>
+              <p>
+                Вместо да платиш 16,99 PLN на касата, записваш пропуснатото лате в Chrumek.
+                Това малко решение спира да бъде невидимо.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Телефон с приложението Chrumek в кафене до меню, показващ пропуснато лате на стойност 16,99 PLN"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Пропускаш латето. Chrumek превръща това решение в конкретна сума.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 03</p>
+              <h3>Спреният абонамент не се разтваря обратно в ежедневните разходи. Започва да работи за целта ти.</h3>
+              <p>
+                Спираш месечна услуга за 49,99 PLN и записваш сумата в Chrumek.
+                Един фиксиран разход може всеки месец да те приближава до целта ти.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Телефон с приложението Chrumek до лаптоп с екран за управление на абонаменти, показващ запис за спрян абонамент"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Отмяната на абонамент се превръща в редовна стъпка към целта ти.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 04</p>
+              <h3>Целта изглежда истинска, защото не расте само от писане.</h3>
+              <p>
+                Велосипедът спира да бъде мъглява идея. Виждаш сумата, прогреса
+                и потвърдените преводи, които наистина те доближават до покупката.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Телефон, показващ целта Bike в приложението Chrumek до каска, колоездачна лампа и велосипед на заден план"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Една цел има име, сума и реален напредък. Вече не е просто желание.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 05</p>
+              <h3>Историята не е дневник на лишенията. Тя е доказателство, че наистина заделяш пари.</h3>
+              <p>
+                Виждаш решенията си и сумите, които наистина са влезли в спестяванията.
+                Това е простото доказателство, че системата работи.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Телефон с екрана История на Chrumek до плик с надпис Bike, тефтер с пропуснати покупки и спестени пари"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947 PLN не са декларация. Това е сборът от решения, които наистина си заделил.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 06</p>
+              <h3>Постоянството става видимо, преди пак да се разтвори.</h3>
+              <p>
+                Всеки превод към целта ти оставя следа. Chrumek показва поредицата ти и дните,
+                в които наистина си заделял пари, за да ти е по-лесно да повториш и утре.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Телефон с екрана Calendar на Chrumek до тефтер с план за преводи и бележка с напомняне"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Не се чудиш дали работи. Виждаш поредицата и точните дни, в които си спестявал.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 07</p>
+              <h3>Виждаш кои малки решения носят най-голямата разлика.</h3>
+              <p>
+                Кафе, доставки, игри, техника. Chrumek показва откъде всъщност са дошли спестяванията ти,
+                за да е по-лесно да повториш решенията, които ти помагат най-много.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Телефон с графика на категориите спестявания в Chrumek до кафе, касова бележка, тефтер, лаптоп, геймпад и пазарска чанта"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Не анализираш всеки разход. Виждаш къде наистина си връщаш пари обратно за себе си.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Оценка 5 от 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "За първи път виждам черно на бяло колко наистина съм спестила, а не колко съм възнамерявала да спестя."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Оценка 5 от 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek не награждава добрите намерения. Брои само това, което наистина си заделил."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Момент по момент</p>
+          <h2>Спестяването започва на обикновени места: в магазина, в кафенето, на дивана.</h2>
+          <p class="section-intro">
+            Chrumek ти помага да уловиш малките решения, които иначе изчезват без следа.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>В магазина</h3>
+            <p class="shot-copy">
+              Избираш по-евтиния продукт и записваш разликата, преди да я похарчиш за нещо друго.
+            </p>
+            <p class="shot-meta">Вместо "май спестих нещо", виждаш точната сума.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>В кафенето</h3>
+            <p class="shot-copy">
+              Пропускаш кафето по пътя и веднага записваш сумата, която трябва да отиде в спестявания.
+            </p>
+            <p class="shot-meta">Едно малко решение спира да бъде невидимо.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>С абонаментите</h3>
+            <p class="shot-copy">
+              Спираш абонамент, който не използваш, и превръщаш тази месечна такса в редовно спестяване.
+            </p>
+            <p class="shot-meta">Едно решение може да работи за теб всеки месец.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>С цел</h3>
+            <p class="shot-copy">
+              Всеки потвърден превод те доближава до нещото, за което наистина искаш да спестяваш.
+            </p>
+            <p class="shot-meta">Целта расте само когато парите наистина са заделени.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>В историята</h3>
+            <p class="shot-copy">
+              Връщаш се към списък със суми, които наистина са стигнали до спестяванията, а не само до плана ти.
+            </p>
+            <p class="shot-meta">Получаваш доказателство, че малките решения дават реален резултат.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Без да свързваш банката си</h3>
+            <p class="shot-copy">
+              Използваш Chrumek без акаунт и без връзка с банката. Ти решаваш къде отиват парите.
+            </p>
+            <p class="shot-meta">Прост ритуал, минимални данни, максимален контрол.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">За кого е</p>
+          <h2>Chrumek е за теб, ако:</h2>
+          <ul>
+            <li>"Знам, че мога да спестявам повече, но не го превръщам в действие."</li>
+            <li>"Не искам още едно приложение за въвеждане на всеки разход."</li>
+            <li>"Трябва ми прост ритуал, който работи от първия ден."</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Не и ако</p>
+          <h2>Chrumek не е за теб, ако:</h2>
+          <ul>
+            <li>искаш автоматична синхронизация с банка,</li>
+            <li>ти трябва сложен финансов планер,</li>
+            <li>искаш приложение, което прави всичко вместо теб без потвърждение.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ЧЗВ</p>
+          <h2>Най-честите въпроси преди да изтеглиш Chrumek.</h2>
+          <p class="section-intro">
+            Знаеш точно какво инсталираш: Chrumek ти помага да доведеш истинското спестяване докрай,
+            но не свързва банката ти, не прави преводи вместо теб и не изисква акаунт.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Трябва ли да свържа банковата си сметка?</summary>
+            <p>Не. Chrumek не се свързва с банката ти. Ти местиш парите където искаш: в отделна сметка, плик или касичка.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Chrumek прави ли превода вместо мен?</summary>
+            <p>Не. Приложението помага да затвориш ритуала: записваш сумата, заделяш я в реалния свят и после потвърждаваш в приложението, че парите вече са на твоя страна.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Какво става, ако запиша сума, но никога не я заделя?</summary>
+            <p>Тогава просто не потвърждаваш превода. Точно това е смисълът: графиките, историята и целите трябва да растат едва след като парите наистина са заделени.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Изпращат ли се данните ми към сървър?</summary>
+            <p>Данните, които въвеждаш в приложението, остават локално на устройството ти. Не създаваш акаунт и не предаваш историята на решенията си към някакъв външен панел.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Как работят Premium и безплатният пробен период?</summary>
+            <p>Можеш да изпробваш приложението, преди да платиш. Достъпът до платените функции след това се управлява през App Store, а наличието на пробен период зависи от офертата, която в момента е достъпна за конкретния потребител.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Мога ли да експортирам данните си?</summary>
+            <p>Да. Chrumek поддържа CSV експорт, така че можеш да изнесеш потвърдените си спестявания и цели извън приложението.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Последната крачка</p>
+          <h2>Не си обещавай, че ще започнеш да спестяваш. Дай си процес, който наистина затваря цикъла.</h2>
+          <p>
+            Chrumek не измерва намеренията. Той ти помага да затвориш момента, в който парите наистина остават за теб.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Изтеглете Chrumek от App Store">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Изтеглете от App Store" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Без акаунт. Без връзка с банка. Започни още днес с първата сума, която не похарчиш.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Сигнали за доверие">
+          <span>без акаунт</span>
+          <span>без рекламни тракери</span>
+          <span>данните остават на устройството ти</span>
+          <span>без връзка с банка</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Реални спестявания, а не декларации. <a href="./privacy/">Политика за поверителност</a> | <a href="./terms/">Условия за ползване</a>.</p>
+  </footer>
+</body>
+</html>
