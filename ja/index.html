@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumekは、日々使わずに済んだお金を、本当に残る貯金へ変えるためのアプリ。アカウント不要、銀行連携なし。">
+  <title>Chrumek | 節約を、本当に残る貯金に変える</title>
+  <link rel="canonical" href="https://chrumek.app/ja/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="ja" href="https://chrumek.app/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="ページテーマ: ダーク。ライトに切り替え。"
+  data-theme-label-light="ページテーマ: ライト。ダークに切り替え。"
+  data-theme-title-dark="ページテーマ: ダーク"
+  data-theme-title-light="ページテーマ: ライト"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="FacebookのChrumek" title="FacebookのChrumek">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">
+            <span class="lang-toggle-icon" aria-hidden="true">JA</span>
+            <span class="lang-toggle-text">日本語</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="言語セレクター">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>日本語</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">ダウンロード</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ただの家計簿じゃない</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">使わなかったなら、その場で取り分ける。</p>
+
+          <p class="lead">
+            レシートを全部記録する代わりに、買わなかった瞬間や、安く済んだ瞬間を残します。
+            目標、履歴、グラフが増えるのは、そのお金を本当に貯金へ移したあとだけです。
+          </p>
+
+          <p class="supporting-copy">
+            「節約しよう」と思うだけでは残らないと分かっている人のために。
+            実際に移し替えない限り、お金はメイン口座に残ったまま、あとで静かに消えていきます。
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="App StoreでChrumekをダウンロード">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="App Storeでダウンロード" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">仕組みを見る</a>
+          </div>
+
+          <p class="microcopy">
+            アカウント不要。銀行連携なし。トラッキングなし。本当に取り分けた分だけを数えます。
+          </p>
+
+          <ul class="proof-pills" aria-label="主な約束">
+            <li>使わなかったお金を、そのまま本当の貯金に変えられる</li>
+            <li>目標が増えるのは、お金が実際に移ったあとだけ</li>
+            <li>家計簿のような重さなしで貯金を続けられる</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">シンプルな習慣</p>
+              <h2>大事なのは、お金がメイン口座から離れる瞬間です。</h2>
+              <p>
+                金額を記録し、本当に貯金している場所へ移し、そのあとでワンタップで確定します。
+                Chrumekが数えるのは、実際に取り分けた分だけです。
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Chrumekアプリを表示したスマートフォン、自転車と書かれた封筒、貯金箱、取り分けたお金"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80PLNは後回しになりません。そのまま「自転車」目標へ移します。</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">課題</p>
+                <strong>買わなかっただけでは、そのお金を本当に貯めたことにはなりません。</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">約束</p>
+                <strong>進捗と履歴は、移し替えを確定したあとにだけ増えます。</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">本当の問題</p>
+          <h2>多くの人に足りないのは貯金の知識ではなく、最後までやり切る仕組みです。</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>判断はできても、お金はそのまま日常の出費に戻っていく。</h3>
+            <p>
+              買うのをやめたり、安い方を選んだり、不要なサブスクを解約したりしても、
+              その金額が自動的に貯金へ移るわけではありません。
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>支出管理アプリは過去を見せるだけで、貯金を増やしてはくれない。</h3>
+            <p>
+              月末に「どこへ消えたか」は分かっても、
+              実際にどれだけ取り分けられたかは見えないままです。
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>予算管理はすぐに面倒な作業になる。</h3>
+            <p>
+              カテゴリや表や手入力が増えるほど、
+              数日でアプリを閉じたままになる可能性も高くなります。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chrumekの仕組み</p>
+          <h2>必要なのは完璧な予算表ではなく、「使ってしまうはずだったお金」に気づくことです。</h2>
+          <p class="section-intro">
+            Chrumekが見ているのはひとつだけ。
+            使わずに済んだお金が、そのままメイン口座で曖昧に消えていかないことです。
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>節約できた瞬間に気づく</h3>
+            <p class="step-copy">
+              買うのをやめた、安い方を選んだ、不要なサブスクをやめた。
+              Chrumekはその瞬間をそのまま記録します。
+            </p>
+            <p class="step-benefit">曖昧な「節約したかも」が、取り分けるべき具体的な金額になります。</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>すぐに移す</h3>
+            <p class="step-copy">
+              その金額を、別口座や封筒や貯金箱など、本当に貯金している場所へ移します。
+            </p>
+            <p class="step-benefit">これで節約が「頭の中だけの話」で終わりません。</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>ワンタップで確定する</h3>
+            <p class="step-copy">
+              そのあとで初めて、記録は履歴に入り、目標に反映され、グラフの一部になります。
+            </p>
+            <p class="step-benefit">本当に動いたお金だけが反映されるので、見える進捗を信頼できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">やり切るとこう見える</p>
+            <h2>最初の「買わなかった」から、本当に増えていく目標まで。</h2>
+            <p class="section-intro">
+              金額を記録し、メイン口座から移し、本当に取り分けたあとで確定する。
+              ジャーナル、履歴、目標、グラフは、実際に貯金へ入った分だけを表示します。
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Chrumekアプリ画面のプレビュー">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Chrumekアプリのジャーナル画面" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>ジャーナル</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="確定した貯金が並ぶ履歴画面" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>履歴</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="アプリ内の貯金目標画面" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>目標</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="グラフとカレンダーの画面" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>グラフ</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">1週間使うと</p>
+            <h2>「たぶん貯められた」ではなく、実際にどれだけ残せたかが見えるようになります。</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>本当に残った金額だけが見える</h3>
+              <p>履歴が数えるのは確定した金額だけ。見せかけの進捗も、膨らんだ合計もありません。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>重い予算管理ではなく、続けやすい習慣になる</h3>
+              <p>入力は3通りだけ。買わなかった、安く済んだ、サブスクをやめた。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>モチベーションが続きやすい</h3>
+              <p>目標が増えるのは移し替えたあとだけ。だから1回ごとの行動が本当に意味を持ちます。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>プライバシーを差し出さずに貯金できる</h3>
+              <p>アカウント不要。トラッカーなし。銀行連携の強制もありません。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">日常の場面</p>
+          <h2>Chrumekが役に立つのは、お金が静かに流れていきがちな瞬間です。</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 01</p>
+              <h3>棚の前で安い方を選んだ差額が、そのまま本当の貯金額になります。</h3>
+              <p>
+                22.99PLNではなく15.99PLNの商品を選ぶ。
+                その7PLNが別の何かに消える前に、Chrumekが差額を残します。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="安い商品を選んだ差額7PLNを記録したChrumekアプリのスマートフォンと店の棚"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>買い物の差額を頭の中だけで終わらせず、Chrumekに残せます。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 02</p>
+              <h3>途中でやめたラテ代が、そのまま目標のためのお金になります。</h3>
+              <p>
+                カウンターで16.99PLNを払う代わりに、
+                そのラテ代をChrumekへ記録します。小さな判断が見えないまま終わりません。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="16.99PLNのラテを見送った記録が表示されたChrumekアプリのスマートフォンとカフェ"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>ラテをやめる。その判断をChrumekが具体的な金額に変えます。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 03</p>
+              <h3>解約したサブスク代が、生活費に埋もれず、そのまま目標の味方になります。</h3>
+              <p>
+                月49.99PLNのサービスをやめて、その金額をChrumekへ記録する。
+                固定費だったものが、毎月あなたを目標へ近づけるお金に変わります。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="解約したサブスクリプションを記録したChrumekアプリのスマートフォンとサブスク管理画面のノートPC"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>サブスク解約が、その場限りで終わらず、目標への定期的な一歩になります。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 04</p>
+              <h3>目標が現実味を持つのは、入力しただけでは増えないからです。</h3>
+              <p>
+                自転車は、なんとなくの願いではなくなります。
+                金額と進捗、そして本当に近づけた移し替えが見えるようになります。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Chrumekアプリの自転車目標を表示したスマートフォン、ヘルメット、ライト、背景の自転車"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>目標には名前と金額と本当の進捗があります。もう願望だけではありません。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 05</p>
+              <h3>履歴は我慢の記録ではなく、本当にお金を残せた証拠です。</h3>
+              <p>
+                判断したことと、実際に貯金へ入った金額が並びます。
+                小さな仕組みが機能していると分かる、シンプルな証拠です。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Chrumekの履歴画面を表示したスマートフォン、自転車と書かれた封筒、ノート、取り分けた現金"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947PLNは宣言ではありません。本当に取り分けた判断の合計です。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 06</p>
+              <h3>続けられているかどうかが、また消える前に見えるようになります。</h3>
+              <p>
+                目標への移し替えは、毎回痕跡を残します。
+                Chrumekはストリークと、実際に取り分けた日を見せてくれるので、翌日も戻りやすくなります。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Chrumekのカレンダー画面を表示したスマートフォン、移し替え計画のノート、リマインドメモ"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>本当に機能しているか迷う必要はありません。連続日数と貯金した日が見えます。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">場面 07</p>
+              <h3>どの小さな判断がいちばん効いているかも見えるようになります。</h3>
+              <p>
+                コーヒー、デリバリー、ゲーム、家電。
+                Chrumekは、どこから実際の貯金が生まれたかを見せてくれるので、効く判断を繰り返しやすくなります。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Chrumekのカテゴリ別貯金グラフを表示したスマートフォン、コーヒー、レシート、ノート、ノートPC、ゲームパッド、買い物袋"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>すべての支出を分析する必要はありません。どこでお金を取り戻せているかだけ見えます。</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="5つ星評価">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "いくら貯めるつもりだったかではなく、実際にいくら残せたかが初めてはっきり見えました。"
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="5つ星評価">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumekは気持ちの良い決意を褒めません。本当に取り分けた分だけを数えてくれます。"
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ひとつひとつの瞬間から</p>
+          <h2>貯金は、店でも、カフェでも、家のソファでも始まります。</h2>
+          <p class="section-intro">
+            Chrumekは、放っておけば跡形もなく消える小さな判断をつかまえるためのアプリです。
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>店で</h3>
+            <p class="shot-copy">
+              安い商品を選び、その差額を別のものに使う前に記録します。
+            </p>
+            <p class="shot-meta">「たぶん少し節約できた」ではなく、正確な金額が残ります。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>カフェで</h3>
+            <p class="shot-copy">
+              途中のコーヒーをやめて、その金額をすぐに貯金へ回す前提で記録します。
+            </p>
+            <p class="shot-meta">小さな判断が見えないままで終わりません。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>サブスクで</h3>
+            <p class="shot-copy">
+              使っていないサブスクを解約し、その月額料金をそのまま貯金に変えます。
+            </p>
+            <p class="shot-meta">ひとつの判断が毎月あなたの味方になります。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>目標に向けて</h3>
+            <p class="shot-copy">
+              確定した移し替えがひとつ増えるたびに、本当に欲しいものへ近づいていきます。
+            </p>
+            <p class="shot-meta">目標が増えるのは、お金が実際に取り分けられたときだけです。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>履歴で</h3>
+            <p class="shot-copy">
+              後から見返せるのは、予定の金額ではなく、本当に貯金へ入った金額の一覧です。
+            </p>
+            <p class="shot-meta">小さな判断が現実の結果になっている証拠が残ります。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>銀行連携なしで</h3>
+            <p class="shot-copy">
+              Chrumekはアカウント不要、銀行連携不要で使えます。どこへ移すかを決めるのは自分です。
+            </p>
+            <p class="shot-meta">シンプルな習慣、最小限のデータ、最大限のコントロール。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">こんな人向け</p>
+          <h2>Chrumekが合うのは、こんな人です。</h2>
+          <ul>
+            <li>"もっと貯められるはずなのに、現実では最後までできない。"</li>
+            <li>"全部の支出を記録するようなアプリはもう増やしたくない。"</li>
+            <li>"初日から回せる、シンプルな習慣がほしい。"</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">向かない人</p>
+          <h2>Chrumekが向かないのは、こんな人です。</h2>
+          <ul>
+            <li>銀行口座の自動同期がほしい人</li>
+            <li>複雑な資金計画ツールが必要な人</li>
+            <li>自分の確定なしに全部やってくれるアプリを求めている人</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Chrumekを入れる前によくある質問。</h2>
+          <p class="section-intro">
+            何を入れるのかが最初から分かります。Chrumekは実際の貯金をやり切るためのアプリですが、
+            銀行にはつながらず、送金も行わず、アカウントも要求しません。
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>銀行口座を連携する必要はありますか？</summary>
+            <p>ありません。Chrumekは銀行と接続しません。お金を移す先は、自分で決められます。別口座でも、封筒でも、貯金箱でも構いません。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Chrumekが代わりに送金してくれますか？</summary>
+            <p>いいえ。Chrumekは習慣を最後まで閉じる手助けをします。金額を記録し、現実で取り分けてから、アプリ上で「もう自分の貯金に入った」と確定します。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>金額だけ記録して、結局取り分けなかったらどうなりますか？</summary>
+            <p>その場合は確定しません。それが大事です。グラフや履歴や目標は、お金を本当に取り分けたあとでしか増えないようにするためです。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>データはどこかのサーバーに送られますか？</summary>
+            <p>アプリに入力したデータは端末内に残ります。アカウントを作る必要もなく、判断の履歴を外部ダッシュボードへ渡すこともありません。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Premiumと無料トライアルはどうなっていますか？</summary>
+            <p>支払う前に試すことができます。有料機能への継続アクセスはApp Store側で管理され、トライアルの有無はそのユーザーに現在提供されているオファーによって決まります。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>データを書き出すことはできますか？</summary>
+            <p>はい。ChrumekはCSVエクスポートに対応しているので、確定した貯金や目標をアプリの外でも使えます。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">最後の一歩</p>
+          <h2>「いつか貯金を始める」と約束するのではなく、最後まで閉じる仕組みを自分に渡してください。</h2>
+          <p>
+            Chrumekは気持ちではなく、完了した行動を数えます。お金が本当に自分の側へ移った瞬間を、曖昧に終わらせません。
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="App StoreでChrumekをダウンロード">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="App Storeでダウンロード" width="180" height="60">
+          </a>
+          <p class="start-note">
+            アカウント不要。銀行連携なし。今日使わずに済んだ最初の金額から始められます。
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="信頼ポイント">
+          <span>アカウント不要</span>
+          <span>広告トラッカーなし</span>
+          <span>データは端末内に保存</span>
+          <span>銀行連携なし</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. 本当に貯金へ回した分だけが積み上がる。 <a href="./privacy/">プライバシーポリシー</a> | <a href="./terms/">利用規約</a></p>
+  </footer>
+</body>
+</html>
