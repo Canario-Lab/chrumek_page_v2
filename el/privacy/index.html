@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Πολιτική Απορρήτου για την εφαρμογή Chrumek." />
+  <title>Πολιτική Απορρήτου - Chrumek</title>
+  <link rel="canonical" href="https://chrumek.app/el/privacy/" />
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/privacy/" />
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/privacy/" />
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/privacy/" />
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/privacy/" />
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/privacy/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/privacy/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/privacy/" />
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/privacy/" />
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/privacy/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/privacy/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/privacy/" />
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/privacy/" />
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/privacy/" />
+  <link rel="icon" type="image/png" href="../../assets/chrumek-app-icon.png" />
+  <link rel="apple-touch-icon" href="../../assets/chrumek-app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Θέμα σελίδας: σκούρο. Μετάβαση σε ανοιχτό."
+  data-theme-label-light="Θέμα σελίδας: ανοιχτό. Μετάβαση σε σκούρο."
+  data-theme-title-dark="Θέμα σελίδας: σκούρο"
+  data-theme-title-light="Θέμα σελίδας: ανοιχτό"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="Chrumek">
+        <img class="brand-mark" src="../../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="legal-return" href="../">Πίσω</a>
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek στο Facebook" title="Chrumek στο Facebook">
+          <img class="header-social-icon" src="../../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Επιλέξτε γλώσσα">
+            <span class="lang-toggle-icon" aria-hidden="true">EL</span>
+            <span class="lang-toggle-text">Ελληνικά</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Επιλογή γλώσσας">
+            <a class="lang-option" href="../../pl/privacy/" data-base="../../pl/privacy/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../en/privacy/" data-base="../../en/privacy/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../es/privacy/" data-base="../../es/privacy/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../de/privacy/" data-base="../../de/privacy/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../fr/privacy/" data-base="../../fr/privacy/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../it/privacy/" data-base="../../it/privacy/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-BR/privacy/" data-base="../../pt-BR/privacy/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-PT/privacy/" data-base="../../pt-PT/privacy/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../tr/privacy/" data-base="../../tr/privacy/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../bg/privacy/" data-base="../../bg/privacy/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../cs/privacy/" data-base="../../cs/privacy/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../da/privacy/" data-base="../../da/privacy/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../../el/privacy/" data-base="../../el/privacy/" lang="el" hreflang="el" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Πολιτική Απορρήτου</h1>
+
+      <section class="legal-section">
+        <h2>1) Υπεύθυνος επεξεργασίας δεδομένων</h2>
+        <p>Υπεύθυνος επεξεργασίας των προσωπικών δεδομένων είναι:<br />Canario-Lab / Chrumek App<br />E-mail επικοινωνίας: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Πεδίο και σκοπός</h2>
+        <p>Η εφαρμογή Chrumek σας βοηθά να παρακολουθείτε την αποταμίευσή σας, καταγράφοντας «πειρασμούς» και επιβεβαιωμένες μεταφορές ή ποσά που βάλατε στην άκρη.</p>
+        <p>Δεν λειτουργούμε λογαριασμούς χρηστών και δεν συλλέγουμε δεδομένα που θα μας επέτρεπαν να σας ταυτοποιήσουμε άμεσα.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Δεδομένα που επεξεργάζεται η εφαρμογή (τοπικά στη συσκευή σας)</h2>
+        <p>Τα δεδομένα που εισάγετε στην εφαρμογή (για παράδειγμα καταχωρίσεις αποταμίευσης, ποσά, ημερομηνίες, κατηγορίες, στόχοι και ρυθμίσεις) αποθηκεύονται τοπικά στη συσκευή σας.</p>
+        <p>Δεν αποστέλλονται αυτόματα σε εμάς ούτε στους διακομιστές μας.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Λειτουργίες που απαιτούν πρόσβαση στο σύστημα</h2>
+        <p>Η εφαρμογή μπορεί να χρησιμοποιεί λειτουργίες του συστήματος και συναφή δεδομένα μόνο στον βαθμό που χρειάζεται για να λειτουργεί:</p>
+        <ul>
+          <li>Ειδοποιήσεις (UNUserNotificationCenter) - αν ενεργοποιήσετε υπενθυμίσεις, το iOS παραδίδει ειδοποιήσεις σύμφωνα με τις ρυθμίσεις σας.</li>
+          <li>Γλώσσα / περιοχή / νόμισμα / θέμα - χρησιμοποιούνται για τη σωστή μορφοποίηση του περιεχομένου και της εμφάνισης της εφαρμογής, χωρίς να αποστέλλονται σε εμάς.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Αναφορές σφαλμάτων / επικοινωνία με την υποστήριξη</h2>
+        <p>Αν χρησιμοποιήσετε την επιλογή «Αναφορά σφάλματος» ή επικοινωνήσετε με την υποστήριξη:</p>
+        <ul>
+          <li>η εφαρμογή μπορεί να δημιουργήσει ένα πρόχειρο e-mail στην εφαρμογή αλληλογραφίας σας,</li>
+          <li>το περιεχόμενο μπορεί να περιλαμβάνει διαγνωστικές πληροφορίες (για παράδειγμα έκδοση εφαρμογής, έκδοση iOS ή ρυθμίσεις γλώσσας / νομίσματος) - ακριβώς ό,τι βλέπετε στο μήνυμα πριν το στείλετε,</li>
+          <li>το e-mail αποστέλλεται μόνο αν το εγκρίνετε εσείς.</li>
+        </ul>
+        <p>Ένα e-mail που αποστέλλεται επεξεργάζεται από τον πάροχο αλληλογραφίας σας και από εμάς ως παραλήπτες αποκλειστικά για να μπορέσουμε να χειριστούμε το αίτημά σας.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Αγορές και συνδρομές (Apple + RevenueCat)</h2>
+        <p>Αν υπάρχουν πληρωμένες λειτουργίες στην εφαρμογή (συνδρομές):</p>
+        <ul>
+          <li>οι πληρωμές διεκπεραιώνονται από την Apple μέσω του App Store και των αγορών εντός εφαρμογής,</li>
+          <li>η εφαρμογή χρησιμοποιεί το RevenueCat ως πάροχο της υποδομής συνδρομών, συμπεριλαμβανομένης της προβολής προσφορών, του ελέγχου της κατάστασης της συνδρομής και της παροχής πρόσβασης Premium.</li>
+        </ul>
+        <p>Στο πλαίσιο της διαχείρισης των συνδρομών ενδέχεται να υποβάλλονται σε επεξεργασία τεχνικά δεδομένα που σχετίζονται με την αγορά, όπως:</p>
+        <ul>
+          <li>αναγνωριστικά συναλλαγής / αγοράς και πληροφορίες προϊόντος,</li>
+          <li>κατάσταση συνδρομής (ενεργή / ανενεργή, ανανεώσεις),</li>
+          <li>ένα τεχνικό αναγνωριστικό χρήστη που χρησιμοποιείται για να συνδέεται η κατάσταση της συνδρομής με τον χρήστη (για παράδειγμα ένα ανώνυμο App User ID που δημιουργείται από το SDK).</li>
+        </ul>
+        <p>Το RevenueCat επεξεργάζεται αυτά τα δεδομένα για να παρέχει υπηρεσίες διαχείρισης συνδρομών ως εκτελών την επεξεργασία, ενώ η Apple επεξεργάζεται τα δεδομένα που σχετίζονται με τις πληρωμές σύμφωνα με τους δικούς της κανόνες.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Αναλύσεις και παρακολούθηση</h2>
+        <p>Η εφαρμογή δεν χρησιμοποιεί εργαλεία ανάλυσης ούτε διαφημιστικά SDK για την παρακολούθηση χρηστών και δεν πωλεί δεδομένα.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Ιστότοπος</h2>
+        <p>Αν επισκεφθείτε τον ιστότοπό μας, ο πάροχος φιλοξενίας (για παράδειγμα το GitHub Pages) μπορεί να επεξεργάζεται αυτόματα τυπικές τεχνικές πληροφορίες στα αρχεία καταγραφής του διακομιστή, όπως διεύθυνση IP, τύπο προγράμματος περιήγησης και ημερομηνία και ώρα του αιτήματος, για σκοπούς ασφάλειας, διαγνωστικών και αξιόπιστης λειτουργίας της υπηρεσίας. Η έκταση και οι κανόνες αυτής της επεξεργασίας καθορίζονται από τις πολιτικές του παρόχου φιλοξενίας.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Αποδέκτες δεδομένων</h2>
+        <p>Τα δεδομένα μπορούν να γνωστοποιηθούν μόνο σε:</p>
+        <ul>
+          <li>παρόχους υπηρεσιών πληρωμών και συνδρομών: Apple και RevenueCat,</li>
+          <li>δημόσιες αρχές, αν αυτό απαιτείται από τον νόμο.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Περίοδος διατήρησης</h2>
+        <ul>
+          <li>Τα δεδομένα που εισάγετε στην εφαρμογή παραμένουν τοπικά στη συσκευή σας μέχρι να τα διαγράψετε εσείς, για παράδειγμα αφαιρώντας καταχωρίσεις ή διαγράφοντας την εφαρμογή.</li>
+          <li>Η αλληλογραφία μέσω e-mail διατηρείται για όσο διάστημα χρειάζεται για τη διαχείριση του αιτήματος και, εφόσον απαιτείται, για την υπεράσπιση έναντι αξιώσεων.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Δικαιώματα χρήστη (ΕΕ / ΕΟΧ)</h2>
+        <p>Αν, σε συγκεκριμένη περίπτωση, επεξεργαζόμαστε προσωπικά δεδομένα σας (για παράδειγμα όταν μας στέλνετε e-mail), έχετε δικαίωμα να:</p>
+        <ul>
+          <li>ζητήσετε πρόσβαση στα δεδομένα, διόρθωση, διαγραφή ή περιορισμό της επεξεργασίας,</li>
+          <li>αντιταχθείτε στην επεξεργασία,</li>
+          <li>υποβάλετε καταγγελία στην αρμόδια εποπτική αρχή.</li>
+        </ul>
+        <p>Η έκταση των υποχρεώσεων ενημέρωσης προκύπτει ιδίως από το άρθρο 13 του GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Ασφάλεια</h2>
+        <p>Εφαρμόζουμε εύλογα οργανωτικά και τεχνικά μέτρα, ανάλογα με τη φύση της υπηρεσίας. Επειδή τα δεδομένα της εφαρμογής αποθηκεύονται τοπικά, σημαντικό μέρος της ασφάλειας είναι και η προστασία της συσκευής σας (κωδικός / Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Αλλαγές στην πολιτική</h2>
+        <p>Η παρούσα πολιτική μπορεί να ενημερωθεί αν αλλάξουν οι λειτουργίες της εφαρμογής ή οι νομικές απαιτήσεις. Η τρέχουσα έκδοση δημοσιεύεται στον ιστότοπο της εφαρμογής.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Πραγματική αποταμίευση, όχι απλές δηλώσεις. <a href="../privacy/">Πολιτική Απορρήτου</a> | <a href="../terms/">Όροι Χρήσης</a>.</p>
+  </footer>
+
+  <script src="../../main.js" defer></script>
+</body>
+</html>

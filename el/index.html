@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Το Chrumek μετατρέπει τις μικρές καθημερινές αποχές από αγορές σε χρήματα που όντως βάζετε στην άκρη. Ένα απλό τελετουργικό αποταμίευσης χωρίς λογαριασμό και χωρίς σύνδεση με την τράπεζά σας.">
+  <title>Chrumek | Αποταμιεύσεις που όντως μπαίνουν στην άκρη</title>
+  <link rel="canonical" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Θέμα σελίδας: σκούρο. Μετάβαση σε ανοιχτό."
+  data-theme-label-light="Θέμα σελίδας: ανοιχτό. Μετάβαση σε σκούρο."
+  data-theme-title-dark="Θέμα σελίδας: σκούρο"
+  data-theme-title-light="Θέμα σελίδας: ανοιχτό"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek στο Facebook" title="Chrumek στο Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Επιλέξτε γλώσσα">
+            <span class="lang-toggle-icon" aria-hidden="true">EL</span>
+            <span class="lang-toggle-text">Ελληνικά</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Επιλογή γλώσσας">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Λήψη</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Όχι άλλη μία εφαρμογή καταγραφής εξόδων</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Δεν το ξόδεψες; Βάλ’ το στην άκρη αμέσως.</p>
+
+          <p class="lead">
+            Αντί να καταγράφεις κάθε απόδειξη, πιάνεις τις στιγμές όπου δεν ξόδεψες ή ξόδεψες λιγότερα.
+            Ο στόχος, το ιστορικό και τα γραφήματά σου μεγαλώνουν μόνο αφού βάλεις πραγματικά αυτά τα χρήματα στην άκρη.
+          </p>
+
+          <p class="supporting-copy">
+            Για όσους δοκίμασαν απλώς να «ξοδεύουν λιγότερα» και ξέρουν ότι χωρίς πραγματική μεταφορά,
+            τα χρήματα μένουν στον κύριο λογαριασμό και χάνονται αθόρυβα αργότερα.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Λήψη του Chrumek στο App Store">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Λήψη στο App Store" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Δείτε πώς λειτουργεί</a>
+          </div>
+
+          <p class="microcopy">
+            Χωρίς λογαριασμό. Χωρίς σύνδεση με τράπεζα. Χωρίς παρακολούθηση. Μετρά μόνο ό,τι βάζεις πραγματικά στην άκρη.
+          </p>
+
+          <ul class="proof-pills" aria-label="Βασικές υποσχέσεις">
+            <li>κάθε έξοδο που αποφεύγεις μπορεί να γίνει πραγματική μεταφορά</li>
+            <li>ο στόχος σου μεγαλώνει μόνο όταν τα χρήματα όντως μετακινούνται</li>
+            <li>αποταμιεύεις χωρίς να νιώθεις ότι κάνεις λογιστική</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Ένα απλό τελετουργικό</p>
+              <h2>Η κρίσιμη στιγμή είναι όταν τα χρήματα φεύγουν από τον κύριο λογαριασμό σου.</h2>
+              <p>
+                Καταγράφεις το ποσό, το μεταφέρεις εκεί όπου κρατάς πραγματικά τις αποταμιεύσεις σου
+                και μετά το επιβεβαιώνεις με ένα πάτημα. Το Chrumek μετρά μόνο ό,τι όντως έβαλες στην άκρη.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Ένα τηλέφωνο με το Chrumek δίπλα σε φάκελο με την ένδειξη Bike, έναν κουμπαρά και χρήματα που μπαίνουν στην άκρη"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80 PLN δεν μένουν για αργότερα. Πηγαίνουν κατευθείαν στον στόχο «Bike».</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Το πρόβλημα</p>
+                <strong>Το ότι δεν αγόρασες κάτι δεν σημαίνει ότι τα χρήματα αποταμιεύτηκαν πραγματικά.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Η υπόσχεση</p>
+                <strong>Η πρόοδος και το ιστορικό σου μεγαλώνουν μόνο αφού επιβεβαιώσεις τη μεταφορά.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Το πραγματικό πρόβλημα</p>
+          <h2>Οι περισσότεροι άνθρωποι δεν έχουν πρόβλημα γνώσης γύρω από την αποταμίευση. Έχουν πρόβλημα συνέπειας.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Η απόφαση υπάρχει, αλλά τα χρήματα συνεχίζουν να κυκλοφορούν.</h3>
+            <p>
+              Παραλείπεις μια αγορά, διαλέγεις τη φθηνότερη επιλογή ή κόβεις μια περιττή συνδρομή.
+              Όμως τίποτα δεν αναγκάζει αυτό το ποσό να περάσει στην αποταμίευση.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Οι εφαρμογές εξόδων δείχνουν το παρελθόν. Δεν χτίζουν αποταμίευση.</h3>
+            <p>
+              Στο τέλος του μήνα ξέρεις πού πήγαν τα χρήματα,
+              αλλά πάλι δεν βλέπεις πόσα κατάφερες πραγματικά να βάλεις στην άκρη.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Ο προϋπολογισμός γρήγορα αρχίζει να μοιάζει με επιπλέον αγγαρεία.</h3>
+            <p>
+              Όσο περισσότερες κατηγορίες, πίνακες και χειροκίνητες καταχωρίσεις προσθέτεις,
+              τόσο πιο πιθανό είναι να εγκαταλείψεις την εφαρμογή ύστερα από λίγες μέρες.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Πώς λειτουργεί το Chrumek</p>
+          <h2>Δεν χρειάζεσαι έναν πλήρη προϋπολογισμό. Χρειάζεται μόνο να προλάβεις τη στιγμή που θα μπορούσες να είχες ξοδέψει αυτά τα χρήματα.</h2>
+          <p class="section-intro">
+            Το Chrumek εστιάζει σε ένα πράγμα: να βεβαιώνεται ότι τα χρήματα που δεν ξόδεψες δεν θα χαθούν αθόρυβα αργότερα από τον κύριο λογαριασμό σου.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Βλέπεις την εξοικονόμηση</h3>
+            <p class="step-copy">
+              Παραλείπεις κάτι, διαλέγεις μια φθηνότερη εκδοχή ή κόβεις μια συνδρομή που δεν χρειάζεσαι.
+              Το Chrumek πιάνει ακριβώς εκείνη τη στιγμή.
+            </p>
+            <p class="step-benefit">Μετατρέπει την αποταμίευση από αόριστη ιδέα σε συγκεκριμένο ποσό που μπορείς να βάλεις στην άκρη.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Το μετακινείς αμέσως</h3>
+            <p class="step-copy">
+              Το ποσό πηγαίνει σε ξεχωριστό λογαριασμό, σε φάκελο, σε κουμπαρά ή όπου αλλού κρατάς πραγματικά τις αποταμιεύσεις σου.
+            </p>
+            <p class="step-benefit">Έτσι η αποταμίευση δεν μένει μόνο στο μυαλό σου.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Το επιβεβαιώνεις με ένα πάτημα</h3>
+            <p class="step-copy">
+              Μόνο τότε η καταχώριση περνά στο ιστορικό, τροφοδοτεί τον στόχο σου και γίνεται μέρος των γραφημάτων.
+            </p>
+            <p class="step-benefit">Βλέπεις πρόοδο που μπορείς να εμπιστευτείς, γιατί στηρίζεται σε πραγματική κίνηση χρημάτων.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Πώς μοιάζει όταν το ακολουθείς μέχρι τέλους</p>
+            <h2>Από το πρώτο «δεν το αγόρασα» σε έναν στόχο που πραγματικά μεγαλώνει.</h2>
+            <p class="section-intro">
+              Καταγράφεις το ποσό, το βγάζεις από τον κύριο λογαριασμό σου και το επιβεβαιώνεις μόνο αφού τα χρήματα μπουν πραγματικά στην άκρη.
+              Το ημερολόγιο, το ιστορικό, οι στόχοι και τα γραφήματα δείχνουν μόνο ό,τι πέρασε στ’ αλήθεια στην αποταμίευσή σου.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Προεπισκόπηση οθονών της εφαρμογής Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Οθόνη ημερολογίου στην εφαρμογή Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Ημερολόγιο</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Οθόνη ιστορικού με επιβεβαιωμένες αποταμιεύσεις" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Ιστορικό</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Οθόνη στόχου αποταμίευσης στην εφαρμογή" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Στόχοι</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Οθόνη γραφημάτων και ημερολογίου μεταφορών στην εφαρμογή" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Γραφήματα</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Μετά από μία εβδομάδα χρήσης</p>
+            <h2>Αντί να μαντεύεις, μπορείς να δεις πόσα κατάφερες πραγματικά να αποταμιεύσεις.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Επιτέλους βλέπεις πραγματικές αποταμιεύσεις</h3>
+              <p>Το ιστορικό μετρά μόνο επιβεβαιωμένα ποσά. Χωρίς ψεύτικη πρόοδο. Χωρίς φουσκωμένα σύνολα.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Αποκτάς ένα απλό τελετουργικό αντί για βαριά διαχείριση προϋπολογισμού</h3>
+              <p>Τρεις γρήγοροι τρόποι καταγραφής: δεν το αγόρασα, το αγόρασα φθηνότερα, ακύρωσα μια συνδρομή.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Γίνεται πιο εύκολο να μείνεις συνεπής</h3>
+              <p>Ο στόχος σου μεγαλώνει μόνο μετά τη μεταφορά, οπότε κάθε κίνηση αλλάζει κάτι πραγματικό.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Δεν ανταλλάσσεις την ιδιωτικότητά σου με οικονομική πειθαρχία</h3>
+              <p>Χωρίς λογαριασμό, χωρίς μηχανισμούς παρακολούθησης και χωρίς να χρειάζεται να συνδέσεις την τράπεζά σου.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Καθημερινές καταστάσεις</p>
+          <h2>Το Chrumek λειτουργεί στις στιγμές που τα χρήματα συνήθως γλιστρούν αθόρυβα μακριά.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 01</p>
+              <h3>Μια φθηνότερη επιλογή στο ράφι γίνεται αμέσως πραγματικό ποσό για αποταμίευση.</h3>
+              <p>
+                Διαλέγεις ένα προϊόν στα 15,99 PLN αντί για 22,99 PLN. Το Chrumek πιάνει τη διαφορά
+                πριν αυτά τα 7 PLN εξαφανιστούν σε κάτι άλλο.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Ένα τηλέφωνο με το Chrumek δίπλα σε ράφι καφέ, που δείχνει καταγεγραμμένη διαφορά 7 PLN μετά την επιλογή φθηνότερου προϊόντος"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Η διαφορά από μια αγορά δεν μένει μόνο στο μυαλό σου. Περνά στο Chrumek.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 02</p>
+              <h3>Αυτό το latte στον δρόμο μπορεί να μείνει στο πορτοφόλι σου και να χρηματοδοτήσει έναν στόχο αμέσως.</h3>
+              <p>
+                Αντί να πληρώσεις 16,99 PLN στον πάγκο, καταγράφεις στο Chrumek το latte που άφησες.
+                Αυτή η μικρή απόφαση παύει να είναι αόρατη.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Ένα τηλέφωνο με το Chrumek σε καφέ δίπλα σε μενού, που δείχνει ένα latte αξίας 16,99 PLN που παραλείφθηκε"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Παραλείπεις το latte. Το Chrumek μετατρέπει αυτή την απόφαση σε συγκεκριμένο ποσό.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 03</p>
+              <h3>Μια συνδρομή που ακυρώνεις δεν ξαναγυρίζει στις καθημερινές δαπάνες. Αρχίζει να δουλεύει για τον στόχο σου.</h3>
+              <p>
+                Κόβεις μια μηνιαία υπηρεσία των 49,99 PLN και καταγράφεις αυτό το ποσό στο Chrumek.
+                Ένα σταθερό έξοδο μπορεί να γίνει κάτι που σε φέρνει πιο κοντά στον στόχο σου κάθε μήνα.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Ένα τηλέφωνο με το Chrumek δίπλα σε φορητό υπολογιστή με οθόνη διαχείρισης συνδρομών, που δείχνει καταγεγραμμένη ακύρωση"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Η ακύρωση μιας συνδρομής γίνεται σταθερό βήμα προς τον στόχο σου.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 04</p>
+              <h3>Ένας στόχος μοιάζει αληθινός, γιατί δεν μεγαλώνει απλώς και μόνο επειδή τον έγραψες.</h3>
+              <p>
+                Το ποδήλατο παύει να είναι μια χαλαρή ιδέα. Βλέπεις το ποσό, την πρόοδο
+                και τις επιβεβαιωμένες μεταφορές που φέρνουν πραγματικά την αγορά πιο κοντά.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Ένα τηλέφωνο που δείχνει τον στόχο Bike στο Chrumek δίπλα σε κράνος, φως ποδηλάτου και ποδήλατο στο βάθος"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Ένας στόχος έχει όνομα, ποσό και πραγματική πρόοδο. Δεν είναι πια απλώς μια ευχή.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 05</p>
+              <h3>Το ιστορικό δεν είναι ημερολόγιο στερήσεων. Είναι απόδειξη ότι βάζεις όντως χρήματα στην άκρη.</h3>
+              <p>
+                Βλέπεις τις αποφάσεις σου και τα ποσά που μπήκαν πραγματικά στην αποταμίευση.
+                Είναι μια απλή απόδειξη ότι το σύστημα λειτουργεί.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Ένα τηλέφωνο με την οθόνη ιστορικού του Chrumek δίπλα σε φάκελο με την ένδειξη Bike, σημειωματάριο με αγορές που παραλείφθηκαν και χρήματα που αποταμιεύτηκαν"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947 PLN δεν είναι πρόθεση. Είναι το άθροισμα αποφάσεων που πραγματικά έβαλες στην άκρη.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 06</p>
+              <h3>Η συνέπεια γίνεται ορατή πριν προλάβει να σβήσει ξανά.</h3>
+              <p>
+                Κάθε μεταφορά προς τον στόχο σου αφήνει ίχνος. Το Chrumek δείχνει το σερί σου και τις ημέρες
+                που έβαλες πραγματικά χρήματα στην άκρη, ώστε να είναι πιο εύκολο να το ξανακάνεις αύριο.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Ένα τηλέφωνο με την οθόνη ημερολογίου του Chrumek δίπλα σε σημειωματάριο με πλάνο μεταφορών και μικρή υπενθύμιση"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Δεν χρειάζεται να αναρωτιέσαι αν λειτουργεί. Βλέπεις το σερί και τις ακριβείς μέρες αποταμίευσης.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Σκηνή 07</p>
+              <h3>Μπορείς να δεις ποιες μικρές αποφάσεις κάνουν τη μεγαλύτερη διαφορά.</h3>
+              <p>
+                Καφές, παραγγελίες απ’ έξω, παιχνίδια, ηλεκτρονικά. Το Chrumek δείχνει από πού προήλθαν πραγματικά οι αποταμιεύσεις σου,
+                ώστε να επαναλαμβάνεις πιο εύκολα τις επιλογές που σε βοηθούν περισσότερο.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Ένα τηλέφωνο με γράφημα κατηγοριών αποταμίευσης στο Chrumek δίπλα σε καφέ, απόδειξη, σημειωματάριο, φορητό υπολογιστή, gamepad και σακούλα αγορών"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Δεν αναλύεις κάθε έξοδο. Βλέπεις από πού πραγματικά κερδίζεις πίσω χρήματα.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Βαθμολογήθηκε με 5 στα 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Για πρώτη φορά βλέπω καθαρά πόσα έβαλα πραγματικά στην άκρη, όχι απλώς πόσα είχα σκοπό να αποταμιεύσω."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Βαθμολογήθηκε με 5 στα 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Το Chrumek δεν επιβραβεύει τις καλές προθέσεις. Μετρά μόνο ό,τι βάζεις πραγματικά στην άκρη."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Στιγμή με τη στιγμή</p>
+          <h2>Η αποταμίευση ξεκινά σε συνηθισμένα μέρη: στο κατάστημα, στο καφέ, στον καναπέ.</h2>
+          <p class="section-intro">
+            Το Chrumek σε βοηθά να πιάνεις τις μικρές αποφάσεις που συνήθως χάνονται χωρίς ίχνος.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>Στο κατάστημα</h3>
+            <p class="shot-copy">
+              Διαλέγεις το φθηνότερο προϊόν και καταγράφεις τη διαφορά πριν τη ξοδέψεις σε κάτι άλλο.
+            </p>
+            <p class="shot-meta">Αντί για «μάλλον κάτι γλίτωσα», βλέπεις το ακριβές ποσό.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>Στο καφέ</h3>
+            <p class="shot-copy">
+              Παραλείπεις τον καφέ στον δρόμο και καταγράφεις αμέσως το ποσό που πρέπει να μπει στην αποταμίευση.
+            </p>
+            <p class="shot-meta">Μια μικρή απόφαση παύει να είναι αόρατη.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>Με τις συνδρομές</h3>
+            <p class="shot-copy">
+              Ακυρώνεις μια συνδρομή που δεν χρησιμοποιείς και μετατρέπεις αυτή τη μηνιαία χρέωση σε σταθερή αποταμίευση.
+            </p>
+            <p class="shot-meta">Μια μόνο απόφαση μπορεί να δουλεύει για σένα κάθε μήνα.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>Με έναν στόχο</h3>
+            <p class="shot-copy">
+              Κάθε επιβεβαιωμένη μεταφορά σε φέρνει πιο κοντά σε αυτό για το οποίο πραγματικά θέλεις να αποταμιεύσεις.
+            </p>
+            <p class="shot-meta">Ο στόχος μεγαλώνει μόνο όταν τα χρήματα μπαίνουν όντως στην άκρη.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>Στο ιστορικό</h3>
+            <p class="shot-copy">
+              Επιστρέφεις σε μια λίστα με ποσά που μπήκαν πραγματικά στην αποταμίευση, όχι απλώς σε ποσά που είχες σχεδιάσει.
+            </p>
+            <p class="shot-meta">Έχεις απόδειξη ότι οι μικρές αποφάσεις προσθέτουν ένα πραγματικό αποτέλεσμα.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Χωρίς να συνδέεις την τράπεζά σου</h3>
+            <p class="shot-copy">
+              Χρησιμοποιείς το Chrumek χωρίς λογαριασμό και χωρίς σύνδεση με την τράπεζά σου. Εσύ αποφασίζεις πού θα πάνε τα χρήματα.
+            </p>
+            <p class="shot-meta">Ένα απλό τελετουργικό, ελάχιστα δεδομένα, μέγιστος έλεγχος.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Για ποιους είναι</p>
+          <h2>Το Chrumek είναι για σένα αν:</h2>
+          <ul>
+            <li>«Ξέρω ότι θα μπορούσα να αποταμιεύω περισσότερο, αλλά στην πράξη δεν το κάνω.»</li>
+            <li>«Δεν θέλω άλλη μία εφαρμογή για να καταγράφω κάθε έξοδο.»</li>
+            <li>«Χρειάζομαι ένα απλό τελετουργικό που να λειτουργεί από την πρώτη μέρα.»</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Όχι αν</p>
+          <h2>Το Chrumek δεν είναι για σένα αν:</h2>
+          <ul>
+            <li>θέλεις αυτόματο συγχρονισμό με την τράπεζα,</li>
+            <li>χρειάζεσαι ένα σύνθετο εργαλείο οικονομικού προγραμματισμού,</li>
+            <li>θέλεις μια εφαρμογή που τα κάνει όλα χωρίς τη δική σου επιβεβαίωση.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Συχνές ερωτήσεις</p>
+          <h2>Οι πιο συνηθισμένες ερωτήσεις πριν κατεβάσεις το Chrumek.</h2>
+          <p class="section-intro">
+            Ξέρεις ακριβώς τι εγκαθιστάς: το Chrumek σε βοηθά να φέρνεις σε πέρας την πραγματική αποταμίευση,
+            αλλά δεν συνδέεται με την τράπεζά σου, δεν κάνει μεταφορές και δεν απαιτεί λογαριασμό.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Χρειάζεται να συνδέσω την τράπεζά μου;</summary>
+            <p>Όχι. Το Chrumek δεν συνδέεται με την τράπεζά σου. Εσύ μετακινείς τα χρήματα όπου θέλεις: σε ξεχωριστό λογαριασμό, σε φάκελο ή σε κουμπαρά.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Κάνει το Chrumek τη μεταφορά για μένα;</summary>
+            <p>Όχι. Η εφαρμογή σε βοηθά να κλείνεις το τελετουργικό: καταγράφεις το ποσό, το βάζεις στην άκρη στην πραγματική ζωή και μετά επιβεβαιώνεις στην εφαρμογή ότι τα χρήματα είναι ήδη στη δική σου πλευρά.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Τι γίνεται αν καταγράψω ένα ποσό αλλά δεν το βάλω ποτέ στην άκρη;</summary>
+            <p>Τότε απλώς δεν επιβεβαιώνεις τη μεταφορά. Αυτός είναι ο λόγος ύπαρξης της εφαρμογής: τα γραφήματα, το ιστορικό και οι στόχοι πρέπει να μεγαλώνουν μόνο αφού τα χρήματα μπουν πραγματικά στην άκρη.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Στέλνονται τα δεδομένα μου σε κάποιον διακομιστή;</summary>
+            <p>Τα δεδομένα που εισάγεις στην εφαρμογή παραμένουν τοπικά στη συσκευή σου. Δεν δημιουργείς λογαριασμό και δεν παραδίδεις το ιστορικό των αποφάσεών σου σε κάποιον εξωτερικό πίνακα ελέγχου.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Πώς λειτουργούν το Premium και η δωρεάν δοκιμή;</summary>
+            <p>Μπορείς να δοκιμάσεις την εφαρμογή πριν πληρώσεις. Η συνέχιση της πρόσβασης στις επί πληρωμή λειτουργίες γίνεται μέσω του App Store και κάθε δοκιμαστική περίοδος εξαρτάται από την προσφορά που είναι διαθέσιμη για τον συγκεκριμένο χρήστη.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Μπορώ να εξαγάγω τα δεδομένα μου;</summary>
+            <p>Ναι. Το Chrumek υποστηρίζει εξαγωγή CSV, ώστε να μπορείς να πάρεις μαζί σου, έξω από την εφαρμογή, τις επιβεβαιωμένες αποταμιεύσεις και τους στόχους σου.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Το τελευταίο βήμα</p>
+          <h2>Μην υπόσχεσαι απλώς στον εαυτό σου ότι θα ξεκινήσεις να αποταμιεύεις. Δώσε στον εαυτό σου μια διαδικασία που πραγματικά κλείνει τον κύκλο.</h2>
+          <p>
+            Το Chrumek δεν μετρά προθέσεις. Σε βοηθά να κλείνεις τη στιγμή όπου τα χρήματα καταλήγουν πραγματικά στη δική σου πλευρά.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Λήψη του Chrumek στο App Store">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Λήψη στο App Store" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Χωρίς λογαριασμό. Χωρίς σύνδεση με τράπεζα. Ξεκίνα σήμερα με το πρώτο ποσό που δεν θα ξοδέψεις.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Σήματα εμπιστοσύνης">
+          <span>χωρίς λογαριασμό</span>
+          <span>χωρίς διαφημιστικούς μηχανισμούς παρακολούθησης</span>
+          <span>τα δεδομένα μένουν στη συσκευή σου</span>
+          <span>χωρίς σύνδεση με τράπεζα</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Πραγματική αποταμίευση, όχι απλές δηλώσεις. <a href="./privacy/">Πολιτική Απορρήτου</a> | <a href="./terms/">Όροι Χρήσης</a>.</p>
+  </footer>
+</body>
+</html>
