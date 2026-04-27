@@ -3,7 +3,7 @@
   var base = root.dataset.redirectBase || ".";
   var suffix = root.dataset.redirectSuffix || "/";
   var defaultLocale = root.dataset.defaultLocale || "en";
-  var supportedLocales = (root.dataset.supportedLocales || "pl,en,es,de,fr,it")
+  var supportedLocales = (root.dataset.supportedLocales || "pl,en,es,de,fr,it,pt-BR")
     .split(",")
     .map(function (locale) {
       return locale.trim();
@@ -36,6 +36,7 @@
       if (supports("de") && lang.indexOf("de") === 0) return "de";
       if (supports("fr") && lang.indexOf("fr") === 0) return "fr";
       if (supports("it") && lang.indexOf("it") === 0) return "it";
+      if (supports("pt-BR") && (lang.indexOf("pt-br") === 0 || lang === "pt")) return "pt-BR";
     }
 
     return supports(defaultLocale) ? defaultLocale : supportedLocales[0] || "en";

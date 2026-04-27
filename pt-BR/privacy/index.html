@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Política de Privacidade do app Chrumek." />
+  <title>Política de Privacidade - Chrumek</title>
+  <link rel="canonical" href="https://chrumek.app/pt-BR/privacy/" />
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/privacy/" />
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/privacy/" />
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/privacy/" />
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/privacy/" />
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/privacy/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/privacy/" />
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/privacy/" />
+  <link rel="icon" type="image/png" href="../../assets/chrumek-app-icon.png" />
+  <link rel="apple-touch-icon" href="../../assets/chrumek-app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Tema da página: escuro. Mudar para claro."
+  data-theme-label-light="Tema da página: claro. Mudar para escuro."
+  data-theme-title-dark="Tema da página: escuro"
+  data-theme-title-light="Tema da página: claro"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="Chrumek">
+        <img class="brand-mark" src="../../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="legal-return" href="../">Voltar</a>
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek no Facebook" title="Chrumek no Facebook">
+          <img class="header-social-icon" src="../../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Escolher idioma">
+            <span class="lang-toggle-icon" aria-hidden="true">PT</span>
+            <span class="lang-toggle-text">Português (BR)</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Seletor de idioma">
+            <a class="lang-option" href="../../pl/privacy/" data-base="../../pl/privacy/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../en/privacy/" data-base="../../en/privacy/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../es/privacy/" data-base="../../es/privacy/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../de/privacy/" data-base="../../de/privacy/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../fr/privacy/" data-base="../../fr/privacy/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../it/privacy/" data-base="../../it/privacy/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../../pt-BR/privacy/" data-base="../../pt-BR/privacy/" lang="pt-BR" hreflang="pt-BR" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Política de Privacidade</h1>
+
+      <section class="legal-section">
+        <h2>1) Controladora dos dados</h2>
+        <p>A controladora dos dados pessoais é:<br />Canario-Lab / Chrumek App<br />E-mail de contato: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Escopo e finalidade</h2>
+        <p>O app Chrumek ajuda a acompanhar economias registrando « tentações » e transferências / valores guardados e confirmados.</p>
+        <p>Não mantemos contas de usuário e não coletamos dados que permitam identificar você diretamente.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Dados tratados no app (localmente no seu dispositivo)</h2>
+        <p>Os dados que você insere no app (por exemplo registros de economia, valores, datas, categorias, metas e configurações) ficam armazenados localmente no seu dispositivo.</p>
+        <p>Eles não são enviados automaticamente para nós nem para os nossos servidores.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Recursos que exigem acesso ao sistema</h2>
+        <p>O app pode usar recursos do sistema e dados relacionados apenas na medida necessária para funcionar:</p>
+        <ul>
+          <li>Notificações (UNUserNotificationCenter) - se você ativar lembretes, o iOS envia notificações de acordo com as suas configurações.</li>
+          <li>Idioma / região / moeda / tema - usados para formatar o conteúdo e a aparência do app (sem enviar nada para nós).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Relato de erros / contato com o suporte</h2>
+        <p>Se você usar a opção « Reportar erro » ou entrar em contato com o suporte:</p>
+        <ul>
+          <li>o app pode criar um rascunho de e-mail no seu aplicativo de e-mail,</li>
+          <li>o conteúdo pode incluir informações de diagnóstico (por exemplo versão do app, versão do iOS ou configurações de idioma / moeda) - exatamente aquilo que você vê na mensagem antes de enviar,</li>
+          <li>o e-mail só é enviado se você mesmo aprovar.</li>
+        </ul>
+        <p>Um e-mail enviado é tratado pelo seu provedor de e-mail e por nós como destinatários, exclusivamente para atender a sua solicitação.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Compras e assinaturas (Apple + RevenueCat)</h2>
+        <p>Se houver recursos pagos (assinaturas) disponíveis no app:</p>
+        <ul>
+          <li>os pagamentos são processados pela Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>o app usa a RevenueCat como provedora de infraestrutura para assinaturas (incluindo apresentação de ofertas, verificação do status da assinatura e concessão de acesso premium).</li>
+        </ul>
+        <p>No contexto do gerenciamento de assinaturas, podem ser tratados dados técnicos relacionados à compra, como:</p>
+        <ul>
+          <li>identificadores de transação / compra e informações sobre o produto,</li>
+          <li>status da assinatura (ativa / inativa, renovações),</li>
+          <li>um identificador técnico de usuário usado para vincular o status da assinatura (por exemplo um App User ID anônimo gerado pelo SDK).</li>
+        </ul>
+        <p>A RevenueCat trata esses dados para prestar o serviço de gerenciamento de assinaturas (como operadora), e a Apple trata os dados relacionados ao pagamento de acordo com as próprias regras.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Análises e rastreamento</h2>
+        <p>O app não usa ferramentas de analytics nem SDKs de publicidade para rastrear usuários e não vende dados.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Site (landing page)</h2>
+        <p>Se você visitar o nosso site, a provedora de hospedagem (por exemplo o GitHub Pages) pode processar automaticamente dados técnicos padrão nos logs do servidor (incluindo endereço IP, tipo de navegador, data e hora da requisição) para fins de segurança, diagnóstico e continuidade do serviço. O escopo e as regras desse tratamento seguem as políticas da provedora de hospedagem.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Destinatários dos dados</h2>
+        <p>Os dados podem ser compartilhados exclusivamente com:</p>
+        <ul>
+          <li>provedores de pagamento e assinatura: Apple e RevenueCat (para gerenciamento das assinaturas),</li>
+          <li>autoridades públicas, se exigido por lei.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Prazo de armazenamento</h2>
+        <ul>
+          <li>Os dados inseridos no app ficam armazenados localmente até que você os exclua (por exemplo apagando registros ou desinstalando o app).</li>
+          <li>A correspondência por e-mail é armazenada pelo tempo necessário para atender a solicitação e, se preciso, para defesa contra eventuais reclamações.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Direitos do usuário (UE / EEE)</h2>
+        <p>Se, em um caso específico, tratarmos seus dados pessoais (por exemplo quando você nos envia um e-mail), você tem direito a:</p>
+        <ul>
+          <li>acesso, retificação, exclusão ou limitação do tratamento,</li>
+          <li>oposição ao tratamento,</li>
+          <li>apresentar reclamação à autoridade supervisora competente.</li>
+        </ul>
+        <p>O alcance dos deveres de informação decorre, em especial, do artigo 13 do GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Segurança</h2>
+        <p>Aplicamos medidas organizacionais e técnicas razoáveis, adequadas à natureza do serviço. Como os dados do app ficam armazenados localmente, proteger o seu dispositivo (código, Face ID) também faz parte da segurança.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Alterações da política</h2>
+        <p>Esta política pode ser atualizada conforme mudem os recursos do app ou as exigências legais. A versão em vigor será publicada no site do app.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Economia real, não promessa. <a href="../privacy/">Política de Privacidade</a> | <a href="../terms/">Termos de Uso</a>.</p>
+  </footer>
+
+  <script src="../../main.js" defer></script>
+</body>
+</html>
