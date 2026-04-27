@@ -482,6 +482,59 @@ a {
   margin-top: 28px;
 }
 
+.hero-photo-card {
+  position: relative;
+  overflow: hidden;
+  margin: 28px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: var(--surface-strong);
+  box-shadow: 0 28px 70px rgba(255, 45, 85, 0.18);
+}
+
+.hero-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 38%;
+  background: linear-gradient(180deg, transparent, rgba(44, 18, 24, 0.52));
+  pointer-events: none;
+}
+
+.hero-photo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.hero-photo-card figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  max-width: 360px;
+  margin: 0;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 18px;
+  background: rgba(57, 22, 30, 0.54);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  backdrop-filter: blur(14px);
+}
+
+.hero-proof-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
 .note-card {
   padding: 18px;
   border-radius: 22px;
@@ -742,6 +795,11 @@ a {
   border-radius: var(--radius-lg);
 }
 
+.spotlight-card-photo {
+  grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
+  align-items: center;
+}
+
 .spotlight-visual {
   display: grid;
   place-items: center;
@@ -771,6 +829,51 @@ a {
   margin-top: 16px;
   font-size: 1.05rem;
   line-height: 1.35;
+}
+
+.spotlight-photo {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.spotlight-photo::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 34%;
+  background: linear-gradient(180deg, transparent, rgba(35, 14, 20, 0.56));
+  pointer-events: none;
+}
+
+.spotlight-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.spotlight-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  margin: 0;
+  padding: 11px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  background: rgba(52, 20, 28, 0.58);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  backdrop-filter: blur(12px);
 }
 
 .quote-grid {
@@ -1033,7 +1136,12 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .hero-stack {
+  .spotlight-card-photo {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stack,
+  .hero-proof-row {
     grid-template-columns: 1fr;
   }
 
