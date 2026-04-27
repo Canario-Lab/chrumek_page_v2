@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek vous aide à transformer les dépenses évitées du quotidien en argent que vous mettez réellement de côté. Un rituel d’épargne simple, sans compte et sans connexion bancaire.">
+  <title>Chrumek | Une épargne que vous mettez vraiment de côté</title>
+  <link rel="canonical" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Thème de la page : sombre. Passer en clair."
+  data-theme-label-light="Thème de la page : clair. Passer en sombre."
+  data-theme-title-dark="Thème de la page : sombre"
+  data-theme-title-light="Thème de la page : clair"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek sur Facebook" title="Chrumek sur Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choisir la langue">
+            <span class="lang-toggle-icon" aria-hidden="true">FR</span>
+            <span class="lang-toggle-text">Français</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Sélecteur de langue">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Télécharger</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Pas encore un suivi de dépenses</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Pas dépensé ? Mettez-le de côté tout de suite.</p>
+
+          <p class="lead">
+            Au lieu d’enregistrer chaque ticket, vous capturez les moments où vous n’avez pas dépensé
+            ou avez dépensé moins. Votre objectif, votre historique et vos graphiques n’avancent
+            qu’après un vrai transfert vers votre épargne.
+          </p>
+
+          <p class="supporting-copy">
+            Pour les personnes qui ont déjà essayé de « simplement moins dépenser » et savent que,
+            sans vrai virement, l’argent reste sur le compte principal puis disparaît discrètement plus tard.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Télécharger Chrumek sur l’App Store">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Télécharger dans l’App Store" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Voir comment ça marche</a>
+          </div>
+
+          <p class="microcopy">
+            Sans compte. Sans connexion bancaire. Sans pistage. Seul ce que vous mettez réellement de côté compte.
+          </p>
+
+          <ul class="proof-pills" aria-label="Promesses clés">
+            <li>chaque dépense évitée devient un vrai transfert</li>
+            <li>votre objectif n’avance que lorsque l’argent a vraiment bougé</li>
+            <li>vous épargnez sans avoir l’impression de faire de la compta</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Rituel simple</p>
+              <h2>Le moment décisif, c’est quand l’argent quitte votre compte principal.</h2>
+              <p>
+                Vous notez le montant, vous le déplacez là où vous gardez vraiment votre épargne,
+                puis vous le confirmez d’un geste. Chrumek ne compte que ce que vous avez vraiment mis de côté.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment.jpg"
+                alt="Un téléphone avec l’app Chrumek à côté d’une enveloppe marquée Vélo, d’une tirelire et d’argent qu’on met de côté"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>80 PLN ne restent pas là « pour plus tard ». Ils vont directement vers l’objectif « Vélo ».</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Problème</p>
+                <strong>Renoncer à un achat ne veut pas dire que l’argent a vraiment été épargné.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Promesse</p>
+                <strong>Votre progression et votre historique n’avancent qu’après confirmation du transfert.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Le vrai problème</p>
+          <h2>La plupart des gens n’ont pas un problème de théorie sur l’épargne. Ils ont un problème de passage à l’action.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>La décision est prise, mais l’argent continue de circuler.</h3>
+            <p>
+              Vous renoncez à un achat, vous choisissez l’option moins chère ou vous coupez un abonnement inutile.
+              Mais rien n’oblige cette somme à partir vers l’épargne.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Les apps de dépenses montrent le passé. Elles ne construisent pas l’épargne.</h3>
+            <p>
+              À la fin du mois, vous savez où l’argent est parti, mais vous ne voyez toujours pas
+              combien vous avez réellement réussi à mettre de côté.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Le budget finit vite par ressembler à du travail en plus.</h3>
+            <p>
+              Plus vous ajoutez de catégories, de tableaux et de saisie manuelle,
+              plus l’app risque d’être abandonnée au bout de quelques jours.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Comment Chrumek fonctionne</p>
+          <h2>Vous n’avez pas besoin d’un budget complet. Vous devez juste attraper le moment où vous auriez pu dépenser cet argent.</h2>
+          <p class="section-intro">
+            Chrumek se concentre sur une seule chose : faire en sorte que l’argent que vous n’avez pas dépensé
+            ne disparaisse pas plus tard, discrètement, de votre compte principal.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Vous repérez l’économie</h3>
+            <p class="step-copy">
+              Vous renoncez à quelque chose, vous choisissez une version moins chère
+              ou vous coupez un abonnement inutile. Chrumek capte exactement ce moment-là.
+            </p>
+            <p class="step-benefit">L’épargne cesse d’être une bonne intention vague et devient un montant concret à mettre de côté.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Vous la mettez de côté tout de suite</h3>
+            <p class="step-copy">
+              La somme atterrit sur un compte séparé, dans une enveloppe, une tirelire
+              ou là où vous gardez réellement votre épargne.
+            </p>
+            <p class="step-benefit">Ainsi, l’économie ne reste pas seulement dans votre tête.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Vous confirmez d’un geste</h3>
+            <p class="step-copy">
+              C’est seulement à ce moment-là que l’entrée rejoint l’historique,
+              fait progresser l’objectif et alimente les graphiques.
+            </p>
+            <p class="step-benefit">Vous voyez une progression fiable, parce qu’elle correspond à un vrai mouvement d’argent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">À quoi ressemble le passage à l’action</p>
+            <h2>Du premier « je ne l’ai pas acheté » à un objectif qui grandit vraiment.</h2>
+            <p class="section-intro">
+              Vous notez le montant, vous le sortez de votre compte principal
+              et vous ne le confirmez qu’une fois l’argent réellement mis de côté.
+              Journal, historique, objectifs et graphiques ne montrent que ce qui a vraiment rejoint votre épargne.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Aperçu des écrans de l’app Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/journal.jpg" alt="Écran Journal dans l’app Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Journal</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/history.jpg" alt="Écran Historique avec les économies confirmées" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Historique</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/goals.jpg" alt="Écran d’objectif d’épargne dans l’app" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Objectifs</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/calendar.jpg" alt="Écran de graphiques dans l’app Chrumek" loading="lazy" decoding="async" width="414" height="900">
+              <figcaption>Graphiques</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Après une semaine d’utilisation</p>
+            <h2>Au lieu de deviner, vous voyez combien vous avez vraiment réussi à mettre de côté.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Vous voyez enfin une épargne réelle</h3>
+              <p>L’historique ne compte que les montants confirmés. Pas de faux progrès. Pas de total gonflé.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Vous avez un rituel simple au lieu d’un gros budget à tenir</h3>
+              <p>Trois façons rapides de l’enregistrer : je ne l’ai pas acheté, je l’ai payé moins cher, j’ai annulé un abonnement.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Il est plus facile de rester motivé</h3>
+              <p>Votre objectif grandit seulement après le transfert, donc chaque geste change quelque chose de réel.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Vous ne troquez pas votre vie privée contre plus de discipline</h3>
+              <p>Pas de compte, pas de trackers, aucune obligation de connecter votre banque.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Situations du quotidien</p>
+          <h2>Chrumek fonctionne justement dans les moments où l’argent vous échappe d’habitude sans bruit.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 01</p>
+              <h3>Un choix moins cher en rayon devient tout de suite une vraie somme à mettre de côté.</h3>
+              <p>
+                Vous choisissez un produit à 15,99 PLN au lieu de 22,99 PLN.
+                Chrumek capte l’écart avant que ces 7 PLN ne repartent ailleurs.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice.jpg"
+                alt="Un téléphone avec l’app Chrumek près d’un rayon café, montrant une différence de 7 PLN enregistrée après le choix d’un produit moins cher"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>L’écart créé au moment de l’achat ne reste pas dans votre tête. Il entre dans Chrumek.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 02</p>
+              <h3>Ce latte du trajet peut rester dans votre portefeuille et financer un objectif tout de suite.</h3>
+              <p>
+                Au lieu de payer 16,99 PLN au comptoir, vous notez le latte évité dans Chrumek.
+                Cette petite décision cesse d’être invisible.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte.jpg"
+                alt="Un téléphone avec l’app Chrumek dans un café à côté d’un menu, montrant un latte évité d’une valeur de 16,99 PLN"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Vous sautez le latte. Chrumek transforme cette décision en montant concret.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 03</p>
+              <h3>Un abonnement annulé ne repart pas dans les dépenses quotidiennes. Il commence à travailler pour votre objectif.</h3>
+              <p>
+                Vous coupez un service mensuel à 49,99 PLN et vous notez ce montant dans Chrumek.
+                Une dépense fixe peut devenir chaque mois quelque chose qui vous rapproche de votre but.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled.jpg"
+                alt="Un téléphone avec l’app Chrumek près d’un ordinateur affichant la gestion d’un abonnement, avec une entrée correspondant à un abonnement annulé"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Annuler un abonnement devient un pas régulier vers votre objectif.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 04</p>
+              <h3>Un objectif paraît réel parce qu’il ne grandit pas juste en tapant du texte.</h3>
+              <p>
+                Le vélo cesse d’être une idée vague. Vous voyez le montant, la progression
+                et les transferts confirmés qui rapprochent réellement de l’achat.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress.jpg"
+                alt="Un téléphone affichant l’objectif Vélo dans Chrumek à côté d’un casque, d’une lampe de vélo et d’un vélo en arrière-plan"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Un objectif a un nom, un montant et une progression réelle. Ce n’est plus juste une envie.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 05</p>
+              <h3>L’historique n’est pas un journal de sacrifices. C’est la preuve que vous mettez vraiment de l’argent de côté.</h3>
+              <p>
+                Vous voyez vos décisions et les montants qui ont réellement rejoint votre épargne.
+                C’est une preuve simple que le système fonctionne.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof.jpg"
+                alt="Un téléphone avec l’écran Historique de Chrumek à côté d’une enveloppe marquée Vélo, d’un carnet avec des achats évités et d’argent épargné"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947 PLN, ce n’est pas une déclaration. C’est la somme des décisions que vous avez vraiment mises de côté.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 06</p>
+              <h3>La régularité devient visible avant de s’effacer une nouvelle fois.</h3>
+              <p>
+                Chaque transfert vers votre objectif laisse une trace.
+                Chrumek montre votre série et les jours où vous avez vraiment mis de l’argent de côté,
+                ce qui rend plus facile le fait de recommencer demain.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar.jpg"
+                alt="Un téléphone avec l’écran calendrier de Chrumek à côté d’un carnet avec un plan de transferts et d’une note de rappel"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Pas besoin de se demander si ça marche. Vous voyez la série et les jours exacts d’épargne.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Scène 07</p>
+              <h3>Vous voyez quelles petites décisions font la plus grande différence.</h3>
+              <p>
+                Café, livraison, jeux, électronique. Chrumek montre d’où viennent réellement vos économies,
+                pour que vous puissiez répéter plus facilement les choix qui vous aident le plus.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories.jpg"
+                alt="Un téléphone avec un graphique des catégories d’épargne dans Chrumek à côté d’un café, d’un ticket, d’un carnet, d’un ordinateur portable, d’une manette et d’un sac de shopping"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Vous n’analysez pas chaque dépense. Vous voyez où vous reprenez réellement la main sur l’argent.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Noté 5 sur 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Pour la première fois, je vois noir sur blanc combien j’ai réellement mis de côté, pas seulement combien j’avais l’intention d’épargner."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Noté 5 sur 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek ne récompense pas les bonnes intentions. Il ne compte que ce que vous avez vraiment mis de côté."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Moment par moment</p>
+          <h2>Épargner commence dans des endroits ordinaires : au magasin, au café, sur le canapé.</h2>
+          <p class="section-intro">
+            Chrumek vous aide à attraper les petites décisions qui disparaissent d’habitude sans laisser de trace.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>Au magasin</h3>
+            <p class="shot-copy">
+              Vous choisissez le produit moins cher et vous notez l’écart avant de le dépenser ailleurs.
+            </p>
+            <p class="shot-meta">Au lieu de « je crois que j’ai un peu économisé », vous voyez le montant exact.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>Au café</h3>
+            <p class="shot-copy">
+              Vous sautez le café du trajet et vous enregistrez tout de suite le montant qui devrait partir en épargne.
+            </p>
+            <p class="shot-meta">Une petite décision cesse d’être invisible.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>Avec les abonnements</h3>
+            <p class="shot-copy">
+              Vous annulez un abonnement que vous n’utilisez pas et transformez ce coût mensuel en épargne régulière.
+            </p>
+            <p class="shot-meta">Une seule décision peut travailler pour vous chaque mois.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>Avec un objectif</h3>
+            <p class="shot-copy">
+              Chaque transfert confirmé vous rapproche de ce pour quoi vous voulez vraiment économiser.
+            </p>
+            <p class="shot-meta">L’objectif ne grandit que lorsque l’argent est réellement mis de côté.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>Dans l’historique</h3>
+            <p class="shot-copy">
+              Vous retrouvez une liste de montants qui ont vraiment rejoint votre épargne, pas seulement des montants prévus.
+            </p>
+            <p class="shot-meta">Vous avez la preuve que de petites décisions peuvent produire un vrai résultat.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Sans connecter votre banque</h3>
+            <p class="shot-copy">
+              Vous utilisez Chrumek sans compte et sans relier votre banque. C’est vous qui décidez où l’argent va.
+            </p>
+            <p class="shot-meta">Un rituel simple, un minimum de données, un maximum de contrôle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Pour qui c’est fait</p>
+          <h2>Chrumek est pour vous si :</h2>
+          <ul>
+            <li>« Je sais que je pourrais épargner davantage, mais dans la vraie vie je ne vais pas jusqu’au bout. »</li>
+            <li>« Je ne veux pas encore une app où il faut saisir chaque dépense. »</li>
+            <li>« J’ai besoin d’un rituel simple qui fonctionne dès le premier jour. »</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Pas pour vous si</p>
+          <h2>Chrumek n’est pas pour vous si :</h2>
+          <ul>
+            <li>vous voulez une synchronisation bancaire automatique,</li>
+            <li>vous avez besoin d’un planificateur financier complexe,</li>
+            <li>vous cherchez une app qui fait tout sans votre confirmation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions fréquentes avant de télécharger Chrumek.</h2>
+          <p class="section-intro">
+            Vous savez exactement ce que vous installez : Chrumek vous aide à passer à une vraie épargne,
+            mais ne connecte pas votre banque, n’exécute pas les virements et n’exige pas de compte.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Dois-je connecter ma banque ?</summary>
+            <p>Non. Chrumek ne se connecte pas à votre banque. Vous déplacez l’argent où vous voulez : sur un compte séparé, dans une enveloppe ou dans une tirelire.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Est-ce que Chrumek fait le virement à ma place ?</summary>
+            <p>Non. L’app vous aide à fermer la boucle : vous notez le montant, vous le mettez de côté dans la vraie vie, puis vous confirmez dans l’app que l’argent est déjà passé de votre côté.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Que se passe-t-il si j’enregistre un montant sans jamais le mettre de côté ?</summary>
+            <p>Alors vous ne confirmez pas le transfert. C’est justement le principe : les graphiques, l’historique et les objectifs ne doivent avancer qu’après une mise de côté réelle.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Mes données sont-elles envoyées vers un serveur ?</summary>
+            <p>Les données que vous saisissez dans l’app restent localement sur votre appareil. Vous ne créez pas de compte et vous ne confiez pas votre historique de décisions à un tableau de bord externe.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Comment fonctionnent Premium et l’essai gratuit ?</summary>
+            <p>Vous pouvez essayer l’app avant de payer. L’accès continu aux fonctions payantes passe par l’App Store, et un éventuel essai dépend de l’offre disponible pour cet utilisateur à ce moment-là.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Puis-je exporter mes données ?</summary>
+            <p>Oui. Chrumek prend en charge l’export CSV, pour que vous puissiez récupérer vos économies confirmées et vos objectifs hors de l’app.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">La dernière étape</p>
+          <h2>Ne vous promettez pas de commencer à épargner. Donnez-vous plutôt un processus qui ferme réellement la boucle.</h2>
+          <p>
+            Chrumek ne mesure pas les intentions. Il vous aide à boucler le moment où l’argent passe réellement de votre côté.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Télécharger Chrumek sur l’App Store">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Télécharger dans l’App Store" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Sans compte. Sans connexion bancaire. Commencez aujourd’hui avec le premier montant que vous ne dépensez pas.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Signaux de confiance">
+          <span>sans compte</span>
+          <span>sans trackers publicitaires</span>
+          <span>données conservées sur votre appareil</span>
+          <span>sans connexion bancaire</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. De vraies économies, pas des déclarations. <a href="./privacy/">Politique de confidentialité</a> | <a href="./terms/">Conditions d’utilisation</a>.</p>
+  </footer>
+</body>
+</html>
