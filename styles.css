@@ -1157,6 +1157,104 @@ body.lang-sheet-open {
   line-height: 1.65;
 }
 
+.contact-section {
+  padding-top: 18px;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.48fr);
+  gap: 24px;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(135deg, var(--surface-strong), transparent 72%),
+    radial-gradient(circle at right, var(--accent-wash), transparent 42%),
+    var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.contact-copy {
+  max-width: 58ch;
+}
+
+.contact-copy h2 {
+  margin: 10px 0 0;
+  font-size: clamp(2rem, 4vw, 3.05rem);
+  line-height: 1.02;
+}
+
+.contact-copy p {
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.contact-action {
+  display: grid;
+  gap: 12px;
+  justify-items: stretch;
+}
+
+.contact-action p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.contact-mail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 74px;
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.contact-mail:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 18px 38px rgba(255, 45, 85, 0.18);
+}
+
+.contact-mail-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), #ff6f91);
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-mail-label,
+.contact-mail-address {
+  display: block;
+}
+
+.contact-mail-label {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.contact-mail-address {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .site-footer {
   padding: 34px 0 44px;
   color: var(--muted);
@@ -1504,6 +1602,15 @@ body.lang-sheet-open {
 
   .faq-layout {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .contact-action p {
+    text-align: left;
   }
 
   .screenshot-card {
