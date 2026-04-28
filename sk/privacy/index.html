@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Zásady ochrany osobných údajov pre aplikáciu Chrumek." />
+  <title>Zásady ochrany osobných údajov - Chrumek</title>
+  <link rel="canonical" href="https://chrumek.app/sk/privacy/" />
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/privacy/" />
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/privacy/" />
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/privacy/" />
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/privacy/" />
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/privacy/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/privacy/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/privacy/" />
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/privacy/" />
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/privacy/" />
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/privacy/" />
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/privacy/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/privacy/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/privacy/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/privacy/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/privacy/">
+  <link rel="alternate" hreflang="ja" href="https://chrumek.app/ja/privacy/">
+  <link rel="alternate" hreflang="ro" href="https://chrumek.app/ro/privacy/">
+  <link rel="alternate" hreflang="ru" href="https://chrumek.app/ru/privacy/">
+  <link rel="alternate" hreflang="sk" href="https://chrumek.app/sk/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/privacy/" />
+  <link rel="icon" type="image/png" href="../../assets/chrumek-app-icon.png" />
+  <link rel="apple-touch-icon" href="../../assets/chrumek-app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Téma stránky: tmavá. Prepnúť na svetlú."
+  data-theme-label-light="Téma stránky: svetlá. Prepnúť na tmavú."
+  data-theme-title-dark="Téma stránky: tmavá"
+  data-theme-title-light="Téma stránky: svetlá"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="Chrumek">
+        <img class="brand-mark" src="../../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="legal-return" href="../">Späť</a>
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek na Facebooku" title="Chrumek na Facebooku">
+          <img class="header-social-icon" src="../../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Vybrať jazyk">
+            <span class="lang-toggle-icon" aria-hidden="true">SK</span>
+            <span class="lang-toggle-text">Slovenčina</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Výber jazyka">
+            <a class="lang-option" href="../../pl/privacy/" data-base="../../pl/privacy/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../en/privacy/" data-base="../../en/privacy/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../es/privacy/" data-base="../../es/privacy/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../de/privacy/" data-base="../../de/privacy/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../fr/privacy/" data-base="../../fr/privacy/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../it/privacy/" data-base="../../it/privacy/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-BR/privacy/" data-base="../../pt-BR/privacy/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../pt-PT/privacy/" data-base="../../pt-PT/privacy/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../tr/privacy/" data-base="../../tr/privacy/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../bg/privacy/" data-base="../../bg/privacy/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../cs/privacy/" data-base="../../cs/privacy/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../da/privacy/" data-base="../../da/privacy/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../el/privacy/" data-base="../../el/privacy/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../fi/privacy/" data-base="../../fi/privacy/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../hr/privacy/" data-base="../../hr/privacy/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../hu/privacy/" data-base="../../hu/privacy/" lang="hu" hreflang="hu" role="menuitem">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../ja/privacy/" data-base="../../ja/privacy/" lang="ja" hreflang="ja" role="menuitem">
+              <span class="lang-option-main"><span>日本語</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../ko/privacy/" data-base="../../ko/privacy/" lang="ko" hreflang="ko" role="menuitem">
+              <span class="lang-option-main"><span>한국어</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../nl/privacy/" data-base="../../nl/privacy/" lang="nl" hreflang="nl" role="menuitem">
+              <span class="lang-option-main"><span>Nederlands</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../no/privacy/" data-base="../../no/privacy/" lang="no" hreflang="no" role="menuitem">
+              <span class="lang-option-main"><span>Norsk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../ro/privacy/" data-base="../../ro/privacy/" lang="ro" hreflang="ro" role="menuitem">
+              <span class="lang-option-main"><span>Română</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../../ru/privacy/" data-base="../../ru/privacy/" lang="ru" hreflang="ru" role="menuitem">
+              <span class="lang-option-main"><span>Русский</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../../sk/privacy/" data-base="../../sk/privacy/" lang="sk" hreflang="sk" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Slovenčina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Zásady ochrany osobných údajov</h1>
+
+      <section class="legal-section">
+        <h2>1) Prevádzkovateľ údajov</h2>
+        <p>Prevádzkovateľom osobných údajov je:<br />Canario-Lab / Chrumek App<br />Kontaktný e-mail: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Rozsah a účel</h2>
+        <p>Aplikácia Chrumek pomáha sledovať úspory zaznamenávaním „pokušení“ a potvrdených prevodov / odložených súm.</p>
+        <p>Neprevádzkujeme používateľské účty a nezhromažďujeme údaje, ktoré by nám umožnili priamo vás identifikovať.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Údaje spracúvané v aplikácii (lokálne vo vašom zariadení)</h2>
+        <p>Údaje, ktoré zadáte do aplikácie (napríklad záznamy úspor, sumy, dátumy, kategórie, ciele a nastavenia), sa ukladajú lokálne vo vašom zariadení.</p>
+        <p>Automaticky sa neposielajú nám ani na naše servery.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funkcie vyžadujúce systémový prístup</h2>
+        <p>Aplikácia môže používať systémové funkcie a súvisiace údaje iba v rozsahu potrebnom na jej fungovanie:</p>
+        <ul>
+          <li>Notifikácie (UNUserNotificationCenter) - ak zapnete pripomenutia, iOS doručuje notifikácie podľa vašich nastavení.</li>
+          <li>Jazyk / región / mena / téma - používajú sa na formátovanie obsahu a vzhľadu aplikácie (bez odosielania čohokoľvek nám).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Hlásenia chýb / kontaktovanie podpory</h2>
+        <p>Ak použijete možnosť „Nahlásiť chybu“ alebo kontaktujete podporu:</p>
+        <ul>
+          <li>aplikácia môže vytvoriť koncept e-mailu vo vašej poštovej aplikácii,</li>
+          <li>obsah môže zahŕňať diagnostické informácie (napríklad verziu aplikácie, verziu iOS alebo nastavenia jazyka / meny) - presne to, čo vidíte v správe pred jej odoslaním,</li>
+          <li>e-mail sa odošle iba vtedy, ak ho sami schválite.</li>
+        </ul>
+        <p>Odoslaný e-mail spracúva váš poskytovateľ e-mailu a my ako príjemca, výlučne na účel vybavenia vašej žiadosti.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Nákupy a predplatné (Apple + RevenueCat)</h2>
+        <p>Ak sú v aplikácii dostupné platené funkcie (predplatné):</p>
+        <ul>
+          <li>platby spracúva Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>aplikácia používa RevenueCat ako poskytovateľa infraštruktúry predplatného (vrátane zobrazovania ponúk, overovania stavu predplatného a udeľovania prémiového prístupu).</li>
+        </ul>
+        <p>V rámci spracovania predplatného sa môžu spracúvať technické údaje súvisiace s nákupom, napríklad:</p>
+        <ul>
+          <li>identifikátory transakcie / nákupu a informácie o produkte,</li>
+          <li>stav predplatného (aktívne / neaktívne, obnovenia),</li>
+          <li>technický identifikátor používateľa používaný na prepojenie stavu predplatného (napríklad anonymné App User ID vygenerované SDK).</li>
+        </ul>
+        <p>RevenueCat spracúva tieto údaje na poskytovanie služieb správy predplatného (ako sprostredkovateľ) a Apple spracúva platobné údaje podľa vlastných pravidiel.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analytika a sledovanie</h2>
+        <p>Aplikácia nepoužíva analytické nástroje ani reklamné SDK na sledovanie používateľov a nepredáva údaje.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Website (landing page)</h2>
+        <p>Ak navštívite náš web, poskytovateľ hostingu (napríklad GitHub Pages) môže automaticky spracúvať štandardné technické údaje v serverových logoch (vrátane IP adresy, typu prehliadača a dátumu a času požiadavky) na účely bezpečnosti, diagnostiky a kontinuity služby. Rozsah a pravidlá tohto spracovania sa riadia zásadami poskytovateľa hostingu.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Príjemcovia údajov</h2>
+        <p>Údaje môžu byť sprístupnené iba:</p>
+        <ul>
+          <li>poskytovateľom platieb a predplatného: Apple a RevenueCat (na správu predplatného),</li>
+          <li>orgánom verejnej moci, ak to vyžaduje zákon.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Doba uchovávania</h2>
+        <ul>
+          <li>Údaje zadané v aplikácii sa ukladajú lokálne, kým ich neodstránite (napríklad vymazaním záznamov alebo odstránením aplikácie).</li>
+          <li>E-mailová korešpondencia sa uchováva tak dlho, ako je potrebné na vybavenie žiadosti a obranu proti nárokom (ak je to potrebné).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Práva používateľa (EÚ / EHP)</h2>
+        <p>Ak v konkrétnom prípade spracúvame vaše osobné údaje (napríklad keď nám pošlete e-mail), máte právo na:</p>
+        <ul>
+          <li>prístup, opravu, vymazanie alebo obmedzenie spracúvania,</li>
+          <li>námietku,</li>
+          <li>podanie sťažnosti príslušnému dozornému orgánu.</li>
+        </ul>
+        <p>Rozsah informačných povinností vyplýva najmä z článku 13 GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Bezpečnosť</h2>
+        <p>Uplatňujeme primerané organizačné a technické opatrenia zodpovedajúce povahe služby. Keďže údaje aplikácie sú uložené lokálne, ochrana vášho zariadenia (kód / Face ID) je tiež dôležitou súčasťou bezpečnosti.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Zmeny zásad</h2>
+        <p>Tieto zásady sa môžu aktualizovať pri zmene funkcií aplikácie alebo právnych požiadaviek. Aktuálna verzia bude zverejnená na webe aplikácie.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Skutočné úspory, nie vyhlásenia. <a href="../privacy/">Zásady ochrany osobných údajov</a> | <a href="../terms/">Podmienky používania</a>.</p>
+  </footer>
+
+  <script src="../../main.js" defer></script>
+</body>
+</html>
