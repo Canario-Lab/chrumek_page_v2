@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek допомагає перетворювати щоденні невитрачені гроші на кошти, які ви справді відкладаєте. Проста звичка заощадження без облікового запису і без підключення банку.">
+  <title>Chrumek | Заощадження, які справді відкладаються</title>
+  <link rel="canonical" href="https://chrumek.app/uk/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/">
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="ja" href="https://chrumek.app/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chrumek.app/ko/">
+  <link rel="alternate" hreflang="nl" href="https://chrumek.app/nl/">
+  <link rel="alternate" hreflang="no" href="https://chrumek.app/no/">
+  <link rel="alternate" hreflang="ro" href="https://chrumek.app/ro/">
+  <link rel="alternate" hreflang="ru" href="https://chrumek.app/ru/">
+  <link rel="alternate" hreflang="sk" href="https://chrumek.app/sk/">
+  <link rel="alternate" hreflang="sl" href="https://chrumek.app/sl/">
+  <link rel="alternate" hreflang="sv" href="https://chrumek.app/sv/">
+  <link rel="alternate" hreflang="uk" href="https://chrumek.app/uk/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Тема сторінки: темна. Перемкнути на світлу."
+  data-theme-label-light="Тема сторінки: світла. Перемкнути на темну."
+  data-theme-title-dark="Тема сторінки: темна"
+  data-theme-title-light="Тема сторінки: світла"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek у Facebook" title="Chrumek у Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Виберіть мову">
+            <span class="lang-toggle-icon" aria-hidden="true">UK</span>
+            <span class="lang-toggle-text">Українська</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Вибір мови">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
+              <span class="lang-option-main"><span>日本語</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
+              <span class="lang-option-main"><span>한국어</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
+              <span class="lang-option-main"><span>Nederlands</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem">
+              <span class="lang-option-main"><span>Norsk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ro/" data-base="../ro/" lang="ro" hreflang="ro" role="menuitem">
+              <span class="lang-option-main"><span>Română</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ru/" data-base="../ru/" lang="ru" hreflang="ru" role="menuitem">
+              <span class="lang-option-main"><span>Русский</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sk/" data-base="../sk/" lang="sk" hreflang="sk" role="menuitem">
+              <span class="lang-option-main"><span>Slovenčina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sl/" data-base="../sl/" lang="sl" hreflang="sl" role="menuitem">
+              <span class="lang-option-main"><span>Slovenščina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sv/" data-base="../sv/" lang="sv" hreflang="sv" role="menuitem">
+              <span class="lang-option-main"><span>Svenska</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../uk/" data-base="../uk/" lang="uk" hreflang="uk" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Українська</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Завантажити</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Не ще один трекер витрат</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Не витратили? Одразу відкладіть цю суму.</p>
+
+          <p class="lead">
+            Замість того щоб заносити кожен чек, ви фіксуєте моменти, коли не витратили гроші або витратили менше.
+            Ціль, історія та графіки зростають лише після того, як ви справді переносите ці гроші в заощадження.
+          </p>
+
+          <p class="supporting-copy">
+            Для людей, які вже пробували "просто витрачати менше" і знають: без реального переказу
+            гроші залишаються на основному рахунку й тихо зникають пізніше.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Завантажити Chrumek в App Store">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Завантажити в App Store" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Подивитися, як це працює</a>
+          </div>
+
+          <p class="microcopy">
+            Без облікового запису. Без підключення банку. Без стеження. Рахується тільки те, що ви справді відклали.
+          </p>
+
+          <ul class="proof-pills" aria-label="Ключові обіцянки">
+            <li>кожна пропущена витрата стає реальним переказом</li>
+            <li>ваша ціль зростає тільки після фактичного руху грошей</li>
+            <li>ви заощаджуєте без відчуття, що ведете бухгалтерію</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Простий ритуал</p>
+              <h2>Ключовий момент - коли гроші залишають ваш основний рахунок.</h2>
+              <p>
+                Запишіть суму, перемістіть її туди, де ви справді тримаєте заощадження, і підтвердьте одним дотиком.
+                Chrumek рахує лише те, що ви фактично відклали.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment-en-eur.jpg"
+                alt="Телефон із застосунком Chrumek поруч із конвертом з написом Bike, скарбничкою та грошима, які відкладають"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>19,04 € не лишаються "на потім". Вони одразу йдуть до цілі "Bike".</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Проблема</p>
+                <strong>Пропущена покупка ще не означає, що гроші справді заощаджено.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Обіцянка</p>
+                <strong>Прогрес та історія зростають лише після підтвердження переказу.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Справжня проблема</p>
+          <h2>Більшості людей бракує не знань про заощадження, а способу довести рішення до кінця.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Рішення вже є, але гроші залишаються в обігу.</h3>
+            <p>
+              Ви пропускаєте покупку, обираєте дешевший варіант або скасовуєте непотрібну підписку.
+              Але ніщо не змушує цю суму перейти в заощадження.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Трекери витрат показують минуле. Вони не створюють заощадження.</h3>
+            <p>
+              Наприкінці місяця ви знаєте, куди пішли гроші, але все ще не бачите,
+              скільки справді вдалося відкласти.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Бюджетування швидко починає відчуватися як додаткова робота.</h3>
+            <p>
+              Чим більше категорій, таблиць і ручних записів, тим більша ймовірність,
+              що застосунок буде закинуто вже за кілька днів.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Як працює Chrumek</p>
+          <h2>Вам не потрібен повний бюджет. Потрібно лише впіймати момент, коли ви могли витратити гроші.</h2>
+          <p class="section-intro">
+            Chrumek зосереджується на одному: щоб гроші, які ви не витратили, не зникли тихо пізніше з основного рахунку.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Ви помічаєте заощадження</h3>
+            <p class="step-copy">
+              Ви відмовляєтеся від чогось, обираєте дешевшу версію або скасовуєте непотрібну підписку.
+              Chrumek фіксує саме цей момент.
+            </p>
+            <p class="step-benefit">Він перетворює заощадження з розмитої ідеї на конкретну суму, яку треба відкласти.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Ви одразу переносите гроші</h3>
+            <p class="step-copy">
+              Сума потрапляє на окремий рахунок, у конверт, скарбничку або туди, де ви справді зберігаєте заощадження.
+            </p>
+            <p class="step-benefit">Так заощадження не залишається лише в голові.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Ви підтверджуєте одним дотиком</h3>
+            <p class="step-copy">
+              Тільки після цього запис переходить в історію, підживлює ціль і стає частиною графіків.
+            </p>
+            <p class="step-benefit">Ви бачите прогрес, якому можна довіряти, бо за ним стоїть реальний рух грошей.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Як виглядає доведення до кінця</p>
+            <h2>Від першого "я цього не купив" до цілі, яка справді зростає.</h2>
+            <p class="section-intro">
+              Ви записуєте суму, виводите її з основного рахунку й підтверджуєте лише тоді, коли гроші справді відкладені.
+              Журнал, історія, цілі та графіки показують тільки те, що реально потрапило до заощаджень.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Попередній перегляд екранів застосунку Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/journal.jpg" alt="Екран журналу в застосунку Chrumek" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Журнал</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/history.jpg" alt="Екран історії з підтвердженими заощадженнями" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Історія</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/goals.jpg" alt="Екран цілі заощадження в застосунку" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Цілі</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/calendar.jpg" alt="Екран календаря переказів у застосунку" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Графіки</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Після тижня використання</p>
+            <h2>Замість здогадок ви бачите, скільки справді вдалося заощадити.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Ви нарешті бачите реальні заощадження</h3>
+              <p>Історія рахує лише підтверджені суми. Без фальшивого прогресу. Без завищених підсумків.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Ви отримуєте простий ритуал замість важкого бюджетування</h3>
+              <p>Три швидкі способи запису: я не купив, купив дешевше, скасував підписку.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Легше залишатися вмотивованими</h3>
+              <p>Ваша ціль зростає тільки після переказу, тому кожен крок змінює щось реальне.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Ви не обмінюєте приватність на фінансову дисципліну</h3>
+              <p>Без облікового запису, без трекерів і без вимоги підключати банк.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Повсякденні ситуації</p>
+          <h2>Chrumek працює в моменти, коли гроші зазвичай непомітно вислизають.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 01</p>
+              <h3>Дешевший вибір на полиці одразу стає реальною сумою, яку можна відкласти.</h3>
+              <p>
+                Ви обираєте продукт за 4,50 € замість 6,50 €. Chrumek фіксує різницю
+                до того, як ці 2,00 € зникнуть на щось інше.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice-en.jpg"
+                alt="Телефон із застосунком Chrumek біля полиці з кавою, де показано записану різницю 2,00 € після вибору дешевшого товару"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Різниця від рішення в магазині не лишається в голові. Вона потрапляє в Chrumek.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 02</p>
+              <h3>Лате дорогою може залишитися у вашому гаманці й одразу працювати на ціль.</h3>
+              <p>
+                Замість того щоб заплатити 4,50 € біля каси, ви записуєте пропущене лате в Chrumek.
+                Це маленьке рішення перестає бути невидимим.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte-en.jpg"
+                alt="Телефон із застосунком Chrumek у кафе поруч із меню, де показано пропущене лате вартістю 4,50 €"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Ви пропускаєте лате. Chrumek перетворює це рішення на конкретну суму.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 03</p>
+              <h3>Скасована підписка не повертається в щоденні витрати. Вона починає працювати на вашу ціль.</h3>
+              <p>
+                Ви прибираєте щомісячний сервіс за 12,99 € і записуєте цю суму в Chrumek.
+                Фіксована витрата може щомісяця наближати вас до мети.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled-en.jpg"
+                alt="Телефон із застосунком Chrumek поруч із ноутбуком із екраном керування підписками, де показано запис про скасовану підписку"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Скасування підписки стає регулярним кроком до вашої цілі.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 04</p>
+              <h3>Ціль відчувається реальною, бо вона не зростає лише від введення цифр.</h3>
+              <p>
+                Велосипед перестає бути розмитою ідеєю. Ви бачите суму, прогрес
+                і підтверджені перекази, які справді наближають покупку.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress-en.jpg"
+                alt="Телефон із ціллю Bike у застосунку Chrumek поруч із шоломом, велосипедним ліхтарем і велосипедом на фоні"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Ціль має назву, суму й реальний прогрес. Це вже не просто бажання.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 05</p>
+              <h3>Історія - не щоденник жертв. Це доказ, що ви справді відкладаєте гроші.</h3>
+              <p>
+                Ви бачите свої рішення та суми, які справді потрапили в заощадження.
+                Це простий доказ, що система працює.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof-en.jpg"
+                alt="Телефон з екраном історії Chrumek поруч із конвертом з написом Bike, нотатником із пропущеними покупками та відкладеною готівкою"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947,00 € - це не декларація. Це сума рішень, які ви справді відклали.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 06</p>
+              <h3>Послідовність стає видимою до того, як знову зникне.</h3>
+              <p>
+                Кожен переказ до цілі залишає слід. Chrumek показує вашу серію та дні,
+                коли ви справді відкладали гроші, тому завтра легше повернутися.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar-en.jpg"
+                alt="Телефон із календарем Chrumek поруч із нотатником із планом переказів і запискою-нагадуванням"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Вам не треба гадати, чи це працює. Ви бачите серію та точні дні заощаджень.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 07</p>
+              <h3>Якщо день вислизає, Chrumek нагадує завершити переказ.</h3>
+              <p>
+                Ви ставите спокійне нагадування на вечір.
+                Коли є сума, яку треба перенести в заощадження, застосунок допомагає повернутися до простого ритуалу без потреби тримати все в голові.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="reminder-photo">
+              <img
+                src="../assets/photos/transfer-reminder-evening-en.jpg"
+                alt="Телефон з екраном нагадування про переказ у Chrumek поруч зі скарбничкою, конвертом Bike, чаєм, свічкою та нотатником"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Нагадування не планує замість вас. Воно допомагає не загубити хороше рішення.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 08</p>
+              <h3>Ви бачите, які маленькі рішення дають найбільший ефект.</h3>
+              <p>
+                Кава, доставка, ігри, електроніка. Chrumek показує, звідки насправді взялися ваші заощадження,
+                щоб легше повторювати рішення, які допомагають найбільше.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories-en.jpg"
+                alt="Телефон із діаграмою категорій заощаджень у Chrumek поруч із кавою, чеком, нотатником, ноутбуком, геймпадом і пакетом"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Ви не аналізуєте кожну витрату. Ви бачите, де справді повертаєте гроші собі.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Сцена 09</p>
+              <h3>Ваші дані під рукою, коли ви хочете навести лад.</h3>
+              <p>
+                Ви експортуєте перекази та завершені цілі в CSV.
+                Без облікового запису, без замикання даних усередині застосунку і без прохання до когось про доступ до власної історії.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="export-photo">
+              <img
+                src="../assets/photos/export-data-control-en.jpg"
+                alt="Телефон із екраном експорту CSV у Chrumek поруч із ноутбуком з таблицею та нотатником із чеклістом даних"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Ви заощаджуєте просто, але дані все одно належать вам.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Оцінка 5 з 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Уперше я бачу чорним по білому, скільки справді заощадила, а не лише скільки планувала заощадити."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Оцінка 5 з 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek не винагороджує добрі наміри. Він рахує тільки те, що ви справді відклали."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Момент за моментом</p>
+          <h2>Заощадження починається у звичайних місцях: у магазині, в кафе, на дивані.</h2>
+          <p class="section-intro">
+            Chrumek допомагає ловити маленькі рішення, які зазвичай зникають без сліду.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>У магазині</h3>
+            <p class="shot-copy">
+              Ви обираєте дешевший товар і записуєте різницю до того, як витратите її на щось інше.
+            </p>
+            <p class="shot-meta">Замість "здається, я трохи заощадив" ви бачите точну суму.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>У кафе</h3>
+            <p class="shot-copy">
+              Ви пропускаєте каву дорогою й одразу записуєте суму, яка має піти в заощадження.
+            </p>
+            <p class="shot-meta">Маленьке рішення перестає бути невидимим.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>З підписками</h3>
+            <p class="shot-copy">
+              Ви скасовуєте підписку, якою не користуєтесь, і перетворюєте щомісячну оплату на регулярне заощадження.
+            </p>
+            <p class="shot-meta">Одне рішення може працювати на вас щомісяця.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>З ціллю</h3>
+            <p class="shot-copy">
+              Кожен підтверджений переказ наближає вас до речі, на яку ви справді хочете назбирати.
+            </p>
+            <p class="shot-meta">Ціль зростає лише тоді, коли гроші справді відкладені.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>В історії</h3>
+            <p class="shot-copy">
+              Ви повертаєтеся до списку сум, які справді стали заощадженнями, а не лише були заплановані.
+            </p>
+            <p class="shot-meta">Ви отримуєте доказ, що маленькі рішення складаються в реальний результат.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Без підключення банку</h3>
+            <p class="shot-copy">
+              Ви користуєтесь Chrumek без облікового запису і без прив'язки банку. Ви самі вирішуєте, куди йдуть гроші.
+            </p>
+            <p class="shot-meta">Простий ритуал, мінімум даних, максимум контролю.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Для кого це</p>
+          <h2>Chrumek для вас, якщо:</h2>
+          <ul>
+            <li>"Я знаю, що міг би заощаджувати більше, але в реальному житті не доводжу це до кінця."</li>
+            <li>"Я не хочу ще один застосунок для запису кожної витрати."</li>
+            <li>"Мені потрібен простий ритуал, який працює з першого дня."</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Не якщо</p>
+          <h2>Chrumek не для вас, якщо:</h2>
+          <ul>
+            <li>ви хочете автоматичну синхронізацію з банком,</li>
+            <li>вам потрібен складний фінансовий планувальник,</li>
+            <li>ви хочете застосунок, який робить усе без вашого підтвердження.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Поширені питання перед завантаженням Chrumek.</h2>
+          <p class="section-intro">
+            Ви точно знаєте, що встановлюєте: Chrumek допомагає довести реальне заощадження до кінця,
+            але не підключає банк, не робить переказів і не вимагає облікового запису.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Чи потрібно підключати банк?</summary>
+            <p>Ні. Chrumek не підключається до вашого банку. Ви переносите гроші куди хочете: на окремий рахунок, у конверт або в скарбничку.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Чи робить Chrumek переказ за мене?</summary>
+            <p>Ні. Застосунок допомагає завершити ритуал: ви записуєте суму, відкладаєте її в реальному житті, а потім підтверджуєте в застосунку, що гроші вже на вашому боці.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Що, якщо я запишу суму, але так і не відкладу її?</summary>
+            <p>Тоді ви не підтверджуєте переказ. У цьому й сенс: графіки, історія та цілі мають зростати лише після того, як гроші справді відкладені.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Чи надсилаються мої дані на сервер?</summary>
+            <p>Дані, які ви вводите в застосунку, залишаються локально на вашому пристрої. Ви не створюєте обліковий запис і не передаєте історію своїх рішень на зовнішню панель.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Як працюють Premium і безкоштовний пробний період?</summary>
+            <p>Ви можете спробувати застосунок перед оплатою. Подальший доступ до платних функцій обробляється через App Store, а наявність пробного періоду залежить від пропозиції, доступної конкретному користувачу.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Чи можу я експортувати свої дані?</summary>
+            <p>Так. Chrumek підтримує експорт CSV, тож ви можете винести підтверджені заощадження та цілі за межі застосунку.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Останній крок</p>
+          <h2>Не просто обіцяйте собі почати заощаджувати. Дайте собі процес, який справді закриває цикл.</h2>
+          <p>
+            Chrumek не вимірює наміри. Він допомагає завершити момент, коли гроші справді опиняються на вашому боці.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Завантажити Chrumek в App Store">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Завантажити в App Store" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Без облікового запису. Без підключення банку. Почніть із першої суми, яку не витратите сьогодні.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Сигнали довіри">
+          <span>без облікового запису</span>
+          <span>без рекламних трекерів</span>
+          <span>дані залишаються на вашому пристрої</span>
+          <span>без підключення банку</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Реальні заощадження, не декларації. <a href="./privacy/">Політика конфіденційності</a> | <a href="./terms/">Умови використання</a>.</p>
+  </footer>
+</body>
+</html>
