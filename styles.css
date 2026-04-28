@@ -536,6 +536,10 @@ a {
   text-transform: uppercase;
 }
 
+.spotlight-tag {
+  display: none;
+}
+
 .scene-copy h2 {
   margin-top: 12px;
   font-size: clamp(1.5rem, 2.8vw, 2.2rem);
@@ -866,6 +870,18 @@ a {
 .spotlight-card-photo {
   grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
   align-items: center;
+}
+
+.spotlight-card-photo:nth-child(even) {
+  grid-template-columns: minmax(360px, 1.18fr) minmax(0, 0.82fr);
+}
+
+.spotlight-card-photo:nth-child(even) .spotlight-copy {
+  order: 2;
+}
+
+.spotlight-card-photo:nth-child(even) .spotlight-photo {
+  order: 1;
 }
 
 .spotlight-visual {
@@ -1215,6 +1231,15 @@ a {
 
   .spotlight-card-photo {
     grid-template-columns: 1fr;
+  }
+
+  .spotlight-card-photo:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-card-photo:nth-child(even) .spotlight-copy,
+  .spotlight-card-photo:nth-child(even) .spotlight-photo {
+    order: initial;
   }
 
   .hero-stack,
