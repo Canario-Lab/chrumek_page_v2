@@ -168,6 +168,10 @@ body.lang-sheet-open {
   overflow: hidden;
 }
 
+body.lang-sheet-open .site-header {
+  backdrop-filter: none;
+}
+
 .header-social-link,
 .theme-toggle,
 .lang-toggle,
@@ -1407,20 +1411,27 @@ body.lang-sheet-open {
     content: "";
     position: fixed;
     inset: 0;
+    min-height: 100dvh;
     z-index: 998;
     background: rgba(20, 9, 13, 0.38);
     backdrop-filter: blur(14px) saturate(1.08);
   }
 
   .lang-menu {
+    --lang-sheet-top: max(10px, env(safe-area-inset-top));
+    --lang-sheet-right: max(10px, env(safe-area-inset-right));
+    --lang-sheet-bottom: max(10px, env(safe-area-inset-bottom));
+    --lang-sheet-left: max(10px, env(safe-area-inset-left));
+
     position: fixed;
-    top: max(10px, env(safe-area-inset-top));
-    right: max(10px, env(safe-area-inset-right));
-    bottom: max(10px, env(safe-area-inset-bottom));
-    left: max(10px, env(safe-area-inset-left));
+    top: var(--lang-sheet-top);
+    right: var(--lang-sheet-right);
+    bottom: var(--lang-sheet-bottom);
+    left: var(--lang-sheet-left);
     z-index: 999;
     width: auto;
-    max-height: none;
+    height: calc(100dvh - var(--lang-sheet-top) - var(--lang-sheet-bottom));
+    max-height: calc(100dvh - var(--lang-sheet-top) - var(--lang-sheet-bottom));
     align-content: start;
     gap: 8px;
     padding: 14px 14px 16px;
