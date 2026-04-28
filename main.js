@@ -83,9 +83,10 @@ if (langSwitch) {
     tr: { search: "Dil ara", empty: "Dil bulunamadı" }
   };
   const labels = languagePickerLabels[currentLang] || languagePickerLabels[currentLang.split("-")[0]] || languagePickerLabels.en;
-  const mobileSheetQuery = window.matchMedia("(max-width: 760px)");
+  const mobileSheetQuery = window.matchMedia("(max-width: 900px), (hover: none) and (pointer: coarse)");
   let langSearchInput = null;
   let langEmptyState = null;
+  let langSheetClose = null;
 
   if (langMenu) {
     langMenu.setAttribute("role", "dialog");
@@ -104,6 +105,19 @@ if (langSwitch) {
     const searchWrap = document.createElement("div");
     searchWrap.className = "lang-search-wrap";
 
+    const sheetHeader = document.createElement("div");
+    sheetHeader.className = "lang-sheet-header";
+
+    const sheetTitle = document.createElement("p");
+    sheetTitle.className = "lang-sheet-title";
+    sheetTitle.textContent = langToggle?.getAttribute("aria-label") || labels.search;
+
+    langSheetClose = document.createElement("button");
+    langSheetClose.className = "lang-sheet-close";
+    langSheetClose.type = "button";
+    langSheetClose.setAttribute("aria-label", "Close language selector");
+    langSheetClose.textContent = "×";
+
     langSearchInput = document.createElement("input");
     langSearchInput.className = "lang-search";
     langSearchInput.type = "search";
@@ -117,8 +131,10 @@ if (langSwitch) {
     langEmptyState.hidden = true;
     langEmptyState.textContent = labels.empty;
 
+    sheetHeader.append(sheetTitle, langSheetClose);
     searchWrap.append(langSearchInput);
     langMenu.prepend(searchWrap);
+    langMenu.prepend(sheetHeader);
     langMenu.prepend(grabber);
     langMenu.append(langEmptyState);
   }
@@ -133,6 +149,10 @@ if (langSwitch) {
 
     if (langMenu) {
       langMenu.setAttribute("aria-modal", open && mobileSheetQuery.matches ? "true" : "false");
+    }
+
+    if (open && langMenu) {
+      langMenu.scrollTop = 0;
     }
 
     if (!open && langSearchInput) {
@@ -248,6 +268,11 @@ if (langSwitch) {
       if (event.key !== "ArrowDown") return;
       event.preventDefault();
       focusVisibleOption(1);
+    });
+
+    langSheetClose?.addEventListener("click", () => {
+      setMenuOpen(false);
+      langToggle.focus();
     });
 
     langSwitch.addEventListener("click", (event) => {
