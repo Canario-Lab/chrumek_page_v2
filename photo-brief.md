@@ -16,7 +16,7 @@ W zdjeciach lifestyle telefon nie ma pokazywac przypadkowego ekranu. Ekran musi 
 | `06_Charts_Path_pl.png` | Rosnacy efekt w czasie, kilka celow naraz | wykres liniowy "Droga Chrumka" i tabela celow |
 | `07_Settings_pl.png` | Prywatnosc, kontrola, ustawienia bez konta | lista ustawien: waluta, jezyk, motyw, Face ID, przypomnienie, kategorie, eksport |
 | `08_CSV_Export_pl.png` | Eksport danych i poczucie kontroli | ekran "Eksport do CSV" i przyciski eksportu przelewow/celow |
-| `09_Paywall_pl.png` | Premium, jesli potrzebujemy pokazac platny dostep | "Odblokuj Premium", lista korzysci i trial |
+| screen "Przypomnienie o przelewie" | Przypomnienie, zeby domknac odlozenie pieniedzy | wlaczony switch, godzina przypomnienia i tekst "Chrumek przypomni Ci..." |
 
 Priorytet do glownej strony: `01_Journal_pl.png`, `03_Goals_pl.png`, `02_History_pl.png`, `04_Charts_Calendar_pl.png`. Pozostale ekrany sa pomocnicze i nie powinny dominowac nad historia oszczedzania.
 
@@ -216,25 +216,27 @@ Czego unikac: prawdziwych danych finansowych, widocznych maili, kont bankowych, 
 
 Cel kadru: pokazac, ze uzytkownik moze zabrac swoje dane poza aplikacje.
 
-## 10. Premium
+## 10. Przypomnienie: wieczorne domkniecie przelewu
 
-Zdjecie Premium ma byc pomocnicze. Nie robimy z niego glownej emocji landingu. Ma pokazac, co odblokowuje platny dostep, ale nie moze wygladac jak agresywna reklama ceny.
+Moja rekomendacja: to zdjecie warto przygotowac, ale nie powinno byc kolejnym ciezkim kafelkiem, jesli strona zacznie byc za dluga. Najlepiej traktowac je jako opcjonalny akcent albo material do podmiany za slabsza scene. Przypomnienie rozwiązuje osobny problem: uzytkownik mial dobra decyzje w ciagu dnia, ale wieczorem zapomina realnie odlozyc pieniadze.
 
-Kadr: telefon z paywallem na spokojnym, jasnym tle. Najlepiej scena przy biurku albo na kanapie, podobna do innych ujec, ale bardziej produktowa. Telefon moze lezec na stole albo byc trzymany w dloni. W tle mozna pokazac rekwizyty zwiazane z korzysciami Premium: notatnik z celem, skarbonka, planner, ale bez przesady.
+Zdjecie ma pokazac spokojny moment po dniu, kiedy Chrumek przypomina: "domknij to, co juz postanowiles". To nie jest alarm, presja ani kolejna aplikacja do zarzadzania zyciem. To ma byc delikatny szturchaniec, ktory pomaga zamienic intencje w wykonany przelew albo wrzucenie pieniedzy do skarbonki.
 
-Ekran telefonu: `09_Paywall_pl.png`. Kluczowe elementy: "Odblokuj Premium", lista korzysci, opcje miesieczna/roczna i przycisk triala. Jesli kadr jest ciasny, priorytet ma gorna karta z korzysciami i przycisk "Rozpocznij 14 dniowy darmowy trial". Ceny moga byc widoczne, ale nie musza dominowac.
+Kadr: wieczorny stolik, biurko albo szafka nocna. Telefon jest na pierwszym planie, pionowo, najlepiej trzymany w dloni albo oparty o notes. Obok powinny byc 2-3 spokojne rekwizyty: kubek herbaty, mala lampka, koperta "Rower", skarbonka, dlugopis, notatnik z jednym zadaniem "przelew do celu". Kadr ma byc prosty i cichy, bardziej "koniec dnia" niz "produktywny poranek".
 
-Ustawienie telefonu: pionowo, ekran czytelny, bez palca na cenie albo przycisku. Jesli trzymany w dloni, kciuk moze byc poza ekranem lub przy krawedzi. Nie robic gestu "wlasnie klikam kup", bo to moze wygladac zbyt nachalnie. Lepszy jest moment spokojnego sprawdzania opcji.
+Ekran telefonu: screen "Przypomnienie o przelewie". Kluczowe elementy: tytul "Przypomnienie o przelewie", grafika Chrumka z budzikiem, tekst "Chrumek przypomni Ci gdy masz oszczednosc do odlozenia", wlaczony switch oraz godzina "21:00". Jezeli ekran trzeba kadrowac, priorytet ma byc wlaczony switch i godzina przypomnienia. Nie musi byc widoczna dolna nawigacja.
 
-Tlo: jasny stol, koperta celu, planner, skarbonka albo kask rowerowy. Tlo ma przypominac, po co Premium istnieje: dalsze potwierdzanie przelewow, cele, wykresy, poziomy Chrumka. Nie robic osobnej, oderwanej sceny "kup teraz".
+Ustawienie telefonu: telefon pionowo, lekko pochylony w strone aparatu, ekran ostry i bez odbic. Jesli telefon jest trzymany w dloni, kciuk nie powinien zaslaniac switcha ani godziny. Jesli telefon stoi na biurku, moze byc oparty o kubek albo notes, ale stabilnie i naturalnie.
 
-Kompozycja: telefon centralnie, malo rozpraszaczy. Paywall ma byc czytelny, ale nie ma krzyczec. Mozna zostawic duzo negatywnej przestrzeni, bo to zdjecie moze trafic do FAQ albo sekcji z pytaniem o Premium.
+Tlo: wieczorne, domowe, cieple. Najlepiej lampka z boku, lekko przygaszone swiatlo, ale ekran telefonu nadal jasny i czytelny. Obok moze byc zamkniety laptop, koperta z odlozonymi pieniedzmi albo kartka "nie zapomnij odlozyc". Nie pokazywac powiadomien z innych aplikacji, prywatnych wiadomosci ani realnych danych bankowych.
 
-Kolory i klimat: spójne z aplikacja: roz, krem, jasne tlo. Brak czerwonych alarmowych akcentow, brak presji. To ma byc transparentne pokazanie platnego dostepu.
+Kompozycja: telefon po prawej albo centralnie, a po lewej koperta/skarbona/notatnik. Oko ma najpierw zobaczyc ustawione przypomnienie, potem zrozumiec po co ono jest: pieniadze maja realnie trafic do celu. Dobrze dziala kadr z mala karteczka "21:00 -> przelew" albo "wieczorem odkladam", ale tekst na kartce nie moze dominowac nad ekranem.
 
-Czego unikac: kadru, ktory wyglada jak dark pattern; palca wciskajacego platnosc; zblizenia tylko na cene; dramatycznych napisow typu "unlock"; chaosu; Premium jako pierwszej rzeczy, ktora widzi uzytkownik na landingu.
+Kolory i klimat: cieple beze, kremy, delikatny roz, drewno, miekkie swiatlo. Akcent rozowy z aplikacji moze pojawic sie w dlugopisie, karteczce albo kopercie. Klimat ma byc spokojny i pomocny, nie alarmowy. Unikac czerwieni kojarzacej sie z bledem albo panika.
 
-Cel kadru: pokazac, co odblokowuje platny dostep, ale nie zaczynac historii od ceny.
+Czego unikac: telefonu zasypanego powiadomieniami, widocznego ekranu banku, stresujacego budzika, ciemnego nocnego kadru, chaosu na biurku, osoby z twarza wygladajacej na przemeczona, gestu "musze natychmiast cos zrobic". Przypomnienie ma wygladac jak wsparcie, nie obowiazek.
+
+Cel kadru: pokazac, ze Chrumek pomaga domknac decyzje nawet wtedy, gdy uzytkownik normalnie by o niej zapomnial.
 
 ## Uwagi produkcyjne
 
