@@ -9,6 +9,9 @@
   --muted-card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 222, 224, 0.36));
   --pill-bg: rgba(255, 255, 255, 0.46);
   --control-bg: rgba(255, 255, 255, 0.58);
+  --picker-bg: #fffafb;
+  --picker-input-bg: #ffffff;
+  --picker-row-bg: rgba(255, 45, 85, 0.06);
   --header-bg: rgba(255, 222, 224, 0.9);
   --header-line: rgba(255, 45, 85, 0.08);
   --phone-shell: #32141f;
@@ -46,6 +49,9 @@ body[data-theme="dark"] {
   --muted-card-bg: linear-gradient(180deg, rgba(29, 29, 38, 0.95), rgba(42, 15, 26, 0.76));
   --pill-bg: rgba(255, 255, 255, 0.07);
   --control-bg: rgba(255, 255, 255, 0.08);
+  --picker-bg: #17131a;
+  --picker-input-bg: #221a23;
+  --picker-row-bg: rgba(255, 255, 255, 0.08);
   --header-bg: rgba(11, 11, 16, 0.86);
   --header-line: rgba(255, 255, 255, 0.08);
   --phone-shell: #08080c;
@@ -158,6 +164,10 @@ a {
   position: relative;
 }
 
+body.lang-sheet-open {
+  overflow: hidden;
+}
+
 .header-social-link,
 .theme-toggle,
 .lang-toggle,
@@ -226,20 +236,61 @@ a {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  min-width: 188px;
+  width: min(320px, calc(100vw - 32px));
+  max-height: min(520px, calc(100dvh - 104px));
   display: none;
-  gap: 4px;
+  gap: 6px;
   padding: 8px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--surface-strong);
-  box-shadow: var(--shadow-soft);
+  border-radius: 24px;
+  background: var(--picker-bg);
+  box-shadow: 0 24px 70px rgba(47, 21, 30, 0.22);
   z-index: 30;
-  backdrop-filter: blur(16px);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
 }
 
 .lang-switch.is-open .lang-menu {
   display: grid;
+}
+
+.lang-menu-grabber {
+  display: none;
+}
+
+.lang-search-wrap {
+  position: sticky;
+  top: -8px;
+  z-index: 1;
+  margin: -8px -8px 2px;
+  padding: 8px;
+  background: var(--picker-bg);
+}
+
+.lang-search {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  appearance: none;
+  background: var(--picker-input-bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.92rem;
+  outline: none;
+}
+
+.lang-search::placeholder {
+  color: var(--muted);
+}
+
+.lang-search:focus {
+  border-color: var(--line-strong);
+  box-shadow: 0 0 0 3px var(--accent-wash);
 }
 
 .lang-option {
@@ -247,15 +298,27 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-height: 44px;
   padding: 10px 12px;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 14px;
   color: var(--text);
   font-size: 0.92rem;
+  outline: none;
 }
 
-.lang-option:hover {
-  background: var(--accent-wash);
+.lang-option:hover,
+.lang-option:focus-visible {
+  background: var(--picker-row-bg);
+}
+
+.lang-option:focus-visible {
+  border-color: var(--line-strong);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+.lang-option[hidden] {
+  display: none;
 }
 
 .lang-option-main {
@@ -272,12 +335,20 @@ a {
 
 .lang-option.is-active {
   border-color: var(--line-strong);
-  background: linear-gradient(180deg, var(--accent-wash), rgba(255, 255, 255, 0));
+  background: var(--picker-row-bg);
   font-weight: 700;
 }
 
 .lang-option.is-active .lang-option-check {
   opacity: 1;
+}
+
+.lang-empty {
+  margin: 6px 4px 8px;
+  padding: 14px 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
 }
 
 .lang-toggle-icon {
@@ -1298,6 +1369,50 @@ a {
   .lang-toggle-text,
   .legal-return {
     display: none;
+  }
+
+  .lang-switch.is-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 29;
+    background: rgba(20, 9, 13, 0.44);
+    backdrop-filter: blur(10px);
+  }
+
+  .lang-menu {
+    position: fixed;
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: max(12px, env(safe-area-inset-left));
+    top: auto;
+    z-index: 31;
+    width: auto;
+    max-height: min(70dvh, 560px);
+    padding: 10px;
+    border-radius: 28px;
+    box-shadow: 0 26px 80px rgba(20, 9, 13, 0.28);
+  }
+
+  .lang-menu-grabber {
+    display: block;
+    width: 42px;
+    height: 5px;
+    margin: 2px auto 6px;
+    border-radius: 999px;
+    background: var(--line-strong);
+  }
+
+  .lang-search-wrap {
+    top: -10px;
+    margin: -10px -10px 2px;
+    padding: 8px 10px 10px;
+  }
+
+  .lang-option {
+    min-height: 48px;
+    padding: 11px 14px;
+    font-size: 1rem;
   }
 
   .brand {

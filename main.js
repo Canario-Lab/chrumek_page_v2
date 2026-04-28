@@ -59,12 +59,85 @@ if (langSwitch) {
   const langToggle = langSwitch.querySelector(".lang-toggle");
   const langMenu = langSwitch.querySelector(".lang-menu");
   const langLinks = Array.from(langSwitch.querySelectorAll(".lang-option"));
+  const currentLang = document.documentElement.lang || "en";
+  const languagePickerLabels = {
+    bg: { search: "Търси език", empty: "Няма намерени езици" },
+    cs: { search: "Hledat jazyk", empty: "Žádné jazyky nenalezeny" },
+    da: { search: "Søg efter sprog", empty: "Ingen sprog fundet" },
+    de: { search: "Sprache suchen", empty: "Keine Sprachen gefunden" },
+    el: { search: "Αναζήτηση γλώσσας", empty: "Δεν βρέθηκαν γλώσσες" },
+    en: { search: "Search language", empty: "No languages found" },
+    es: { search: "Buscar idioma", empty: "No se encontraron idiomas" },
+    fi: { search: "Etsi kieltä", empty: "Kieliä ei löytynyt" },
+    fr: { search: "Rechercher une langue", empty: "Aucune langue trouvée" },
+    hr: { search: "Pretraži jezik", empty: "Nema pronađenih jezika" },
+    hu: { search: "Nyelv keresése", empty: "Nincs találat" },
+    it: { search: "Cerca lingua", empty: "Nessuna lingua trovata" },
+    ja: { search: "言語を検索", empty: "言語が見つかりません" },
+    ko: { search: "언어 검색", empty: "언어를 찾을 수 없습니다" },
+    nl: { search: "Taal zoeken", empty: "Geen talen gevonden" },
+    no: { search: "Søk etter språk", empty: "Ingen språk funnet" },
+    pl: { search: "Szukaj języka", empty: "Nie znaleziono języka" },
+    "pt-BR": { search: "Buscar idioma", empty: "Nenhum idioma encontrado" },
+    "pt-PT": { search: "Procurar idioma", empty: "Nenhum idioma encontrado" },
+    tr: { search: "Dil ara", empty: "Dil bulunamadı" }
+  };
+  const labels = languagePickerLabels[currentLang] || languagePickerLabels[currentLang.split("-")[0]] || languagePickerLabels.en;
+  const mobileSheetQuery = window.matchMedia("(max-width: 760px)");
+  let langSearchInput = null;
+  let langEmptyState = null;
+
+  if (langMenu) {
+    langMenu.setAttribute("role", "dialog");
+    langLinks.forEach((link) => link.removeAttribute("role"));
+  }
+
+  if (langToggle) {
+    langToggle.setAttribute("aria-haspopup", "dialog");
+  }
+
+  if (langMenu && langLinks.length > 8) {
+    const grabber = document.createElement("div");
+    grabber.className = "lang-menu-grabber";
+    grabber.setAttribute("aria-hidden", "true");
+
+    const searchWrap = document.createElement("div");
+    searchWrap.className = "lang-search-wrap";
+
+    langSearchInput = document.createElement("input");
+    langSearchInput.className = "lang-search";
+    langSearchInput.type = "search";
+    langSearchInput.autocomplete = "off";
+    langSearchInput.spellcheck = false;
+    langSearchInput.placeholder = labels.search;
+    langSearchInput.setAttribute("aria-label", labels.search);
+
+    langEmptyState = document.createElement("p");
+    langEmptyState.className = "lang-empty";
+    langEmptyState.hidden = true;
+    langEmptyState.textContent = labels.empty;
+
+    searchWrap.append(langSearchInput);
+    langMenu.prepend(searchWrap);
+    langMenu.prepend(grabber);
+    langMenu.append(langEmptyState);
+  }
 
   const setMenuOpen = (open) => {
     langSwitch.classList.toggle("is-open", open);
+    document.body.classList.toggle("lang-sheet-open", open && mobileSheetQuery.matches);
 
     if (langToggle) {
       langToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    if (langMenu) {
+      langMenu.setAttribute("aria-modal", open && mobileSheetQuery.matches ? "true" : "false");
+    }
+
+    if (!open && langSearchInput) {
+      langSearchInput.value = "";
+      filterLanguageOptions("");
     }
   };
 
@@ -80,11 +153,57 @@ if (langSwitch) {
   updateLangHrefs();
   window.addEventListener("hashchange", updateLangHrefs);
 
+  const getVisibleLangLinks = () => langLinks.filter((link) => !link.hidden);
+
+  const focusVisibleOption = (direction = 1) => {
+    const visibleLinks = getVisibleLangLinks();
+    if (!visibleLinks.length) return;
+
+    const focusedIndex = visibleLinks.indexOf(document.activeElement);
+    const activeIndex = visibleLinks.findIndex((link) => link.classList.contains("is-active"));
+    const baseIndex = focusedIndex >= 0 ? focusedIndex : Math.max(activeIndex, 0) - direction;
+    const nextIndex = (baseIndex + direction + visibleLinks.length) % visibleLinks.length;
+    visibleLinks[nextIndex].focus();
+  };
+
+  const filterLanguageOptions = (query) => {
+    const normalizedQuery = query.trim().toLocaleLowerCase();
+    let visibleCount = 0;
+
+    langLinks.forEach((link) => {
+      const haystack = [
+        link.textContent,
+        link.getAttribute("lang"),
+        link.getAttribute("hreflang")
+      ].join(" ").toLocaleLowerCase();
+      const isVisible = !normalizedQuery || haystack.includes(normalizedQuery);
+      link.hidden = !isVisible;
+      visibleCount += isVisible ? 1 : 0;
+    });
+
+    if (langEmptyState) {
+      langEmptyState.hidden = visibleCount > 0;
+    }
+  };
+
   if (langToggle && langMenu) {
     langToggle.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
-      setMenuOpen(!langSwitch.classList.contains("is-open"));
+
+      const shouldOpen = !langSwitch.classList.contains("is-open");
+      setMenuOpen(shouldOpen);
+
+      if (shouldOpen && langSearchInput && !mobileSheetQuery.matches) {
+        window.setTimeout(() => langSearchInput.focus(), 0);
+      }
+    });
+
+    langToggle.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+      event.preventDefault();
+      setMenuOpen(true);
+      focusVisibleOption(event.key === "ArrowDown" ? 1 : -1);
     });
 
     langLinks.forEach((link) => {
@@ -105,6 +224,37 @@ if (langSwitch) {
       });
     });
 
+    langMenu.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        focusVisibleOption(event.key === "ArrowDown" ? 1 : -1);
+        return;
+      }
+
+      if (event.key !== "Home" && event.key !== "End") return;
+
+      const visibleLinks = getVisibleLangLinks();
+      if (!visibleLinks.length) return;
+
+      event.preventDefault();
+      visibleLinks[event.key === "Home" ? 0 : visibleLinks.length - 1].focus();
+    });
+
+    langSearchInput?.addEventListener("input", (event) => {
+      filterLanguageOptions(event.target.value);
+    });
+
+    langSearchInput?.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowDown") return;
+      event.preventDefault();
+      focusVisibleOption(1);
+    });
+
+    langSwitch.addEventListener("click", (event) => {
+      if (event.target !== langSwitch) return;
+      setMenuOpen(false);
+    });
+
     document.addEventListener("click", (event) => {
       if (langSwitch.contains(event.target)) return;
       setMenuOpen(false);
@@ -114,6 +264,16 @@ if (langSwitch) {
       if (event.key !== "Escape") return;
       setMenuOpen(false);
     });
+
+    const syncSheetLock = () => {
+      document.body.classList.toggle("lang-sheet-open", langSwitch.classList.contains("is-open") && mobileSheetQuery.matches);
+    };
+
+    if (mobileSheetQuery.addEventListener) {
+      mobileSheetQuery.addEventListener("change", syncSheetLock);
+    } else {
+      mobileSheetQuery.addListener(syncSheetLock);
+    }
   }
 }
 
