@@ -278,18 +278,6 @@ if (langSwitch) {
     }
   };
 
-  const updateLangHrefs = () => {
-    const hash = window.location.hash || "";
-
-    langLinks.forEach((link) => {
-      const base = link.getAttribute("data-base") || link.getAttribute("href");
-      link.setAttribute("href", `${base}${hash}`);
-    });
-  };
-
-  updateLangHrefs();
-  window.addEventListener("hashchange", updateLangHrefs);
-
   const getVisibleLangLinks = () => langLinks.filter((link) => !link.hidden);
 
   const focusVisibleOption = (direction = 1) => {
