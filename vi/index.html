@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek giúp biến những khoản bạn không chi mỗi ngày thành số tiền bạn thật sự để dành. Một thói quen tiết kiệm đơn giản, không cần tài khoản và không cần kết nối ngân hàng.">
+  <title>Chrumek | Khoản tiết kiệm thật sự được để dành</title>
+  <link rel="canonical" href="https://chrumek.app/vi/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/">
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="ja" href="https://chrumek.app/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chrumek.app/ko/">
+  <link rel="alternate" hreflang="nl" href="https://chrumek.app/nl/">
+  <link rel="alternate" hreflang="no" href="https://chrumek.app/no/">
+  <link rel="alternate" hreflang="ro" href="https://chrumek.app/ro/">
+  <link rel="alternate" hreflang="ru" href="https://chrumek.app/ru/">
+  <link rel="alternate" hreflang="sk" href="https://chrumek.app/sk/">
+  <link rel="alternate" hreflang="sl" href="https://chrumek.app/sl/">
+  <link rel="alternate" hreflang="sv" href="https://chrumek.app/sv/">
+  <link rel="alternate" hreflang="uk" href="https://chrumek.app/uk/">
+  <link rel="alternate" hreflang="vi" href="https://chrumek.app/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="Giao diện trang: tối. Chuyển sang sáng."
+  data-theme-label-light="Giao diện trang: sáng. Chuyển sang tối."
+  data-theme-title-dark="Giao diện trang: tối"
+  data-theme-title-light="Giao diện trang: sáng"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek trên Facebook" title="Chrumek trên Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Chọn ngôn ngữ">
+            <span class="lang-toggle-icon" aria-hidden="true">VI</span>
+            <span class="lang-toggle-text">Tiếng Việt</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Bộ chọn ngôn ngữ">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
+              <span class="lang-option-main"><span>日本語</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
+              <span class="lang-option-main"><span>한국어</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
+              <span class="lang-option-main"><span>Nederlands</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem">
+              <span class="lang-option-main"><span>Norsk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ro/" data-base="../ro/" lang="ro" hreflang="ro" role="menuitem">
+              <span class="lang-option-main"><span>Română</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ru/" data-base="../ru/" lang="ru" hreflang="ru" role="menuitem">
+              <span class="lang-option-main"><span>Русский</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sk/" data-base="../sk/" lang="sk" hreflang="sk" role="menuitem">
+              <span class="lang-option-main"><span>Slovenčina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sl/" data-base="../sl/" lang="sl" hreflang="sl" role="menuitem">
+              <span class="lang-option-main"><span>Slovenščina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sv/" data-base="../sv/" lang="sv" hreflang="sv" role="menuitem">
+              <span class="lang-option-main"><span>Svenska</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../uk/" data-base="../uk/" lang="uk" hreflang="uk" role="menuitem">
+              <span class="lang-option-main"><span>Українська</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../vi/" data-base="../vi/" lang="vi" hreflang="vi" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>Tiếng Việt</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">Tải xuống</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Không phải một trình theo dõi chi tiêu nữa</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">Không tiêu khoản đó? Hãy để dành ngay.</p>
+
+          <p class="lead">
+            Thay vì ghi lại mọi hóa đơn, bạn chỉ nắm bắt những lúc mình không tiêu hoặc tiêu ít hơn.
+            Mục tiêu, lịch sử và biểu đồ chỉ tăng sau khi bạn thật sự chuyển khoản đó vào tiết kiệm.
+          </p>
+
+          <p class="supporting-copy">
+            Dành cho những người từng thử "cứ tiêu ít lại" và hiểu rằng nếu không chuyển tiền thật,
+            số tiền đó vẫn nằm trong tài khoản chính rồi âm thầm biến mất sau đó.
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Tải Chrumek trên App Store">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Tải xuống trên App Store" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">Xem cách hoạt động</a>
+          </div>
+
+          <p class="microcopy">
+            Không cần tài khoản. Không kết nối ngân hàng. Không theo dõi. Chỉ số tiền bạn thật sự để dành mới được tính.
+          </p>
+
+          <ul class="proof-pills" aria-label="Cam kết chính">
+            <li>mỗi khoản chi bỏ qua trở thành một lần chuyển tiền thật</li>
+            <li>mục tiêu chỉ tăng sau khi tiền thật sự được chuyển đi</li>
+            <li>bạn tiết kiệm mà không thấy như đang làm sổ sách</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">Một thói quen đơn giản</p>
+              <h2>Khoảnh khắc quan trọng là lúc tiền rời khỏi tài khoản chính.</h2>
+              <p>
+                Ghi lại số tiền, chuyển nó đến nơi bạn thật sự giữ khoản tiết kiệm, rồi xác nhận bằng một lần chạm.
+                Chrumek chỉ tính những gì bạn thật sự để dành.
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment-en-eur.jpg"
+                alt="Một điện thoại có ứng dụng Chrumek cạnh phong bì ghi Bike, heo đất và tiền đang được để dành"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>19,04 € không nằm đó để rồi bị tiêu sau. Nó đi thẳng vào mục tiêu "Bike".</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">Vấn đề</p>
+                <strong>Bỏ qua một khoản mua không có nghĩa là tiền đã thật sự được tiết kiệm.</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">Cam kết</p>
+                <strong>Tiến độ và lịch sử chỉ tăng sau khi bạn xác nhận đã chuyển tiền.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Vấn đề thật sự</p>
+          <h2>Phần lớn mọi người không thiếu kiến thức về tiết kiệm. Họ thiếu một cách để làm đến cùng.</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>Quyết định đã có, nhưng tiền vẫn còn trong vòng chi tiêu.</h3>
+            <p>
+              Bạn bỏ qua một món mua, chọn phương án rẻ hơn hoặc hủy một gói đăng ký không cần thiết.
+              Nhưng không có gì buộc khoản đó phải chuyển thành tiền tiết kiệm.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>Trình theo dõi chi tiêu cho thấy quá khứ. Chúng không tạo ra khoản tiết kiệm.</h3>
+            <p>
+              Cuối tháng, bạn biết tiền đã đi đâu, nhưng vẫn không thấy rõ
+              mình thật sự đã để dành được bao nhiêu.
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>Lập ngân sách rất nhanh trở thành thêm một việc phải làm.</h3>
+            <p>
+              Càng nhiều danh mục, bảng biểu và thao tác nhập tay, khả năng
+              ứng dụng bị bỏ quên sau vài ngày càng cao.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chrumek hoạt động như thế nào</p>
+          <h2>Bạn không cần một ngân sách đầy đủ. Bạn chỉ cần bắt đúng khoảnh khắc mình đã có thể tiêu khoản tiền đó.</h2>
+          <p class="section-intro">
+            Chrumek tập trung vào một việc: đảm bảo số tiền bạn không tiêu không âm thầm biến mất khỏi tài khoản chính sau đó.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>Bạn nhận ra khoản tiết kiệm</h3>
+            <p class="step-copy">
+              Bạn bỏ qua một thứ, chọn phiên bản rẻ hơn hoặc cắt một gói đăng ký không cần thiết.
+              Chrumek ghi lại đúng khoảnh khắc đó.
+            </p>
+            <p class="step-benefit">Nó biến việc tiết kiệm từ một ý định mơ hồ thành số tiền cụ thể cần để dành.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>Bạn chuyển tiền ngay</h3>
+            <p class="step-copy">
+              Khoản tiền đó đi vào tài khoản riêng, phong bì, heo đất hoặc bất kỳ nơi nào bạn thật sự giữ tiền tiết kiệm.
+            </p>
+            <p class="step-benefit">Nhờ vậy, khoản tiết kiệm không chỉ nằm trong suy nghĩ.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>Bạn xác nhận bằng một lần chạm</h3>
+            <p class="step-copy">
+              Chỉ khi đó mục ghi mới vào lịch sử, đóng góp cho mục tiêu và xuất hiện trong biểu đồ.
+            </p>
+            <p class="step-benefit">Bạn thấy tiến độ đáng tin vì phía sau là dòng tiền thật sự đã dịch chuyển.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Làm đến cùng trông như thế nào</p>
+            <h2>Từ lần đầu "mình đã không mua" đến một mục tiêu thật sự tăng lên.</h2>
+            <p class="section-intro">
+              Bạn ghi lại số tiền, chuyển nó ra khỏi tài khoản chính và chỉ xác nhận khi tiền đã thật sự được để dành.
+              Nhật ký, lịch sử, mục tiêu và biểu đồ chỉ hiển thị những gì thật sự đi vào khoản tiết kiệm.
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Xem trước các màn hình của ứng dụng Chrumek">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/journal.jpg" alt="Màn hình nhật ký trong ứng dụng Chrumek" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Nhật ký</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/history.jpg" alt="Màn hình lịch sử với các khoản tiết kiệm đã xác nhận" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Lịch sử</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/goals.jpg" alt="Màn hình mục tiêu tiết kiệm trong ứng dụng" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Mục tiêu</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/calendar.jpg" alt="Màn hình lịch chuyển tiền trong ứng dụng" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>Biểu đồ</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">Sau một tuần sử dụng</p>
+            <h2>Thay vì đoán, bạn thấy mình thật sự đã tiết kiệm được bao nhiêu.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>Cuối cùng bạn thấy khoản tiết kiệm thật</h3>
+              <p>Lịch sử chỉ tính các số tiền đã xác nhận. Không có tiến độ ảo. Không có tổng số bị thổi phồng.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Bạn có một thói quen đơn giản thay vì ngân sách nặng nề</h3>
+              <p>Ba cách ghi nhanh: tôi không mua, tôi mua rẻ hơn, tôi đã hủy một gói đăng ký.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Dễ giữ động lực hơn</h3>
+              <p>Mục tiêu chỉ tăng sau khi chuyển tiền, nên mỗi lần hành động đều thay đổi điều gì đó thật.</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>Bạn không đánh đổi quyền riêng tư để có kỷ luật tài chính</h3>
+              <p>Không tài khoản, không trình theo dõi, không yêu cầu kết nối ngân hàng.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Những tình huống hằng ngày</p>
+          <h2>Chrumek hoạt động đúng lúc tiền thường lặng lẽ trôi mất.</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 01</p>
+              <h3>Một lựa chọn rẻ hơn trên kệ lập tức trở thành số tiền thật để dành.</h3>
+              <p>
+                Bạn chọn sản phẩm 4,50 € thay vì 6,50 €. Chrumek ghi lại phần chênh lệch
+                trước khi 2,00 € đó biến mất vào việc khác.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice-en.jpg"
+                alt="Một điện thoại có ứng dụng Chrumek cạnh kệ cà phê, hiển thị khoản chênh lệch 2,00 € sau khi chọn sản phẩm rẻ hơn"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Khoản chênh lệch từ một quyết định mua sắm không chỉ nằm trong đầu. Nó đi vào Chrumek.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 02</p>
+              <h3>Ly latte trên đường đi có thể ở lại trong ví và góp ngay vào một mục tiêu.</h3>
+              <p>
+                Thay vì trả 4,50 € ở quầy, bạn ghi lại ly latte đã bỏ qua trong Chrumek.
+                Quyết định nhỏ đó không còn vô hình nữa.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte-en.jpg"
+                alt="Một điện thoại có ứng dụng Chrumek trong quán cà phê cạnh thực đơn, hiển thị ly latte đã bỏ qua trị giá 4,50 €"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Bạn bỏ qua ly latte. Chrumek biến quyết định đó thành một con số cụ thể.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 03</p>
+              <h3>Một gói đăng ký đã hủy không trôi ngược lại vào chi tiêu hằng ngày. Nó bắt đầu phục vụ mục tiêu của bạn.</h3>
+              <p>
+                Bạn cắt một dịch vụ 12,99 € mỗi tháng và ghi số tiền đó vào Chrumek.
+                Một chi phí cố định có thể trở thành thứ đưa bạn gần mục tiêu hơn mỗi tháng.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled-en.jpg"
+                alt="Một điện thoại có ứng dụng Chrumek cạnh laptop với màn hình quản lý đăng ký, hiển thị mục đăng ký đã hủy"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Hủy một gói đăng ký trở thành bước đều đặn hướng tới mục tiêu.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 04</p>
+              <h3>Một mục tiêu trở nên thật vì nó không lớn lên chỉ nhờ bạn gõ số.</h3>
+              <p>
+                Chiếc xe đạp không còn là ý tưởng mơ hồ. Bạn thấy số tiền, tiến độ
+                và các lần chuyển đã xác nhận thật sự đưa việc mua nó đến gần hơn.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress-en.jpg"
+                alt="Một điện thoại hiển thị mục tiêu Bike trong Chrumek cạnh mũ bảo hiểm, đèn xe đạp và xe đạp ở nền sau"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Một mục tiêu có tên, có số tiền và có tiến độ thật. Nó không còn chỉ là mong muốn.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 05</p>
+              <h3>Lịch sử không phải nhật ký hy sinh. Đó là bằng chứng bạn thật sự đang để dành tiền.</h3>
+              <p>
+                Bạn thấy các quyết định của mình và những số tiền thật sự đi vào tiết kiệm.
+                Đó là bằng chứng đơn giản rằng hệ thống đang hiệu quả.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof-en.jpg"
+                alt="Một điện thoại với màn hình lịch sử Chrumek cạnh phong bì ghi Bike, sổ ghi các khoản mua đã bỏ qua và tiền mặt đã để dành"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947,00 € không phải lời tuyên bố. Đó là tổng của những quyết định bạn thật sự để dành.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 06</p>
+              <h3>Sự đều đặn trở nên nhìn thấy được trước khi nó lại mờ đi.</h3>
+              <p>
+                Mỗi lần chuyển tiền vào mục tiêu đều để lại dấu vết. Chrumek hiển thị chuỗi ngày và những ngày
+                bạn thật sự để dành tiền, nên ngày mai quay lại sẽ dễ hơn.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar-en.jpg"
+                alt="Một điện thoại với màn hình lịch Chrumek cạnh sổ tay có kế hoạch chuyển tiền và ghi chú nhắc nhở"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Bạn không cần tự hỏi liệu nó có hiệu quả không. Bạn thấy chuỗi ngày và đúng những ngày đã tiết kiệm.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 07</p>
+              <h3>Nếu một ngày trôi qua quá nhanh, Chrumek nhắc bạn hoàn tất chuyển tiền.</h3>
+              <p>
+                Bạn đặt một lời nhắc nhẹ nhàng vào buổi tối.
+                Khi còn khoản cần chuyển vào tiết kiệm, ứng dụng giúp bạn quay lại thói quen đơn giản mà không phải giữ mọi thứ trong đầu.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="reminder-photo">
+              <img
+                src="../assets/photos/transfer-reminder-evening-en.jpg"
+                alt="Một điện thoại hiển thị màn hình nhắc chuyển tiền trong Chrumek cạnh heo đất, phong bì ghi Bike, trà, nến và sổ tay"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Lời nhắc không lập kế hoạch thay bạn. Nó giúp bạn không đánh mất một quyết định tốt.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 08</p>
+              <h3>Bạn thấy quyết định nhỏ nào tạo khác biệt lớn nhất.</h3>
+              <p>
+                Cà phê, giao đồ ăn, trò chơi, đồ điện tử. Chrumek cho thấy khoản tiết kiệm thật sự đến từ đâu
+                để bạn dễ lặp lại những lựa chọn giúp ích nhất.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories-en.jpg"
+                alt="Một điện thoại với biểu đồ danh mục tiết kiệm trong Chrumek cạnh cà phê, hóa đơn, sổ tay, laptop, tay cầm chơi game và túi mua sắm"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Bạn không phân tích mọi khoản chi. Bạn thấy mình thật sự lấy lại tiền từ đâu.</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">Cảnh 09</p>
+              <h3>Dữ liệu luôn trong tay khi bạn muốn sắp xếp lại.</h3>
+              <p>
+                Bạn xuất các lần chuyển tiền và mục tiêu đã hoàn thành sang CSV.
+                Không cần tài khoản, không khóa dữ liệu trong ứng dụng và không phải xin ai quyền truy cập lịch sử của chính mình.
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="export-photo">
+              <img
+                src="../assets/photos/export-data-control-en.jpg"
+                alt="Một điện thoại hiển thị màn hình xuất CSV trong Chrumek cạnh laptop có bảng tính và sổ tay với danh sách kiểm tra dữ liệu"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Bạn tiết kiệm đơn giản, nhưng dữ liệu vẫn thuộc về bạn.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Được đánh giá 5 trên 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Lần đầu tiên tôi thấy rõ ràng mình thật sự đã tiết kiệm được bao nhiêu, không chỉ là mình định tiết kiệm bao nhiêu."
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="Được đánh giá 5 trên 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            "Chrumek không thưởng cho ý định tốt. Nó chỉ tính những gì bạn thật sự để dành."
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Từng khoảnh khắc</p>
+          <h2>Tiết kiệm bắt đầu ở những nơi rất bình thường: cửa hàng, quán cà phê, trên ghế sofa.</h2>
+          <p class="section-intro">
+            Chrumek giúp bạn nắm bắt những quyết định nhỏ thường biến mất không dấu vết.
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>Ở cửa hàng</h3>
+            <p class="shot-copy">
+              Bạn chọn sản phẩm rẻ hơn và ghi lại phần chênh lệch trước khi tiêu nó vào việc khác.
+            </p>
+            <p class="shot-meta">Thay vì "chắc mình tiết kiệm được chút", bạn thấy đúng số tiền.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>Ở quán cà phê</h3>
+            <p class="shot-copy">
+              Bạn bỏ qua ly cà phê trên đường đi và ghi ngay số tiền nên đưa vào tiết kiệm.
+            </p>
+            <p class="shot-meta">Một quyết định nhỏ không còn vô hình.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>Với các gói đăng ký</h3>
+            <p class="shot-copy">
+              Bạn hủy một gói đăng ký không dùng và biến khoản phí hằng tháng đó thành tiền tiết kiệm đều đặn.
+            </p>
+            <p class="shot-meta">Một quyết định có thể làm việc cho bạn mỗi tháng.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>Với một mục tiêu</h3>
+            <p class="shot-copy">
+              Mỗi lần chuyển tiền đã xác nhận đưa bạn gần hơn với điều mình thật sự muốn tiết kiệm để đạt được.
+            </p>
+            <p class="shot-meta">Mục tiêu chỉ lớn lên khi tiền thật sự được để dành.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>Trong lịch sử</h3>
+            <p class="shot-copy">
+              Bạn quay lại danh sách các khoản thật sự đã thành tiền tiết kiệm, không chỉ là những khoản đã lên kế hoạch.
+            </p>
+            <p class="shot-meta">Bạn có bằng chứng rằng các quyết định nhỏ cộng lại thành kết quả thật.</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>Không cần kết nối ngân hàng</h3>
+            <p class="shot-copy">
+              Bạn dùng Chrumek không cần tài khoản và không cần liên kết ngân hàng. Bạn quyết định tiền đi đâu.
+            </p>
+            <p class="shot-meta">Một thói quen đơn giản, ít dữ liệu, nhiều quyền kiểm soát.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">Dành cho ai</p>
+          <h2>Chrumek dành cho bạn nếu:</h2>
+          <ul>
+            <li>"Tôi biết mình có thể tiết kiệm hơn, nhưng ngoài đời tôi không làm đến cùng."</li>
+            <li>"Tôi không muốn thêm một ứng dụng ghi lại mọi khoản chi."</li>
+            <li>"Tôi cần một thói quen đơn giản dùng được từ ngày đầu."</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">Không phù hợp nếu</p>
+          <h2>Chrumek không dành cho bạn nếu:</h2>
+          <ul>
+            <li>bạn muốn đồng bộ ngân hàng tự động,</li>
+            <li>bạn cần một công cụ lập kế hoạch tài chính phức tạp,</li>
+            <li>bạn muốn một ứng dụng làm mọi thứ mà không cần bạn xác nhận.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Những câu hỏi thường gặp trước khi tải Chrumek.</h2>
+          <p class="section-intro">
+            Bạn biết rõ mình đang cài gì: Chrumek giúp bạn làm đến cùng việc tiết kiệm thật,
+            nhưng không kết nối ngân hàng, không tự chuyển tiền và không yêu cầu tài khoản.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Tôi có cần kết nối ngân hàng không?</summary>
+            <p>Không. Chrumek không kết nối với ngân hàng của bạn. Bạn chuyển tiền đến nơi mình muốn: tài khoản riêng, phong bì hoặc heo đất.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Chrumek có chuyển tiền thay tôi không?</summary>
+            <p>Không. Ứng dụng giúp bạn hoàn tất thói quen: ghi số tiền, để dành ngoài đời thật, rồi xác nhận trong ứng dụng rằng tiền đã nằm về phía bạn.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Nếu tôi ghi một số tiền nhưng không để dành thì sao?</summary>
+            <p>Khi đó bạn không xác nhận chuyển tiền. Đó chính là điểm quan trọng: biểu đồ, lịch sử và mục tiêu chỉ nên tăng sau khi tiền thật sự được để dành.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Dữ liệu của tôi có được gửi lên máy chủ không?</summary>
+            <p>Dữ liệu bạn nhập trong ứng dụng ở lại cục bộ trên thiết bị. Bạn không tạo tài khoản và không giao lịch sử quyết định của mình cho một bảng điều khiển bên ngoài.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Premium và dùng thử miễn phí hoạt động thế nào?</summary>
+            <p>Bạn có thể dùng thử ứng dụng trước khi trả tiền. Quyền truy cập tiếp vào các tính năng trả phí được xử lý qua App Store, và thời gian dùng thử phụ thuộc vào ưu đãi hiện có cho người dùng đó.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Tôi có thể xuất dữ liệu không?</summary>
+            <p>Có. Chrumek hỗ trợ xuất CSV, nên bạn có thể đưa các khoản tiết kiệm và mục tiêu đã xác nhận ra ngoài ứng dụng.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">Bước cuối cùng</p>
+          <h2>Đừng chỉ hứa với bản thân rằng mình sẽ bắt đầu tiết kiệm. Hãy cho mình một quy trình thật sự khép kín vòng lặp.</h2>
+          <p>
+            Chrumek không đo ý định. Nó giúp bạn khép lại khoảnh khắc khi tiền thật sự về phía bạn.
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Tải Chrumek trên App Store">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="Tải xuống trên App Store" width="180" height="60">
+          </a>
+          <p class="start-note">
+            Không cần tài khoản. Không kết nối ngân hàng. Bắt đầu với khoản đầu tiên bạn không tiêu hôm nay.
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="Tín hiệu tin cậy">
+          <span>không cần tài khoản</span>
+          <span>không trình theo dõi quảng cáo</span>
+          <span>dữ liệu ở lại trên thiết bị</span>
+          <span>không kết nối ngân hàng</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Tiết kiệm thật, không phải lời hứa. <a href="./privacy/">Chính sách quyền riêng tư</a> | <a href="./terms/">Điều khoản sử dụng</a>.</p>
+  </footer>
+</body>
+</html>
