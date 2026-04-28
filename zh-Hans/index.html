@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff2d55">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chrumek 帮你把日常少花的钱变成真正存下来的钱。一个简单的储蓄习惯，不需要账号，也不需要连接银行。">
+  <title>Chrumek | 真正存下来的储蓄</title>
+  <link rel="canonical" href="https://chrumek.app/zh-Hans/">
+  <link rel="alternate" hreflang="pl" href="https://chrumek.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://chrumek.app/en/">
+  <link rel="alternate" hreflang="es" href="https://chrumek.app/es/">
+  <link rel="alternate" hreflang="de" href="https://chrumek.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://chrumek.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://chrumek.app/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://chrumek.app/pt-BR/">
+  <link rel="alternate" hreflang="pt-PT" href="https://chrumek.app/pt-PT/">
+  <link rel="alternate" hreflang="tr" href="https://chrumek.app/tr/">
+  <link rel="alternate" hreflang="bg" href="https://chrumek.app/bg/">
+  <link rel="alternate" hreflang="cs" href="https://chrumek.app/cs/">
+  <link rel="alternate" hreflang="da" href="https://chrumek.app/da/">
+  <link rel="alternate" hreflang="el" href="https://chrumek.app/el/">
+  <link rel="alternate" hreflang="fi" href="https://chrumek.app/fi/">
+  <link rel="alternate" hreflang="hr" href="https://chrumek.app/hr/">
+  <link rel="alternate" hreflang="hu" href="https://chrumek.app/hu/">
+  <link rel="alternate" hreflang="ja" href="https://chrumek.app/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chrumek.app/ko/">
+  <link rel="alternate" hreflang="nl" href="https://chrumek.app/nl/">
+  <link rel="alternate" hreflang="no" href="https://chrumek.app/no/">
+  <link rel="alternate" hreflang="ro" href="https://chrumek.app/ro/">
+  <link rel="alternate" hreflang="ru" href="https://chrumek.app/ru/">
+  <link rel="alternate" hreflang="sk" href="https://chrumek.app/sk/">
+  <link rel="alternate" hreflang="sl" href="https://chrumek.app/sl/">
+  <link rel="alternate" hreflang="sv" href="https://chrumek.app/sv/">
+  <link rel="alternate" hreflang="uk" href="https://chrumek.app/uk/">
+  <link rel="alternate" hreflang="vi" href="https://chrumek.app/vi/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://chrumek.app/zh-Hans/">
+  <link rel="alternate" hreflang="x-default" href="https://chrumek.app/">
+  <link rel="icon" type="image/png" href="../assets/chrumek-app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/chrumek-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body
+  data-theme-label-dark="页面主题：深色。切换到浅色。"
+  data-theme-label-light="页面主题：浅色。切换到深色。"
+  data-theme-title-dark="页面主题：深色"
+  data-theme-title-light="页面主题：浅色"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chrumek">
+        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+        <span class="brand-text">Chrumek</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek 的 Facebook" title="Chrumek 的 Facebook">
+          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
+        </a>
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">
+            <span class="lang-toggle-icon" aria-hidden="true">ZH</span>
+            <span class="lang-toggle-text">简体中文</span>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="语言选择器">
+            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+              <span class="lang-option-main"><span>Polski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+              <span class="lang-option-main"><span>English</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+              <span class="lang-option-main"><span>Español</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+              <span class="lang-option-main"><span>Deutsch</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+              <span class="lang-option-main"><span>Français</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+              <span class="lang-option-main"><span>Italiano</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+              <span class="lang-option-main"><span>Português (BR)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+              <span class="lang-option-main"><span>Português (PT)</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+              <span class="lang-option-main"><span>Türkçe</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+              <span class="lang-option-main"><span>Български</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+              <span class="lang-option-main"><span>Čeština</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+              <span class="lang-option-main"><span>Dansk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+              <span class="lang-option-main"><span>Ελληνικά</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+              <span class="lang-option-main"><span>Suomi</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+              <span class="lang-option-main"><span>Hrvatski</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+              <span class="lang-option-main"><span>Magyar</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
+              <span class="lang-option-main"><span>日本語</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
+              <span class="lang-option-main"><span>한국어</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
+              <span class="lang-option-main"><span>Nederlands</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem">
+              <span class="lang-option-main"><span>Norsk</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ro/" data-base="../ro/" lang="ro" hreflang="ro" role="menuitem">
+              <span class="lang-option-main"><span>Română</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../ru/" data-base="../ru/" lang="ru" hreflang="ru" role="menuitem">
+              <span class="lang-option-main"><span>Русский</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sk/" data-base="../sk/" lang="sk" hreflang="sk" role="menuitem">
+              <span class="lang-option-main"><span>Slovenčina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sl/" data-base="../sl/" lang="sl" hreflang="sl" role="menuitem">
+              <span class="lang-option-main"><span>Slovenščina</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../sv/" data-base="../sv/" lang="sv" hreflang="sv" role="menuitem">
+              <span class="lang-option-main"><span>Svenska</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../uk/" data-base="../uk/" lang="uk" hreflang="uk" role="menuitem">
+              <span class="lang-option-main"><span>Українська</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option" href="../vi/" data-base="../vi/" lang="vi" hreflang="vi" role="menuitem">
+              <span class="lang-option-main"><span>Tiếng Việt</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+            <a class="lang-option is-active" href="../zh-Hans/" data-base="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans" role="menuitem" aria-current="page">
+              <span class="lang-option-main"><span>简体中文</span></span>
+              <span class="lang-option-check" aria-hidden="true">✓</span>
+            </a>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button">
+          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn-primary" href="#start">下载</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">不只是又一个记账工具</p>
+          <h1>
+            Chrumek
+          </h1>
+          <p class="hero-statement">没有花掉？马上把它存起来。</p>
+
+          <p class="lead">
+            你不需要记录每一张小票，只要抓住那些没有花钱或少花钱的瞬间。
+            只有当你真的把钱转入储蓄后，目标、历史和图表才会增长。
+          </p>
+
+          <p class="supporting-copy">
+            适合那些试过“少花一点”，并且知道如果没有真实转账，
+            钱仍会留在主账户里，之后悄悄消失的人。
+          </p>
+
+          <div class="hero-actions-large store-actions">
+            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="在 App Store 下载 Chrumek">
+              <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="在 App Store 下载" width="180" height="60">
+            </a>
+            <a class="btn btn-ghost btn-large" href="#how">看看它如何运作</a>
+          </div>
+
+          <p class="microcopy">
+            不需要账号。不连接银行。不跟踪。只有你真正存下来的钱才会被计算。
+          </p>
+
+          <ul class="proof-pills" aria-label="核心承诺">
+            <li>每一笔省下的开销都会变成真实转账</li>
+            <li>只有钱真的移动后，目标才会增长</li>
+            <li>你在储蓄，而不是被迫做账</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="scene-card">
+            <div class="scene-copy">
+              <p class="scene-label">简单习惯</p>
+              <h2>关键时刻，是钱离开主账户的那一刻。</h2>
+              <p>
+                记录金额，把它转到你真正存钱的地方，然后一键确认。
+                Chrumek 只计算你真正存下来的钱。
+              </p>
+            </div>
+
+            <figure class="hero-photo-card" id="hero-photo">
+              <img
+                src="../assets/photos/hero-saving-moment-en-eur.jpg"
+                alt="一部显示 Chrumek 应用的手机，旁边有写着 Bike 的信封、存钱罐和正在存下的钱"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+                decoding="async"
+              >
+              <figcaption>19.04 欧元不会留到以后被花掉。它直接进入“Bike”目标。</figcaption>
+            </figure>
+
+            <div class="hero-proof-row">
+              <div class="note-card">
+                <p class="note-card-label">问题</p>
+                <strong>没有买某样东西，并不代表钱真的被存下来了。</strong>
+              </div>
+
+              <div class="note-card note-card-accent">
+                <p class="note-card-label">承诺</p>
+                <strong>只有确认转账后，进度和历史才会增长。</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">真正的问题</p>
+          <h2>大多数人不是不懂储蓄，而是缺少把决定执行到底的方法。</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <p class="card-index">01</p>
+            <h3>决定已经做了，但钱还在流通。</h3>
+            <p>
+              你跳过一次购买，选择更便宜的选项，或取消不需要的订阅。
+              但没有什么会迫使这笔钱真正进入储蓄。
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">02</p>
+            <h3>记账工具展示过去，却不会帮你建立储蓄。</h3>
+            <p>
+              到月底，你知道钱花到哪里去了，却仍然看不清
+              自己到底真正存下了多少。
+            </p>
+          </article>
+
+          <article class="problem-card reveal">
+            <p class="card-index">03</p>
+            <h3>预算管理很快就会变成额外负担。</h3>
+            <p>
+              分类、表格和手动输入越多，
+              应用就越可能在几天后被放弃。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chrumek 如何运作</p>
+          <h2>你不需要完整预算。你只需要抓住那个本来可能花钱的瞬间。</h2>
+          <p class="section-intro">
+            Chrumek 只专注一件事：确保你没有花掉的钱不会之后从主账户里悄悄消失。
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-badge">1</div>
+            <h3>你发现一次省钱机会</h3>
+            <p class="step-copy">
+              你放弃某个购买，选择更便宜的版本，或取消不必要的订阅。
+              Chrumek 记录的就是这个瞬间。
+            </p>
+            <p class="step-benefit">它把“我应该省钱”的想法变成一笔具体要存下来的金额。</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">2</div>
+            <h3>你立刻把钱转走</h3>
+            <p class="step-copy">
+              这笔钱进入单独账户、信封、存钱罐，或任何你真正存钱的地方。
+            </p>
+            <p class="step-benefit">这样，储蓄就不只是停留在脑海里。</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-badge">3</div>
+            <h3>你一键确认</h3>
+            <p class="step-copy">
+              只有这时，记录才会进入历史、推动目标，并成为图表的一部分。
+            </p>
+            <p class="step-benefit">你看到的是可以信任的进度，因为背后有真实的钱在移动。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-proof-section" id="screens">
+      <div class="container">
+        <div class="app-proof-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">执行到底是什么样</p>
+            <h2>从第一次“我没有买”到一个真正增长的目标。</h2>
+            <p class="section-intro">
+              你记录金额，把它从主账户转走，并且只在钱真正存下后确认。
+              日志、历史、目标和图表只显示真正进入储蓄的钱。
+            </p>
+          </div>
+
+          <div class="screenshots-grid" aria-label="Chrumek 应用界面预览">
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/journal.jpg" alt="Chrumek 应用中的日志界面" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>日志</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/history.jpg" alt="包含已确认储蓄的历史界面" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>历史</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/goals.jpg" alt="应用中的储蓄目标界面" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>目标</figcaption>
+            </figure>
+
+            <figure class="screenshot-card reveal">
+              <img src="../assets/screenshots/en/calendar.jpg" alt="应用中的转账日历界面" loading="lazy" decoding="async" width="1178" height="2556">
+              <figcaption>图表</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefit-section">
+      <div class="container">
+        <div class="benefit-layout">
+          <div class="benefit-copy reveal">
+            <p class="eyebrow">使用一周后</p>
+            <h2>你不再靠猜，而是能看到自己真正存下了多少。</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <h3>你终于看到真实储蓄</h3>
+              <p>历史只计算已确认金额。没有虚假进度，也没有膨胀的总数。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>你得到的是简单习惯，而不是沉重预算</h3>
+              <p>三种快速记录方式：我没有买、我买得更便宜、我取消了订阅。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>更容易保持动力</h3>
+              <p>目标只在转账后增长，所以每一步都改变了真实的东西。</p>
+            </article>
+
+            <article class="benefit-card reveal">
+              <h3>你不需要用隐私换取财务自律</h3>
+              <p>不需要账号，没有跟踪器，也不要求连接银行。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">日常场景</p>
+          <h2>Chrumek 适合那些钱通常会悄悄溜走的时刻。</h2>
+        </div>
+
+        <div class="spotlight-list">
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 01</p>
+              <h3>货架上的更便宜选择，马上变成一笔可以存下来的真实金额。</h3>
+              <p>
+                你选择 4.50 欧元的商品，而不是 6.50 欧元的商品。Chrumek 会记录差额，
+                避免这 2.00 欧元又花到别处。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="store-photo">
+              <img
+                src="../assets/photos/store-cheaper-choice-en.jpg"
+                alt="咖啡货架旁的一部手机显示 Chrumek 应用，记录了选择更便宜商品后省下的 2.00 欧元"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>购物决定带来的差额不会只留在脑中。它会进入 Chrumek。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 02</p>
+              <h3>路上的那杯拿铁可以留在钱包里，马上支持一个目标。</h3>
+              <p>
+                你没有在柜台支付 4.50 欧元，而是在 Chrumek 里记录跳过的拿铁。
+                这个小决定不再隐形。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="cafe-photo">
+              <img
+                src="../assets/photos/cafe-skipped-latte-en.jpg"
+                alt="咖啡馆菜单旁的一部手机显示 Chrumek 应用，记录了一杯价值 4.50 欧元的跳过拿铁"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>你跳过那杯拿铁。Chrumek 把这个决定变成具体金额。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 03</p>
+              <h3>取消的订阅不会回到日常开销里，而是开始为你的目标服务。</h3>
+              <p>
+                你取消一项每月 12.99 欧元的服务，并在 Chrumek 中记录这笔金额。
+                固定支出也可以每月让你更接近目标。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="subscription-photo">
+              <img
+                src="../assets/photos/subscription-cancelled-en.jpg"
+                alt="一部显示 Chrumek 应用的手机，旁边的笔记本电脑显示订阅管理界面和已取消订阅记录"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>取消订阅变成了朝目标前进的固定动作。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 04</p>
+              <h3>目标之所以真实，是因为它不会只靠输入数字增长。</h3>
+              <p>
+                自行车不再只是一个模糊想法。你能看到金额、进度，
+                以及真正让购买更近一步的已确认转账。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="bike-goal-photo">
+              <img
+                src="../assets/photos/bike-goal-progress-en.jpg"
+                alt="一部手机显示 Chrumek 应用中的 Bike 目标，旁边有头盔、自行车灯和背景中的自行车"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>目标有名称、有金额、有真实进度。它不再只是愿望。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 05</p>
+              <h3>历史不是牺牲日记，而是你真的在存钱的证明。</h3>
+              <p>
+                你看到自己的决定，以及真正进入储蓄的金额。
+                这是系统有效的简单证明。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="history-photo">
+              <img
+                src="../assets/photos/history-proof-en.jpg"
+                alt="一部显示 Chrumek 历史界面的手机，旁边有写着 Bike 的信封、记录跳过购买的笔记本和存下的现金"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>947.00 欧元不是一句声明，而是你真正存下来的决定总和。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 06</p>
+              <h3>坚持在再次淡去之前变得可见。</h3>
+              <p>
+                每一次转入目标的钱都会留下痕迹。Chrumek 显示你的连续记录和真正存钱的日子，
+                让明天回来继续更容易。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="streak-photo">
+              <img
+                src="../assets/photos/transfer-streak-calendar-en.jpg"
+                alt="一部显示 Chrumek 日历界面的手机，旁边有写着转账计划和提醒的笔记本"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>你不必猜它有没有用。你能看到连续记录和具体存钱日期。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 07</p>
+              <h3>如果一天快过去了，Chrumek 会提醒你完成转账。</h3>
+              <p>
+                你可以给晚上设置一个平静提醒。
+                当还有钱需要转入储蓄时，应用会帮你回到这个简单习惯，而不用把一切都记在脑中。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="reminder-photo">
+              <img
+                src="../assets/photos/transfer-reminder-evening-en.jpg"
+                alt="一部手机显示 Chrumek 中的转账提醒界面，旁边有存钱罐、写着 Bike 的信封、茶、蜡烛和笔记本"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>提醒不会替你计划。它只是帮你别丢掉一个好决定。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 08</p>
+              <h3>你能看到哪些小决定带来最大差异。</h3>
+              <p>
+                咖啡、外卖、游戏、电子产品。Chrumek 显示你的储蓄真正来自哪里，
+                让你更容易重复最有帮助的选择。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="categories-photo">
+              <img
+                src="../assets/photos/savings-categories-en.jpg"
+                alt="一部手机显示 Chrumek 的储蓄分类图表，旁边有咖啡、小票、笔记本、笔记本电脑、手柄和购物袋"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>你不需要分析每一笔开销。你会看到自己真正从哪里把钱赢回来。</figcaption>
+            </figure>
+          </article>
+
+          <article class="spotlight-card spotlight-card-photo reveal">
+            <div class="spotlight-copy">
+              <p class="spotlight-tag">场景 09</p>
+              <h3>当你想整理时，数据随时在手边。</h3>
+              <p>
+                你可以把转账和已完成目标导出为 CSV。
+                不需要账号，数据不会被锁在应用里，也不需要向任何人申请访问自己的历史。
+              </p>
+            </div>
+            <figure class="spotlight-photo" id="export-photo">
+              <img
+                src="../assets/photos/export-data-control-en.jpg"
+                alt="一部手机显示 Chrumek 的 CSV 导出界面，旁边有打开电子表格的笔记本电脑和数据清单笔记本"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>你可以简单储蓄，数据仍然属于你。</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="评分 5 分，满分 5 分">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            “这是第一次，我能清楚看到自己实际存下了多少，而不只是打算存多少。”
+          </p>
+          <footer>Ola</footer>
+        </blockquote>
+
+        <blockquote class="quote-card reveal">
+          <div class="rating-stars" aria-label="评分 5 分，满分 5 分">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p>
+            “Chrumek 不奖励好意图。它只计算你真正存下来的钱。”
+          </p>
+          <footer>Mateusz</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">一个瞬间接一个瞬间</p>
+          <h2>储蓄从普通地方开始：商店、咖啡馆、沙发上。</h2>
+          <p class="section-intro">
+            Chrumek 帮你抓住那些通常会无声消失的小决定。
+          </p>
+        </div>
+
+        <div class="shots-grid">
+          <article class="shot-card reveal">
+            <p class="shot-number">01</p>
+            <h3>在商店</h3>
+            <p class="shot-copy">
+              你选择更便宜的商品，并在把差额花到别处前记录下来。
+            </p>
+            <p class="shot-meta">不再是“我应该省了一点”，而是看到准确金额。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">02</p>
+            <h3>在咖啡馆</h3>
+            <p class="shot-copy">
+              你跳过路上的咖啡，并立刻记录应该进入储蓄的金额。
+            </p>
+            <p class="shot-meta">小决定不再隐形。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">03</p>
+            <h3>处理订阅</h3>
+            <p class="shot-copy">
+              你取消不用的订阅，把每月费用变成固定储蓄。
+            </p>
+            <p class="shot-meta">一个决定可以每个月为你工作。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">04</p>
+            <h3>有一个目标</h3>
+            <p class="shot-copy">
+              每一次已确认转账都会让你更接近真正想存钱购买的东西。
+            </p>
+            <p class="shot-meta">只有钱真的被存下，目标才会增长。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">05</p>
+            <h3>在历史中</h3>
+            <p class="shot-copy">
+              你看到的是已经真正进入储蓄的金额，而不只是计划中的金额。
+            </p>
+            <p class="shot-meta">你会看到小决定累积成真实结果的证据。</p>
+          </article>
+
+          <article class="shot-card reveal">
+            <p class="shot-number">06</p>
+            <h3>不连接银行</h3>
+            <p class="shot-copy">
+              你可以在没有账号、没有连接银行的情况下使用 Chrumek。钱去哪儿由你决定。
+            </p>
+            <p class="shot-meta">简单习惯，最少数据，最大控制权。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="container fit-grid">
+        <article class="fit-card reveal">
+          <p class="eyebrow">适合谁</p>
+          <h2>如果你有这些想法，Chrumek 适合你：</h2>
+          <ul>
+            <li>“我知道自己可以存更多，但现实中总是没有执行到底。”</li>
+            <li>“我不想再用一个记录每笔开销的应用。”</li>
+            <li>“我需要一个从第一天就能用起来的简单习惯。”</li>
+          </ul>
+        </article>
+
+        <article class="fit-card fit-card-muted reveal">
+          <p class="eyebrow">不适合如果</p>
+          <h2>如果你需要这些，Chrumek 可能不适合：</h2>
+          <ul>
+            <li>你想要自动银行同步，</li>
+            <li>你需要复杂的财务规划工具，</li>
+            <li>你想要应用在没有你确认的情况下完成所有事。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>下载 Chrumek 前的常见问题。</h2>
+          <p class="section-intro">
+            你会清楚知道自己安装的是什么：Chrumek 帮你把真实储蓄执行到底，
+            但它不会连接银行、不会替你转账，也不需要账号。
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>我需要连接银行吗？</summary>
+            <p>不需要。Chrumek 不连接你的银行。你可以把钱转到任何地方：独立账户、信封或存钱罐。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Chrumek 会替我转账吗？</summary>
+            <p>不会。应用帮你完成这个习惯：记录金额，在现实中把它存起来，然后在应用里确认钱已经站到你这边。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>如果我记录了金额但没有真正存下，会怎样？</summary>
+            <p>那你就不确认转账。这正是重点：图表、历史和目标只有在钱真的存下后才应该增长。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>我的数据会发送到服务器吗？</summary>
+            <p>你在应用中输入的数据会留在本机设备上。你不需要创建账号，也不会把自己的决策历史交给外部仪表盘。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Premium 和免费试用如何运作？</summary>
+            <p>你可以先试用再付费。付费功能的后续访问通过 App Store 处理，是否有试用取决于当前对该用户可用的优惠。</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>我可以导出数据吗？</summary>
+            <p>可以。Chrumek 支持 CSV 导出，因此你可以把已确认储蓄和目标带到应用之外。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start-section" id="start">
+      <div class="container start-card reveal">
+        <div class="start-copy">
+          <p class="eyebrow">最后一步</p>
+          <h2>不要只是向自己保证会开始存钱。给自己一个真正闭环的流程。</h2>
+          <p>
+            Chrumek 不衡量意图。它帮你完成钱真正站到你这边的那个瞬间。
+          </p>
+        </div>
+
+        <div class="start-actions">
+          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="在 App Store 下载 Chrumek">
+            <img class="app-store-badge" src="../assets/app-store-badge-pl.svg" alt="在 App Store 下载" width="180" height="60">
+          </a>
+          <p class="start-note">
+            不需要账号。不连接银行。从今天第一笔没有花掉的钱开始。
+          </p>
+        </div>
+
+        <div class="trust-row" aria-label="信任提示">
+          <span>不需要账号</span>
+          <span>没有广告跟踪器</span>
+          <span>数据留在你的设备上</span>
+          <span>不连接银行</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026。真实储蓄，不只是声明。<a href="./privacy/">隐私政策</a> | <a href="./terms/">使用条款</a>。</p>
+  </footer>
+</body>
+</html>
