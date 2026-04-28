@@ -58,8 +58,117 @@ const langSwitch = document.querySelector("[data-lang-switch]");
 if (langSwitch) {
   const langToggle = langSwitch.querySelector(".lang-toggle");
   const langMenu = langSwitch.querySelector(".lang-menu");
-  const langLinks = Array.from(langSwitch.querySelectorAll(".lang-option"));
   const currentLang = document.documentElement.lang || "en";
+  const normalizedCurrentLang = currentLang.toLocaleLowerCase();
+  const languageOptions = [
+    { code: "pl", label: "Polski" },
+    { code: "en", label: "English" },
+    { code: "es", label: "Español" },
+    { code: "de", label: "Deutsch" },
+    { code: "fr", label: "Français" },
+    { code: "it", label: "Italiano" },
+    { code: "pt-BR", label: "Português (BR)" },
+    { code: "pt-PT", label: "Português (PT)" },
+    { code: "tr", label: "Türkçe" },
+    { code: "bg", label: "Български" },
+    { code: "cs", label: "Čeština" },
+    { code: "da", label: "Dansk" },
+    { code: "el", label: "Ελληνικά" },
+    { code: "fi", label: "Suomi" },
+    { code: "hr", label: "Hrvatski" },
+    { code: "hu", label: "Magyar" },
+    { code: "ja", label: "日本語" },
+    { code: "ko", label: "한국어" },
+    { code: "nl", label: "Nederlands" },
+    { code: "no", label: "Norsk" },
+    { code: "ro", label: "Română" },
+    { code: "ru", label: "Русский" },
+    { code: "sk", label: "Slovenčina" },
+    { code: "sl", label: "Slovenščina" },
+    { code: "sv", label: "Svenska" },
+    { code: "uk", label: "Українська" },
+    { code: "vi", label: "Tiếng Việt" },
+    { code: "zh-Hans", label: "简体中文" }
+  ];
+
+  const getLanguagePageSuffix = () => {
+    const path = window.location.pathname.replace(/index\.html$/i, "");
+
+    if (/\/privacy\/?$/i.test(path)) {
+      return "privacy/";
+    }
+
+    if (/\/terms\/?$/i.test(path)) {
+      return "terms/";
+    }
+
+    return "";
+  };
+
+  const buildLanguageHref = (code) => {
+    const suffix = getLanguagePageSuffix();
+    const basePrefix = suffix ? "../../" : "../";
+    return `${basePrefix}${code}/${suffix}`;
+  };
+
+  const buildLanguageOption = ({ code, label }) => {
+    const href = buildLanguageHref(code);
+    const link = document.createElement("a");
+    const isCurrent = code.toLocaleLowerCase() === normalizedCurrentLang;
+
+    link.className = `lang-option${isCurrent ? " is-active" : ""}`;
+    link.href = href;
+    link.dataset.base = href;
+    link.lang = code;
+    link.hreflang = code;
+    link.setAttribute("role", "menuitem");
+
+    if (isCurrent) {
+      link.setAttribute("aria-current", "page");
+    }
+
+    const main = document.createElement("span");
+    main.className = "lang-option-main";
+
+    const name = document.createElement("span");
+    name.textContent = label;
+
+    const check = document.createElement("span");
+    check.className = "lang-option-check";
+    check.setAttribute("aria-hidden", "true");
+    check.textContent = "✓";
+
+    main.append(name);
+    link.append(main, check);
+
+    return link;
+  };
+
+  if (langMenu) {
+    const existingLinks = Array.from(langSwitch.querySelectorAll(".lang-option"));
+    const existingLocales = new Map(existingLinks.map((link) => [
+      (link.getAttribute("hreflang") || link.lang || "").toLocaleLowerCase(),
+      link
+    ]));
+
+    languageOptions.forEach((option) => {
+      const normalizedCode = option.code.toLocaleLowerCase();
+      const existingLink = existingLocales.get(normalizedCode);
+
+      if (existingLink) {
+        const href = buildLanguageHref(option.code);
+        existingLink.href = href;
+        existingLink.dataset.base = href;
+        existingLink.lang = option.code;
+        existingLink.hreflang = option.code;
+        return;
+      }
+
+      langMenu.append(buildLanguageOption(option));
+    });
+  }
+
+  const langLinks = Array.from(langSwitch.querySelectorAll(".lang-option"));
   const languagePickerLabels = {
     bg: { search: "Търси език", empty: "Няма намерени езици" },
     cs: { search: "Hledat jazyk", empty: "Žádné jazyky nenalezeny" },
@@ -80,7 +189,15 @@ if (langSwitch) {
     pl: { search: "Szukaj języka", empty: "Nie znaleziono języka" },
     "pt-BR": { search: "Buscar idioma", empty: "Nenhum idioma encontrado" },
     "pt-PT": { search: "Procurar idioma", empty: "Nenhum idioma encontrado" },
-    tr: { search: "Dil ara", empty: "Dil bulunamadı" }
+    ro: { search: "Caută limba", empty: "Nu s-au găsit limbi" },
+    ru: { search: "Поиск языка", empty: "Языки не найдены" },
+    sk: { search: "Hľadať jazyk", empty: "Nenašli sa žiadne jazyky" },
+    sl: { search: "Poišči jezik", empty: "Ni najdenih jezikov" },
+    sv: { search: "Sök språk", empty: "Inga språk hittades" },
+    tr: { search: "Dil ara", empty: "Dil bulunamadı" },
+    uk: { search: "Пошук мови", empty: "Мови не знайдено" },
+    vi: { search: "Tìm ngôn ngữ", empty: "Không tìm thấy ngôn ngữ" },
+    "zh-Hans": { search: "搜索语言", empty: "未找到语言" }
   };
   const labels = languagePickerLabels[currentLang] || languagePickerLabels[currentLang.split("-")[0]] || languagePickerLabels.en;
   const mobileSheetQuery = window.matchMedia("(max-width: 900px), (hover: none) and (pointer: coarse)");
