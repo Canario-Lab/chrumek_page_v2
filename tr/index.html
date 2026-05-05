@@ -49,12 +49,12 @@
 >
   <script>
     (function () {
-      try {
-        var savedTheme = localStorage.getItem("chrum-theme");
-        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
-      } catch (error) {
-        document.body.setAttribute("data-theme", "light");
-      }
+          try {
+            var savedTheme = localStorage.getItem("chrum-theme");
+            document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+          } catch (error) {
+            document.body.setAttribute("data-theme", "light");
+          }
     })();
   </script>
 
@@ -63,672 +63,493 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Chrumek">
-        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
-        <span class="brand-text">Chrumek</span>
+            <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+            <span class="brand-text">Chrumek</span>
       </a>
 
       <div class="header-actions">
-        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Facebook'ta Chrumek" title="Facebook'ta Chrumek">
-          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
-        </a>
-        <div class="lang-switch" data-lang-switch>
-          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil seç">
-            <span class="lang-toggle-icon" aria-hidden="true">TR</span>
-            <span class="lang-toggle-text">Türkçe</span>
-          </button>
-          <div class="lang-menu" role="menu" aria-label="Dil seçici">
-            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
-              <span class="lang-option-main"><span>Polski</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
+            <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Facebook'ta Chrumek" title="Facebook'ta Chrumek">
+              <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
             </a>
-            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
-              <span class="lang-option-main"><span>English</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
-              <span class="lang-option-main"><span>Español</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
-              <span class="lang-option-main"><span>Deutsch</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
-              <span class="lang-option-main"><span>Français</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
-              <span class="lang-option-main"><span>Italiano</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
-              <span class="lang-option-main"><span>Português (BR)</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
-              <span class="lang-option-main"><span>Português (PT)</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option is-active" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem" aria-current="page">
-              <span class="lang-option-main"><span>Türkçe</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
-              <span class="lang-option-main"><span>Български</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
-              <span class="lang-option-main"><span>Čeština</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
-              <span class="lang-option-main"><span>Dansk</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
-              <span class="lang-option-main"><span>Ελληνικά</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
-              <span class="lang-option-main"><span>Suomi</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
-              <span class="lang-option-main"><span>Hrvatski</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
-              <span class="lang-option-main"><span>Magyar</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
-              <span class="lang-option-main"><span>日本語</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
-              <span class="lang-option-main"><span>한국어</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
-              <span class="lang-option-main"><span>Nederlands</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem">
-              <span class="lang-option-main"><span>Norsk</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-          </div>
-        </div>
-        <button class="theme-toggle" id="themeToggle" type="button">
-          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
-        </button>
-        <a class="btn btn-primary" href="#start">İndir</a>
-      </div>
-    </div>
+            <div class="lang-switch" data-lang-switch>
+              <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil seç">
+                <span class="lang-toggle-icon" aria-hidden="true">TR</span>
+                <span class="lang-toggle-text">Türkçe</span>
+              </button>
+              <div class="lang-menu" role="menu" aria-label="Dil seçici">
+                <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+                  <span class="lang-option-main"><span>Polski</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+                  <span class="lang-option-main"><span>English</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+                  <span class="lang-option-main"><span>Español</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+                  <span class="lang-option-main"><span>Deutsch</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+                  <span class="lang-option-main"><span>Français</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+                  <span class="lang-option-main"><span>Italiano</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+                  <span class="lang-option-main"><span>Português (BR)</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+                  <span class="lang-option-main"><span>Português (PT)</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option is-active" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem" aria-current="page">
+                  <span class="lang-option-main"><span>Türkçe</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+                  <span class="lang-option-main"><span>Български</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+                  <span class="lang-option-main"><span>Čeština</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+                  <span class="lang-option-main"><span>Dansk</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+                  <span class="lang-option-main"><span>Ελληνικά</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+                  <span class="lang-option-main"><span>Suomi</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+                  <span class="lang-option-main"><span>Hrvatski</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+                  <span class="lang-option-main"><span>Magyar</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
+                  <span class="lang-option-main"><span>日本語</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
+                  <span class="lang-option-main"><span>한국어</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
+                  <span class="lang-option-main"><span>Nederlands</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem">
+                  <span class="lang-option-main"><span>Norsk</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+              </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" type="button">
+              <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+            </button>
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">Ücretsiz indir</a>
+              </div>
+            </div>
   </header>
 
   <main id="top">
     <section class="hero section">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Bu, bir masraf takip uygulaması değil</p>
-          <h1>
-            Chrumek
-          </h1>
-          <p class="hero-statement">Harcamadıysan hemen ayır.</p>
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Bu, bir masraf takip uygulaması değil</p>
+              <h1>
+                Chrumek
+              </h1>
+              <p class="hero-statement">Harcamadıysan hemen ayır.</p>
 
-          <p class="lead">
-            Her fişi kaydetmek yerine, hiç harcamadığın ya da daha az harcadığın anları yakalarsın.
-            Hedefin, geçmişin ve grafiklerin ancak o parayı gerçekten birikime aktardıktan sonra büyür.
-          </p>
-
-          <p class="supporting-copy">
-            “Daha az harcayayım yeter” yaklaşımını deneyip de gerçek bir transfer olmazsa
-            paranın ana hesapta kalıp sonra sessizce kaybolduğunu bilenler için.
-          </p>
-
-          <div class="hero-actions-large store-actions">
-            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Chrumek'i App Store'dan indir">
-              <img class="app-store-badge" src="../assets/app-store-badge-tr.svg" alt="App Store'dan indir" width="180" height="60">
-            </a>
-            <a class="btn btn-ghost btn-large" href="#how">Nasıl çalıştığını gör</a>
-          </div>
-
-          <p class="microcopy">
-            Hesap yok. Banka bağlantısı yok. Takip yok. Sadece gerçekten ayırdığın para sayılır.
-          </p>
-
-          <ul class="proof-pills" aria-label="Temel vaatler">
-            <li>vazgeçtiğin her harcama gerçek bir transfere dönüşür</li>
-            <li>hedefin ancak para gerçekten yer değiştirdiğinde büyür</li>
-            <li>muhasebe yapıyormuş gibi hissetmeden birikim yaparsın</li>
-          </ul>
-        </div>
-
-        <div class="hero-visual reveal">
-          <article class="scene-card">
-            <div class="scene-copy">
-              <p class="scene-label">Basit bir rutin</p>
-              <h2>Önemli olan an, paranın ana hesabından çıktığı andır.</h2>
-              <p>
-                Tutarı kaydedersin, gerçekten biriktirdiğin yere aktarırsın ve sonra tek dokunuşla onaylarsın.
-                Chrumek sadece gerçekten ayırdığın parayı sayar.
+              <p class="lead">
+                Her fişi kaydetmek yerine, hiç harcamadığın ya da daha az harcadığın anları yakalarsın.
+                Hedefin, geçmişin ve grafiklerin ancak o parayı gerçekten birikime aktardıktan sonra büyür.
               </p>
-            </div>
 
-            <figure class="hero-photo-card" id="hero-photo">
-              <img
-                src="../assets/photos/hero-saving-moment-en-eur.jpg"
-                alt="Chrumek uygulamasının açık olduğu bir telefon, Bisiklet yazılı bir zarf, kumbara ve kenara ayrılan para"
-                width="1536"
-                height="1024"
-                fetchpriority="high"
-                decoding="async"
-              >
-              <figcaption>19,04 € “sonra bakarım” diye beklemez. Doğrudan “Bike” hedefine gider.</figcaption>
-            </figure>
+              <p class="supporting-copy">
+                “Daha az harcayayım yeter” yaklaşımını deneyip de gerçek bir transfer olmazsa
+                paranın ana hesapta kalıp sonra sessizce kaybolduğunu bilenler için.
+              </p>
 
-            <div class="hero-proof-row">
-              <div class="note-card">
-                <p class="note-card-label">Sorun</p>
-                <strong>Bir satın alımdan vazgeçmek, o paranın gerçekten biriktiği anlamına gelmez.</strong>
+              <div class="hero-actions-large store-actions">
+                <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Chrumek'i App Store'dan indir">
+                  <img class="app-store-badge" src="../assets/app-store-badge-tr.svg" alt="App Store'dan indir" width="180" height="60">
+                </a>
+                <a class="btn btn-primary btn-large" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">
+                  Ücretsiz indir
+                </a>
+                <a class="btn btn-ghost btn-large" href="#how">Nasıl çalıştığını gör</a>
               </div>
 
-              <div class="note-card note-card-accent">
-                <p class="note-card-label">Vaat</p>
-                <strong>İlerlemen ve geçmişin ancak transferi onayladıktan sonra büyür.</strong>
-              </div>
+
+              <ul class="proof-pills" aria-label="Temel vaatler">
+                <li>vazgeçtiğin her harcama gerçek bir transfere dönüşür</li>
+                <li>hedefin ancak para gerçekten yer değiştirdiğinde büyür</li>
+                <li>muhasebe yapıyormuş gibi hissetmeden birikim yaparsın</li>
+              </ul>
             </div>
-          </article>
-        </div>
-      </div>
+
+            <div class="hero-visual reveal">
+              <article class="scene-card">
+                <div class="scene-copy">
+                  <p class="scene-label">Basit bir rutin</p>
+                  <h2>Önemli olan an, paranın ana hesabından çıktığı andır.</h2>
+                  <p>
+                    Tutarı kaydedersin, gerçekten biriktirdiğin yere aktarırsın ve sonra tek dokunuşla onaylarsın.
+                    Chrumek sadece gerçekten ayırdığın parayı sayar.
+                  </p>
+                </div>
+
+                <figure class="hero-photo-card" id="hero-photo">
+                  <img
+                    src="../assets/photos/hero-saving-moment-en-eur.jpg"
+                    alt="Chrumek uygulamasının açık olduğu bir telefon, Bisiklet yazılı bir zarf, kumbara ve kenara ayrılan para"
+                    width="1536"
+                    height="1024"
+                    fetchpriority="high"
+                    decoding="async"
+                  >
+                  <figcaption>19,04 € “sonra bakarım” diye beklemez. Doğrudan “Bike” hedefine gider.</figcaption>
+                </figure>
+
+                <div class="hero-proof-row">
+                  <div class="note-card">
+                    <p class="note-card-label">Sorun</p>
+                    <strong>Bir satın alımdan vazgeçmek, o paranın gerçekten biriktiği anlamına gelmez.</strong>
+                  </div>
+
+                  <div class="note-card note-card-accent">
+                    <p class="note-card-label">Vaat</p>
+                    <strong>İlerlemen ve geçmişin ancak transferi onayladıktan sonra büyür.</strong>
+                  </div>
+                </div>
+              </article>
+            </div>
+              </div>
     </section>
 
     <section class="problem-strip section">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Asıl sorun</p>
-          <h2>Çoğu insanın birikim konusunda bilgi sorunu yok. Devam ettirme sorunu var.</h2>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Asıl sorun</p>
+              <h2>Çoğu insanın birikim konusunda bilgi sorunu yok. Devam ettirme sorunu var.</h2>
+            </div>
 
-        <div class="problem-grid">
-          <article class="problem-card reveal">
-            <p class="card-index">01</p>
-            <h3>Karar verilir ama para dolaşımda kalır.</h3>
-            <p>
-              Bir şey almaktan vazgeçersin, daha ucuz seçeneği seçersin ya da gereksiz bir aboneliği iptal edersin.
-              Ama o tutarı birikime aktarmaya seni zorlayan hiçbir şey yoktur.
-            </p>
-          </article>
+            <div class="problem-grid">
+              <article class="problem-card reveal">
+                <p class="card-index">01</p>
+                <h3>Karar verilir ama para dolaşımda kalır.</h3>
+                <p>
+                  Bir şey almaktan vazgeçersin, daha ucuz seçeneği seçersin ya da gereksiz bir aboneliği iptal edersin.
+                  Ama o tutarı birikime aktarmaya seni zorlayan hiçbir şey yoktur.
+                </p>
+              </article>
 
-          <article class="problem-card reveal">
-            <p class="card-index">02</p>
-            <h3>Masraf takip uygulamaları geçmişi gösterir. Birikim oluşturmaz.</h3>
-            <p>
-              Ay sonunda paranın nereye gittiğini bilirsin,
-              ama gerçekten ne kadarını ayırabildiğini hâlâ göremezsin.
-            </p>
-          </article>
+              <article class="problem-card reveal">
+                <p class="card-index">02</p>
+                <h3>Masraf takip uygulamaları geçmişi gösterir. Birikim oluşturmaz.</h3>
+                <p>
+                  Ay sonunda paranın nereye gittiğini bilirsin,
+                  ama gerçekten ne kadarını ayırabildiğini hâlâ göremezsin.
+                </p>
+              </article>
 
-          <article class="problem-card reveal">
-            <p class="card-index">03</p>
-            <h3>Bütçe yapmak kısa sürede ek işe dönüşür.</h3>
-            <p>
-              Ne kadar çok kategori, tablo ve manuel giriş eklersen,
-              uygulamayı birkaç gün sonra bırakma ihtimalin o kadar artar.
-            </p>
-          </article>
-        </div>
-      </div>
+              <article class="problem-card reveal">
+                <p class="card-index">03</p>
+                <h3>Bütçe yapmak kısa sürede ek işe dönüşür.</h3>
+                <p>
+                  Ne kadar çok kategori, tablo ve manuel giriş eklersen,
+                  uygulamayı birkaç gün sonra bırakma ihtimalin o kadar artar.
+                </p>
+              </article>
+            </div>
+              </div>
     </section>
 
     <section class="section" id="how">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Chrumek nasıl çalışır</p>
-          <h2>Eksiksiz bir bütçeye ihtiyacın yok. Sadece o parayı harcayabileceğin anı yakalaman yeterli.</h2>
-          <p class="section-intro">
-            Chrumek tek bir şeye odaklanır: harcamadığın paranın ana hesabından daha sonra sessizce kaybolmamasını sağlamak.
-          </p>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Chrumek nasıl çalışır</p>
+              <h2>Eksiksiz bir bütçeye ihtiyacın yok. Sadece o parayı harcayabileceğin anı yakalaman yeterli.</h2>
+              <p class="section-intro">
+                Chrumek tek bir şeye odaklanır: harcamadığın paranın ana hesabından daha sonra sessizce kaybolmamasını sağlamak.
+              </p>
+            </div>
 
-        <div class="steps-grid">
-          <article class="step-card reveal">
-            <div class="step-badge">1</div>
-            <h3>Tasarrufu fark edersin</h3>
-            <p class="step-copy">
-              Bir şey almaktan vazgeçersin, daha ucuz bir seçeneği seçersin ya da gereksiz bir aboneliği iptal edersin.
-              Chrumek tam o anı yakalar.
-            </p>
-            <p class="step-benefit">Tasarrufu belirsiz bir fikir olmaktan çıkarıp kenara ayrılacak somut bir tutara dönüştürür.</p>
-          </article>
+            <div class="steps-grid">
+              <article class="step-card reveal">
+                <div class="step-badge">1</div>
+                <h3>Tasarrufu fark edersin</h3>
+                <p class="step-copy">
+                  Bir şey almaktan vazgeçersin, daha ucuz bir seçeneği seçersin ya da gereksiz bir aboneliği iptal edersin.
+                  Chrumek tam o anı yakalar.
+                </p>
+                <p class="step-benefit">Tasarrufu belirsiz bir fikir olmaktan çıkarıp kenara ayrılacak somut bir tutara dönüştürür.</p>
+              </article>
 
-          <article class="step-card reveal">
-            <div class="step-badge">2</div>
-            <h3>Hemen ayırırsın</h3>
-            <p class="step-copy">
-              Tutar ayrı bir hesaba, bir zarfa, bir kumbaraya ya da birikimini gerçekten tuttuğun yere gider.
-            </p>
-            <p class="step-benefit">Böylece tasarruf sadece kafanda kalmaz.</p>
-          </article>
+              <article class="step-card reveal">
+                <div class="step-badge">2</div>
+                <h3>Hemen ayırırsın</h3>
+                <p class="step-copy">
+                  Tutar ayrı bir hesaba, bir zarfa, bir kumbaraya ya da birikimini gerçekten tuttuğun yere gider.
+                </p>
+                <p class="step-benefit">Böylece tasarruf sadece kafanda kalmaz.</p>
+              </article>
 
-          <article class="step-card reveal">
-            <div class="step-badge">3</div>
-            <h3>Tek dokunuşla onaylarsın</h3>
-            <p class="step-copy">
-              Ancak o zaman kayıt geçmişe girer, hedefi besler ve grafiklerin bir parçası olur.
-            </p>
-            <p class="step-benefit">Güvenebileceğin bir ilerleme görürsün, çünkü arkasında gerçekten hareket etmiş para vardır.</p>
-          </article>
-        </div>
-      </div>
+              <article class="step-card reveal">
+                <div class="step-badge">3</div>
+                <h3>Tek dokunuşla onaylarsın</h3>
+                <p class="step-copy">
+                  Ancak o zaman kayıt geçmişe girer, hedefi besler ve grafiklerin bir parçası olur.
+                </p>
+                <p class="step-benefit">Güvenebileceğin bir ilerleme görürsün, çünkü arkasında gerçekten hareket etmiş para vardır.</p>
+              </article>
+            </div>
+              </div>
+    </section>
+
+
+    <section class="section benefit-section">
+      <div class="container">
+            <div class="benefit-layout">
+              <div class="benefit-copy reveal">
+                <p class="eyebrow">Bir haftalık kullanımdan sonra</p>
+                <h2>Tahmin etmek yerine gerçekten ne kadar biriktirebildiğini görmeye başlarsın.</h2>
+              </div>
+
+              <div class="benefit-grid">
+                <article class="benefit-card reveal">
+                  <h3>Gerçek birikimi sonunda görürsün</h3>
+                  <p>Geçmiş yalnızca onaylanmış tutarları sayar. Sahte ilerleme yok. Şişirilmiş toplam yok.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Ağır bir bütçe yerine basit bir rutin kazanırsın</h3>
+                  <p>Kaydetmenin üç hızlı yolu vardır: almadım, daha ucuza aldım, aboneliği iptal ettim.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Motivasyonu sürdürmek kolaylaşır</h3>
+                  <p>Hedefin ancak transferden sonra büyür; bu yüzden her hareket gerçekten bir şeyi değiştirir.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Finansal disiplin için gizliliğinden vazgeçmezsin</h3>
+                  <p>Hesap yok, takip araçları yok, bankanı bağlama zorunluluğu yok.</p>
+                </article>
+              </div>
+            </div>
+              </div>
     </section>
 
     <section class="section app-proof-section" id="screens">
       <div class="container">
-        <div class="app-proof-layout">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Devamlılık nasıl görünür</p>
-            <h2>İlk “almadım” anından gerçekten büyüyen bir hedefe kadar.</h2>
-            <p class="section-intro">
-              Tutarı kaydedersin, ana hesabından çıkarırsın ve ancak para gerçekten kenara ayrıldıktan sonra onaylarsın.
-              Günlük, geçmiş, hedefler ve grafikler yalnızca gerçekten birikime gireni gösterir.
-            </p>
-          </div>
+            <div class="app-proof-layout">
+              <div class="section-heading reveal">
+                <p class="eyebrow">Devamlılık nasıl görünür</p>
+                <h2>İlk “almadım” anından gerçekten büyüyen bir hedefe kadar.</h2>
+                <p class="section-intro">
+                  Tutarı kaydedersin, ana hesabından çıkarırsın ve ancak para gerçekten kenara ayrıldıktan sonra onaylarsın.
+                  Günlük, geçmiş, hedefler ve grafikler yalnızca gerçekten birikime gireni gösterir.
+                </p>
+              </div>
 
-          <div class="screenshots-grid" aria-label="Chrumek uygulama ekranlarının ön izlemesi">
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/tr/journal.webp" alt="Chrumek uygulamasında Günlük ekranı" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Günlük</figcaption>
-            </figure>
+              <div class="screenshots-grid" aria-label="Chrumek uygulama ekranlarının ön izlemesi">
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/tr/journal.webp" alt="Chrumek uygulamasında Günlük ekranı" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Günlük</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/tr/history.webp" alt="Onaylanmış birikimleri gösteren Geçmiş ekranı" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Geçmiş</figcaption>
-            </figure>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/tr/history.webp" alt="Onaylanmış birikimleri gösteren Geçmiş ekranı" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Geçmiş</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/tr/goals.webp" alt="Uygulamadaki birikim hedefi ekranı" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Hedefler</figcaption>
-            </figure>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/tr/goals.webp" alt="Uygulamadaki birikim hedefi ekranı" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Hedefler</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/tr/calendar.webp" alt="Uygulamadaki Grafikler ekranı" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Grafikler</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section benefit-section">
-      <div class="container">
-        <div class="benefit-layout">
-          <div class="benefit-copy reveal">
-            <p class="eyebrow">Bir haftalık kullanımdan sonra</p>
-            <h2>Tahmin etmek yerine gerçekten ne kadar biriktirebildiğini görmeye başlarsın.</h2>
-          </div>
-
-          <div class="benefit-grid">
-            <article class="benefit-card reveal">
-              <h3>Gerçek birikimi sonunda görürsün</h3>
-              <p>Geçmiş yalnızca onaylanmış tutarları sayar. Sahte ilerleme yok. Şişirilmiş toplam yok.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Ağır bir bütçe yerine basit bir rutin kazanırsın</h3>
-              <p>Kaydetmenin üç hızlı yolu vardır: almadım, daha ucuza aldım, aboneliği iptal ettim.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Motivasyonu sürdürmek kolaylaşır</h3>
-              <p>Hedefin ancak transferden sonra büyür; bu yüzden her hareket gerçekten bir şeyi değiştirir.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Finansal disiplin için gizliliğinden vazgeçmezsin</h3>
-              <p>Hesap yok, takip araçları yok, bankanı bağlama zorunluluğu yok.</p>
-            </article>
-          </div>
-        </div>
-      </div>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/tr/calendar.webp" alt="Uygulamadaki Grafikler ekranı" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Grafikler</figcaption>
+                </figure>
+              </div>
+            </div>
+              </div>
     </section>
 
     <section class="section spotlights">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Günlük hayat sahneleri</p>
-          <h2>Chrumek, paranın genelde sessizce kayıp gittiği anlarda işe yarar.</h2>
-        </div>
-
-        <div class="spotlight-list">
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 01</p>
-              <h3>Raftaki daha ucuz seçim anında kenara ayrılacak gerçek bir tutara dönüşür.</h3>
-              <p>
-                6,50 € yerine 4,50 €’luk bir ürünü seçersin. Chrumek bu farkı,
-                o 2,00 € başka bir şeye gitmeden önce yakalar.
-              </p>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Günlük hayat sahneleri</p>
+              <h2>Chrumek, paranın genelde sessizce kayıp gittiği anlarda işe yarar.</h2>
             </div>
-            <figure class="spotlight-photo" id="store-photo">
-              <img
-                src="../assets/photos/store-cheaper-choice-en.jpg"
-                alt="Daha ucuz bir ürün seçildikten sonra kaydedilen 2,00 € farkı gösteren, kahve rafının yanında Chrumek uygulaması açık bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Alışveriş kararından doğan fark sadece aklında kalmaz. Chrumek’e girer.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 02</p>
-              <h3>Yoldaki o latte cüzdanında kalıp doğrudan bir hedefe gidebilir.</h3>
-              <p>
-                Kasada 4,50 € ödemek yerine, vazgeçtiğin latte’yi Chrumek’e kaydedersin.
-                O küçük karar görünmez olmaktan çıkar.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="cafe-photo">
-              <img
-                src="../assets/photos/cafe-skipped-latte-en.jpg"
-                alt="Menünün yanında, kafede duran ve 4,50 € değerindeki vazgeçilmiş latte’yi gösteren Chrumek uygulaması açık bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Latte’yi geçersin. Chrumek o kararı somut bir tutara dönüştürür.</figcaption>
-            </figure>
-          </article>
+            <div class="spotlight-list">
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 03</p>
-              <h3>İptal edilen bir abonelik günlük harcamalara geri karışmaz. Hedefin için çalışmaya başlar.</h3>
-              <p>
-                Aylık 12,99 €’luk bir hizmeti iptal eder ve o tutarı Chrumek’e kaydedersin.
-                Sabit bir gider, her ay seni hedefine yaklaştıran bir şeye dönüşebilir.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="subscription-photo">
-              <img
-                src="../assets/photos/subscription-cancelled-en.jpg"
-                alt="Abonelik yönetimi ekranı açık bir dizüstü bilgisayarın yanında, iptal edilen abonelik kaydını gösteren Chrumek uygulaması açık bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Bir aboneliği iptal etmek, hedefe doğru düzenli bir adıma dönüşür.</figcaption>
-            </figure>
-          </article>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>Raftaki daha ucuz seçim anında kenara ayrılacak gerçek bir tutara dönüşür.</h3>
+                </div>
+                <figure class="spotlight-photo" id="store-photo">
+                  <img
+                    src="../assets/photos/store-cheaper-choice-en.jpg"
+                    alt="Daha ucuz bir ürün seçildikten sonra kaydedilen 2,00 € farkı gösteren, kahve rafının yanında Chrumek uygulaması açık bir telefon"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Alışveriş kararından doğan fark sadece aklında kalmaz. Chrumek’e girer.</figcaption>
+                </figure>
+              </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 04</p>
-              <h3>Bir hedef gerçek hissettirir çünkü sadece yazı yazarak büyümez.</h3>
-              <p>
-                Bisiklet artık havada duran bir fikir olmaktan çıkar. Tutarı, ilerlemeyi
-                ve satın almaya gerçekten yaklaştıran onaylı transferleri görürsün.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="bike-goal-photo">
-              <img
-                src="../assets/photos/bike-goal-progress-en.jpg"
-                alt="Kask, bisiklet ışığı ve arka plandaki bisikletin yanında, Chrumek uygulamasında Bisiklet hedefini gösteren bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Bir hedefin adı, tutarı ve gerçek ilerlemesi vardır. Artık sadece bir istek değildir.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 05</p>
-              <h3>Geçmiş, vazgeçiş günlüğü değildir. Gerçekten para ayırdığının kanıtıdır.</h3>
-              <p>
-                Kararlarını ve gerçekten birikime girmiş tutarları görürsün.
-                Sistemin çalıştığını gösteren sade bir kanıttır.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="history-photo">
-              <img
-                src="../assets/photos/history-proof-en.jpg"
-                alt="Bisiklet yazılı zarf, vazgeçilen harcamaların not edildiği bir defter ve birikmiş para yanında Chrumek geçmiş ekranı açık bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>947,00 € bir beyan değildir. Gerçekten kenara ayırdığın kararların toplamıdır.</figcaption>
-            </figure>
-          </article>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>Yoldaki o latte cüzdanında kalıp doğrudan bir hedefe gidebilir.</h3>
+                </div>
+                <figure class="spotlight-photo" id="cafe-photo">
+                  <img
+                    src="../assets/photos/cafe-skipped-latte-en.jpg"
+                    alt="Menünün yanında, kafede duran ve 4,50 € değerindeki vazgeçilmiş latte’yi gösteren Chrumek uygulaması açık bir telefon"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Latte’yi geçersin. Chrumek o kararı somut bir tutara dönüştürür.</figcaption>
+                </figure>
+              </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 06</p>
-              <h3>İstikrar, yeniden kaybolmadan önce görünür hâle gelir.</h3>
-              <p>
-                Hedefine yaptığın her transfer bir iz bırakır. Chrumek serini ve
-                gerçekten para ayırdığın günleri gösterir; böylece yarın tekrar dönmek kolaylaşır.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="streak-photo">
-              <img
-                src="../assets/photos/transfer-streak-calendar-en.jpg"
-                alt="Transfer planı ve hatırlatma notunun yanındaki defterin yanında, Chrumek takvim ekranı açık bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>İşe yarayıp yaramadığını merak etmek zorunda kalmazsın. Seriyi ve tam birikim günlerini görürsün.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 07</p>
-              <h3>Gün elinden kayarsa, Chrumek havaleyi tamamlamanı hatırlatır.</h3>
-              <p>
-                Akşam için sakin bir hatırlatma ayarlarsın.
-                Bir kenara ayıracak bir tutar çıktığında uygulama, her şeyi aklında tutmadan bu basit ritme dönmene yardımcı olur.
-              </p>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>İptal edilen bir abonelik günlük harcamalara geri karışmaz. Hedefin için çalışmaya başlar.</h3>
+                </div>
+                <figure class="spotlight-photo" id="subscription-photo">
+                  <img
+                    src="../assets/photos/subscription-cancelled-en.jpg"
+                    alt="Abonelik yönetimi ekranı açık bir dizüstü bilgisayarın yanında, iptal edilen abonelik kaydını gösteren Chrumek uygulaması açık bir telefon"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Bir aboneliği iptal etmek, hedefe doğru düzenli bir adıma dönüşür.</figcaption>
+                </figure>
+              </article>
             </div>
-            <figure class="spotlight-photo" id="reminder-photo">
-              <img
-                src="../assets/photos/transfer-reminder-evening-en.jpg"
-                alt="Chrumek uygulamasında havale hatırlatma ekranı açık olan bir telefon; yanında kumbara, Bisiklet yazılı bir zarf, çay, mum ve bir not defteri"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Hatırlatma senin yerine karar vermez. Sadece iyi bir kararı kaybetmene engel olur.</figcaption>
-            </figure>
-          </article>
-
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 08</p>
-              <h3>Hangi küçük kararların en büyük farkı yarattığını görürsün.</h3>
-              <p>
-                Kahve, paket yemek, oyunlar, elektronik. Chrumek birikiminin gerçekten nereden geldiğini gösterir;
-                böylece en çok işe yarayan seçimleri tekrarlamak kolaylaşır.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="categories-photo">
-              <img
-                src="../assets/photos/savings-categories-en.jpg"
-                alt="Kahve, fiş, defter, dizüstü bilgisayar, oyun kolu ve alışveriş çantasının yanında Chrumek’te birikim kategorileri grafiğini gösteren bir telefon"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Her harcamayı tek tek analiz etmezsin. Parayı gerçekten nerede geri kazandığını görürsün.</figcaption>
-            </figure>
-          </article>
-
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Sahne 09</p>
-              <h3>Verilerin, onları düzene sokmak istediğinde elinin altında olur.</h3>
-              <p>
-                Havaleleri ve tamamlanan hedefleri CSV olarak dışa aktarırsın.
-                Hesap yok, verilerini uygulamanın içine kilitlemek yok, kendi geçmişine erişmek için kimseden izin istemek yok.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="export-photo">
-              <img
-                src="../assets/photos/export-data-control-en.jpg"
-                alt="Chrumek uygulamasında CSV dışa aktarma ekranı açık olan bir telefon; yanında elektronik tablo açık bir dizüstü bilgisayar ve veri kontrol listesi bulunan bir not defteri"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Basitçe birikim yaparsın ama veriler yine de sana aittir.</figcaption>
-            </figure>
-          </article>
-        </div>
-      </div>
+              </div>
     </section>
 
-    <section class="section quote-section">
+<section class="section quote-section">
       <div class="container quote-grid">
-        <blockquote class="quote-card reveal">
-          <div class="rating-stars" aria-label="5 üzerinden 5 puan">
-            <span aria-hidden="true">★★★★★</span>
-          </div>
-          <p>
-            "İlk kez gerçekten ne kadar biriktirdiğimi net biçimde görebiliyorum; sadece ne kadar biriktirmek istediğimi değil."
-          </p>
-          <footer>Ola</footer>
-        </blockquote>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Yorumlar</p>
+              <h2>800’den fazla kişi Chrumek ile birikim yapıyor.</h2>
+            </div>
 
-        <blockquote class="quote-card reveal">
-          <div class="rating-stars" aria-label="5 üzerinden 5 puan">
-            <span aria-hidden="true">★★★★★</span>
-          </div>
-          <p>
-            "Chrumek iyi niyeti ödüllendirmez. Sadece gerçekten ayırdığın parayı sayar."
-          </p>
-          <footer>Mateusz</footer>
-        </blockquote>
-      </div>
+            <blockquote class="quote-card reveal">
+              <div class="rating-stars" aria-label="5 üzerinden 5 puan">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <p>
+                "İlk kez gerçekten ne kadar biriktirdiğimi net biçimde görebiliyorum; sadece ne kadar biriktirmek istediğimi değil."
+              </p>
+              <footer>Ola</footer>
+            </blockquote>
+
+            <blockquote class="quote-card reveal">
+              <div class="rating-stars" aria-label="5 üzerinden 5 puan">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <p>
+                "Chrumek iyi niyeti ödüllendirmez. Sadece gerçekten ayırdığın parayı sayar."
+              </p>
+              <footer>Mateusz</footer>
+            </blockquote>
+              </div>
     </section>
 
-    <section class="section moments-section" id="moments">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">An be an</p>
-          <h2>Birikim sıradan yerlerde başlar: mağazada, kafede, koltukta.</h2>
-          <p class="section-intro">
-            Chrumek, genelde iz bırakmadan kaybolan küçük kararları yakalamana yardım eder.
-          </p>
-        </div>
 
-        <div class="shots-grid">
-          <article class="shot-card reveal">
-            <p class="shot-number">01</p>
-            <h3>Mağazada</h3>
-            <p class="shot-copy">
-              Daha ucuz ürünü seçer ve farkı başka bir şeye harcamadan önce kaydedersin.
-            </p>
-            <p class="shot-meta">“Galiba biraz tasarruf ettim” demek yerine tam tutarı görürsün.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">02</p>
-            <h3>Kafede</h3>
-            <p class="shot-copy">
-              Yoldaki kahveyi geçer ve birikime gitmesi gereken tutarı hemen kaydedersin.
-            </p>
-            <p class="shot-meta">Küçük bir karar görünmez olmaktan çıkar.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">03</p>
-            <h3>Aboneliklerde</h3>
-            <p class="shot-copy">
-              Kullanmadığın bir aboneliği iptal eder ve o aylık ücreti düzenli bir birikime dönüştürürsün.
-            </p>
-            <p class="shot-meta">Tek bir karar her ay senin için çalışabilir.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">04</p>
-            <h3>Bir hedefle</h3>
-            <p class="shot-copy">
-              Onaylanan her transfer seni gerçekten biriktirmek istediğin şeye biraz daha yaklaştırır.
-            </p>
-            <p class="shot-meta">Hedef ancak para gerçekten kenara ayrıldığında büyür.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">05</p>
-            <h3>Geçmişte</h3>
-            <p class="shot-copy">
-              Sadece planladığın tutarlara değil, gerçekten birikime girmiş tutarların listesine dönersin.
-            </p>
-            <p class="shot-meta">Küçük kararların gerçek bir sonuca dönüştüğüne dair kanıt elde edersin.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">06</p>
-            <h3>Bankanı bağlamadan</h3>
-            <p class="shot-copy">
-              Chrumek’i hesap açmadan ve bankanı bağlamadan kullanırsın. Paranın nereye gideceğine sen karar verirsin.
-            </p>
-            <p class="shot-meta">Basit bir rutin, minimum veri, maksimum kontrol.</p>
-          </article>
-        </div>
+    <section class="section pricing-section">
+      <div class="container pricing-card reveal">
+            <div class="pricing-copy">
+              <p class="eyebrow">Premium</p>
+              <h2>Para ayırmaya başladın. Şimdi durma.</h2>
+              <p>İlk 5 transfer ücretsiz. Sonra sana uygun olanı seç:</p>
+            </div>
+            <div class="pricing-grid">
+              <div class="price-card">
+                <p class="price-label">Aylık</p>
+                <p class="price-amount">₺49,99<span>/ay</span></p>
+                <p class="price-note">App Store üzerinden her ay yenilenir.</p>
+              </div>
+              <div class="price-card price-card-highlight">
+                <p class="price-badge">En iyi değer</p>
+                <p class="price-label">Süresiz</p>
+                <p class="price-amount">₺499,99</p>
+                <p class="price-note">Tek seferlik satın alma. Bir kez öde, limitsiz kullan.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-large" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">
+          Ücretsiz başla
+        </a>
       </div>
     </section>
 
     <section class="section fit-section">
       <div class="container fit-grid">
-        <article class="fit-card reveal">
-          <p class="eyebrow">Kimler için</p>
-          <h2>Chrumek sana uygunsa:</h2>
-          <ul>
-            <li>“Daha fazla biriktirebileceğimi biliyorum ama gerçek hayatta devamını getiremiyorum.”</li>
-            <li>“Her harcamayı kaydedeceğim bir uygulama daha istemiyorum.”</li>
-            <li>“İlk günden işe yarayan basit bir rutine ihtiyacım var.”</li>
-          </ul>
-        </article>
+            <article class="fit-card reveal">
+              <p class="eyebrow">Kimler için</p>
+              <h2>Chrumek sana uygunsa:</h2>
+              <ul>
+                <li>“Daha fazla biriktirebileceğimi biliyorum ama gerçek hayatta devamını getiremiyorum.”</li>
+                <li>“Her harcamayı kaydedeceğim bir uygulama daha istemiyorum.”</li>
+                <li>“İlk günden işe yarayan basit bir rutine ihtiyacım var.”</li>
+              </ul>
+            </article>
 
-        <article class="fit-card fit-card-muted reveal">
-          <p class="eyebrow">Şunlar için değil</p>
-          <h2>Chrumek sana uygun değilse:</h2>
-          <ul>
-            <li>otomatik banka senkronizasyonu istiyorsan,</li>
-            <li>karmaşık bir finans planlayıcısına ihtiyacın varsa,</li>
-            <li>sen onay vermeden her şeyi yapan bir uygulama istiyorsan.</li>
-          </ul>
-        </article>
-      </div>
+            <article class="fit-card fit-card-muted reveal">
+              <p class="eyebrow">Şunlar için değil</p>
+              <h2>Chrumek sana uygun değilse:</h2>
+              <ul>
+                <li>otomatik banka senkronizasyonu istiyorsan,</li>
+                <li>karmaşık bir finans planlayıcısına ihtiyacın varsa,</li>
+                <li>sen onay vermeden her şeyi yapan bir uygulama istiyorsan.</li>
+              </ul>
+            </article>
+              </div>
     </section>
 
     <section class="section faq-section" id="faq">
       <div class="container faq-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">SSS</p>
-          <h2>Chrumek’i indirmeden önce en sık sorulan sorular.</h2>
-          <p class="section-intro">
-            Ne kurduğunu tam olarak bilirsin: Chrumek gerçek birikimi devam ettirmene yardım eder,
-            ama bankanı bağlamaz, transfer yapmaz ve hesap gerektirmez.
-          </p>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">SSS</p>
+              <h2>Chrumek’i indirmeden önce en sık sorulan sorular.</h2>
+              <p class="section-intro">
+                Ne kurduğunu tam olarak bilirsin: Chrumek gerçek birikimi devam ettirmene yardım eder,
+                ama bankanı bağlamaz, transfer yapmaz ve hesap gerektirmez.
+              </p>
+            </div>
 
         <div class="faq-list">
           <details class="faq-item reveal">
@@ -750,69 +571,62 @@
             <summary>Verilerim bir sunucuya gönderiliyor mu?</summary>
             <p>Uygulamaya girdiğin veriler cihazında yerel olarak kalır. Hesap oluşturmazsın ve karar geçmişini dışarıdaki bir panele teslim etmezsin.</p>
           </details>
-
-          <details class="faq-item reveal">
-            <summary>Premium ve ücretsiz deneme nasıl çalışır?</summary>
-            <p>Uygulamayı ödeme yapmadan önce deneyebilirsin. Ücretli özelliklere devam eden erişim App Store üzerinden yönetilir ve deneme süresi o kullanıcı için o anda mevcut olan teklife bağlıdır.</p>
-          </details>
+              <details class="faq-item reveal" open>
+                <summary>Premium nasıl çalışır?</summary>
+                <p>İlk 5 transferi ücretsiz onaylayabilirsin. Sonra Premium’u seçebilirsin: ayda ₺49,99 veya süresiz ₺499,99.</p>
+              </details>
 
           <details class="faq-item reveal">
             <summary>Verilerimi dışa aktarabilir miyim?</summary>
             <p>Evet. Chrumek CSV dışa aktarmayı destekler; böylece onaylanmış birikimlerini ve hedeflerini uygulama dışına taşıyabilirsin.</p>
           </details>
         </div>
-      </div>
+              </div>
     </section>
 
     <section class="section contact-section" aria-labelledby="contact-title-tr">
       <div class="container contact-panel reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">İletişim</p>
-          <h2 id="contact-title-tr">Başlamadan önce bir sorun mu var?</h2>
-          <p>
-            Chrumek, veri gizliliği, Premium ya da SSS’ye sığmayan herhangi bir konu hakkında sormak istersen bana yaz.
-          </p>
-        </div>
+            <div class="contact-copy">
+              <p class="eyebrow">İletişim</p>
+              <h2 id="contact-title-tr">Başlamadan önce bir sorun mu var?</h2>
+              <p>
+                Chrumek, veri gizliliği, Premium ya da SSS’ye sığmayan herhangi bir konu hakkında sormak istersen bana yaz.
+              </p>
+            </div>
 
-        <div class="contact-action">
-          <a class="contact-mail" href="mailto:chrumek@chrumek.app?subject=Chrumek" aria-label="chrumek@chrumek.app adresine e-posta gönder">
-            <span class="contact-mail-icon" aria-hidden="true">@</span>
-            <span>
-              <span class="contact-mail-label">Bana yaz</span>
-              <span class="contact-mail-address">chrumek@chrumek.app</span>
-            </span>
-          </a>
-          <p>Form yok, hesap yok, otomatik destek kaydı yok.</p>
-        </div>
-      </div>
+            <div class="contact-action">
+              <a class="contact-mail" href="mailto:chrumek@chrumek.app?subject=Chrumek" aria-label="chrumek@chrumek.app adresine e-posta gönder">
+                <span class="contact-mail-icon" aria-hidden="true">@</span>
+                <span>
+                  <span class="contact-mail-label">Bana yaz</span>
+                  <span class="contact-mail-address">chrumek@chrumek.app</span>
+                </span>
+              </a>
+              <p>Form yok, hesap yok, otomatik destek kaydı yok.</p>
+            </div>
+              </div>
     </section>
 
     <section class="section start-section" id="start">
       <div class="container start-card reveal">
-        <div class="start-copy">
-          <p class="eyebrow">Son adım</p>
-          <h2>Kendine “bir gün birikim yapacağım” diye söz verme. Döngüyü gerçekten kapatan bir süreç kur.</h2>
-          <p>
-            Chrumek niyet ölçmez. Paranın gerçekten senin tarafına geçtiği anı kapatmana yardım eder.
-          </p>
-        </div>
+            <div class="start-copy">
+              <p class="eyebrow">Son adım</p>
+              <h2>Kendine “bir gün birikim yapacağım” diye söz verme. Döngüyü gerçekten kapatan bir süreç kur.</h2>
+              <p>
+                Chrumek niyet ölçmez. Paranın gerçekten senin tarafına geçtiği anı kapatmana yardım eder.
+              </p>
+            </div>
 
-        <div class="start-actions">
-          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Chrumek'i App Store'dan indir">
-            <img class="app-store-badge" src="../assets/app-store-badge-tr.svg" alt="App Store'dan indir" width="180" height="60">
-          </a>
-          <p class="start-note">
-            Hesap yok. Banka bağlantısı yok. Bugün harcamadığın ilk tutarla başla.
-          </p>
-        </div>
+            <div class="start-actions">
+              <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Chrumek'i App Store'dan indir">
+                <img class="app-store-badge" src="../assets/app-store-badge-tr.svg" alt="App Store'dan indir" width="180" height="60">
+              </a>
+              <p class="start-note">
+                Hesap yok. Banka bağlantısı yok. Bugün harcamadığın ilk tutarla başla.
+              </p>
+            </div>
 
-        <div class="trust-row" aria-label="Güven işaretleri">
-          <span>hesap yok</span>
-          <span>reklam takipçisi yok</span>
-          <span>veri cihazında kalır</span>
-          <span>banka bağlantısı yok</span>
-        </div>
-      </div>
+              </div>
     </section>
   </main>
 

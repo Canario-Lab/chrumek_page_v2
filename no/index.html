@@ -49,12 +49,12 @@
 >
   <script>
     (function () {
-      try {
-        var savedTheme = localStorage.getItem("chrum-theme");
-        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
-      } catch (error) {
-        document.body.setAttribute("data-theme", "light");
-      }
+          try {
+            var savedTheme = localStorage.getItem("chrum-theme");
+            document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+          } catch (error) {
+            document.body.setAttribute("data-theme", "light");
+          }
     })();
   </script>
 
@@ -63,672 +63,493 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Chrumek">
-        <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
-        <span class="brand-text">Chrumek</span>
+            <img class="brand-mark" src="../assets/chrumek-app-icon.png" alt="" width="42" height="42">
+            <span class="brand-text">Chrumek</span>
       </a>
 
       <div class="header-actions">
-        <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek på Facebook" title="Chrumek på Facebook">
-          <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
-        </a>
-        <div class="lang-switch" data-lang-switch>
-          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Velg språk">
-            <span class="lang-toggle-icon" aria-hidden="true">NO</span>
-            <span class="lang-toggle-text">Norsk</span>
-          </button>
-          <div class="lang-menu" role="menu" aria-label="Språkvelger">
-            <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
-              <span class="lang-option-main"><span>Polski</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
+            <a class="header-social-link" href="https://www.facebook.com/profile.php?id=61579514051295" target="_blank" rel="noopener noreferrer" aria-label="Chrumek på Facebook" title="Chrumek på Facebook">
+              <img class="header-social-icon" src="../assets/facebook-icon.svg" alt="" width="20" height="20">
             </a>
-            <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
-              <span class="lang-option-main"><span>English</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
-              <span class="lang-option-main"><span>Español</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
-              <span class="lang-option-main"><span>Deutsch</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
-              <span class="lang-option-main"><span>Français</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
-              <span class="lang-option-main"><span>Italiano</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
-              <span class="lang-option-main"><span>Português (BR)</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
-              <span class="lang-option-main"><span>Português (PT)</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
-              <span class="lang-option-main"><span>Türkçe</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
-              <span class="lang-option-main"><span>Български</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
-              <span class="lang-option-main"><span>Čeština</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
-              <span class="lang-option-main"><span>Dansk</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
-              <span class="lang-option-main"><span>Ελληνικά</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
-              <span class="lang-option-main"><span>Suomi</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
-              <span class="lang-option-main"><span>Hrvatski</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
-              <span class="lang-option-main"><span>Magyar</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
-              <span class="lang-option-main"><span>日本語</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
-              <span class="lang-option-main"><span>한국어</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
-              <span class="lang-option-main"><span>Nederlands</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-            <a class="lang-option is-active" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem" aria-current="page">
-              <span class="lang-option-main"><span>Norsk</span></span>
-              <span class="lang-option-check" aria-hidden="true">✓</span>
-            </a>
-          </div>
-        </div>
-        <button class="theme-toggle" id="themeToggle" type="button">
-          <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
-        </button>
-        <a class="btn btn-primary" href="#start">Download</a>
-      </div>
-    </div>
+            <div class="lang-switch" data-lang-switch>
+              <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Velg språk">
+                <span class="lang-toggle-icon" aria-hidden="true">NO</span>
+                <span class="lang-toggle-text">Norsk</span>
+              </button>
+              <div class="lang-menu" role="menu" aria-label="Språkvelger">
+                <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" hreflang="pl" role="menuitem">
+                  <span class="lang-option-main"><span>Polski</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../en/" data-base="../en/" lang="en" hreflang="en" role="menuitem">
+                  <span class="lang-option-main"><span>English</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../es/" data-base="../es/" lang="es" hreflang="es" role="menuitem">
+                  <span class="lang-option-main"><span>Español</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../de/" data-base="../de/" lang="de" hreflang="de" role="menuitem">
+                  <span class="lang-option-main"><span>Deutsch</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" hreflang="fr" role="menuitem">
+                  <span class="lang-option-main"><span>Français</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../it/" data-base="../it/" lang="it" hreflang="it" role="menuitem">
+                  <span class="lang-option-main"><span>Italiano</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" hreflang="pt-BR" role="menuitem">
+                  <span class="lang-option-main"><span>Português (BR)</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" hreflang="pt-PT" role="menuitem">
+                  <span class="lang-option-main"><span>Português (PT)</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" hreflang="tr" role="menuitem">
+                  <span class="lang-option-main"><span>Türkçe</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../bg/" data-base="../bg/" lang="bg" hreflang="bg" role="menuitem">
+                  <span class="lang-option-main"><span>Български</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" hreflang="cs" role="menuitem">
+                  <span class="lang-option-main"><span>Čeština</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../da/" data-base="../da/" lang="da" hreflang="da" role="menuitem">
+                  <span class="lang-option-main"><span>Dansk</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../el/" data-base="../el/" lang="el" hreflang="el" role="menuitem">
+                  <span class="lang-option-main"><span>Ελληνικά</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" hreflang="fi" role="menuitem">
+                  <span class="lang-option-main"><span>Suomi</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" hreflang="hr" role="menuitem">
+                  <span class="lang-option-main"><span>Hrvatski</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" hreflang="hu" role="menuitem">
+                  <span class="lang-option-main"><span>Magyar</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../ja/" data-base="../ja/" lang="ja" hreflang="ja" role="menuitem">
+                  <span class="lang-option-main"><span>日本語</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../ko/" data-base="../ko/" lang="ko" hreflang="ko" role="menuitem">
+                  <span class="lang-option-main"><span>한국어</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" hreflang="nl" role="menuitem">
+                  <span class="lang-option-main"><span>Nederlands</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+                <a class="lang-option is-active" href="../no/" data-base="../no/" lang="no" hreflang="no" role="menuitem" aria-current="page">
+                  <span class="lang-option-main"><span>Norsk</span></span>
+                  <span class="lang-option-check" aria-hidden="true">✓</span>
+                </a>
+              </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" type="button">
+              <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+            </button>
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">Last ned gratis</a>
+              </div>
+            </div>
   </header>
 
   <main id="top">
     <section class="hero section">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Ikke enda en utgiftsapp</p>
-          <h1>
-            Chrumek
-          </h1>
-          <p class="hero-statement">Brukte du dem ikke? Sett dem til side med en gang.</p>
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Ikke enda en utgiftsapp</p>
+              <h1>
+                Chrumek
+              </h1>
+              <p class="hero-statement">Brukte du dem ikke? Sett dem til side med en gang.</p>
 
-          <p class="lead">
-            I stedet for å registrere hver kvittering, fanger du øyeblikkene da du ikke brukte penger eller brukte mindre.
-            Målet ditt, historikken og grafene vokser først etter at du faktisk har flyttet pengene til sparing.
-          </p>
-
-          <p class="supporting-copy">
-            For folk som har prøvd å «bare bruke mindre» og vet at uten en reell overføring
-            blir pengene stående på brukskontoen og forsvinner stille senere.
-          </p>
-
-          <div class="hero-actions-large store-actions">
-            <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Last ned Chrumek i App Store">
-              <img class="app-store-badge" src="../assets/app-store-badge-no.svg" alt="Last ned i App Store" width="180" height="60">
-            </a>
-            <a class="btn btn-ghost btn-large" href="#how">Se hvordan det virker</a>
-          </div>
-
-          <p class="microcopy">
-            Ingen konto. Ingen bankkobling. Ingen sporing. Bare det du faktisk setter til side, teller.
-          </p>
-
-          <ul class="proof-pills" aria-label="Viktigste løfter">
-            <li>hver utgift du hopper over blir til en reell overføring</li>
-            <li>målet ditt vokser først etter at pengene faktisk flyttes</li>
-            <li>du sparer uten at det føles som bokføring</li>
-          </ul>
-        </div>
-
-        <div class="hero-visual reveal">
-          <article class="scene-card">
-            <div class="scene-copy">
-              <p class="scene-label">Enkelt ritual</p>
-              <h2>Det avgjørende øyeblikket er når pengene forlater brukskontoen din.</h2>
-              <p>
-                Registrer beløpet, flytt det dit du faktisk oppbevarer sparingen din, og bekreft det deretter med ett trykk.
-                Chrumek teller bare det du faktisk setter til side.
+              <p class="lead">
+                I stedet for å registrere hver kvittering, fanger du øyeblikkene da du ikke brukte penger eller brukte mindre.
+                Målet ditt, historikken og grafene vokser først etter at du faktisk har flyttet pengene til sparing.
               </p>
-            </div>
 
-            <figure class="hero-photo-card" id="hero-photo">
-              <img
-                src="../assets/photos/hero-saving-moment-en-eur.jpg"
-                alt="En telefon med Chrumek-appen ved siden av en konvolutt merket Sykkel, en sparegris og penger som legges til side"
-                width="1536"
-                height="1024"
-                fetchpriority="high"
-                decoding="async"
-              >
-              <figcaption>€19,04 blir ikke liggende til senere. De går rett til målet «Bike».</figcaption>
-            </figure>
+              <p class="supporting-copy">
+                For folk som har prøvd å «bare bruke mindre» og vet at uten en reell overføring
+                blir pengene stående på brukskontoen og forsvinner stille senere.
+              </p>
 
-            <div class="hero-proof-row">
-              <div class="note-card">
-                <p class="note-card-label">Problem</p>
-                <strong>Å hoppe over et kjøp betyr ikke at pengene faktisk ble spart.</strong>
+              <div class="hero-actions-large store-actions">
+                <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Last ned Chrumek i App Store">
+                  <img class="app-store-badge" src="../assets/app-store-badge-no.svg" alt="Last ned i App Store" width="180" height="60">
+                </a>
+                <a class="btn btn-primary btn-large" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">
+                  Last ned gratis
+                </a>
+                <a class="btn btn-ghost btn-large" href="#how">Se hvordan det virker</a>
               </div>
 
-              <div class="note-card note-card-accent">
-                <p class="note-card-label">Løfte</p>
-                <strong>Fremgangen og historikken vokser først etter at du bekrefter overføringen.</strong>
-              </div>
+
+              <ul class="proof-pills" aria-label="Viktigste løfter">
+                <li>hver utgift du hopper over blir til en reell overføring</li>
+                <li>målet ditt vokser først etter at pengene faktisk flyttes</li>
+                <li>du sparer uten at det føles som bokføring</li>
+              </ul>
             </div>
-          </article>
-        </div>
-      </div>
+
+            <div class="hero-visual reveal">
+              <article class="scene-card">
+                <div class="scene-copy">
+                  <p class="scene-label">Enkelt ritual</p>
+                  <h2>Det avgjørende øyeblikket er når pengene forlater brukskontoen din.</h2>
+                  <p>
+                    Registrer beløpet, flytt det dit du faktisk oppbevarer sparingen din, og bekreft det deretter med ett trykk.
+                    Chrumek teller bare det du faktisk setter til side.
+                  </p>
+                </div>
+
+                <figure class="hero-photo-card" id="hero-photo">
+                  <img
+                    src="../assets/photos/hero-saving-moment-en-eur.jpg"
+                    alt="En telefon med Chrumek-appen ved siden av en konvolutt merket Sykkel, en sparegris og penger som legges til side"
+                    width="1536"
+                    height="1024"
+                    fetchpriority="high"
+                    decoding="async"
+                  >
+                  <figcaption>€19,04 blir ikke liggende til senere. De går rett til målet «Bike».</figcaption>
+                </figure>
+
+                <div class="hero-proof-row">
+                  <div class="note-card">
+                    <p class="note-card-label">Problem</p>
+                    <strong>Å hoppe over et kjøp betyr ikke at pengene faktisk ble spart.</strong>
+                  </div>
+
+                  <div class="note-card note-card-accent">
+                    <p class="note-card-label">Løfte</p>
+                    <strong>Fremgangen og historikken vokser først etter at du bekrefter overføringen.</strong>
+                  </div>
+                </div>
+              </article>
+            </div>
+              </div>
     </section>
 
     <section class="problem-strip section">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Det egentlige problemet</p>
-          <h2>De fleste har ikke et kunnskapsproblem om sparing. De har et gjennomføringsproblem.</h2>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Det egentlige problemet</p>
+              <h2>De fleste har ikke et kunnskapsproblem om sparing. De har et gjennomføringsproblem.</h2>
+            </div>
 
-        <div class="problem-grid">
-          <article class="problem-card reveal">
-            <p class="card-index">01</p>
-            <h3>Beslutningen er der, men pengene blir værende i omløp.</h3>
-            <p>
-              Du hopper over et kjøp, velger det billigere alternativet eller sier opp et unødvendig abonnement.
-              Men ingenting tvinger det beløpet over i sparing.
-            </p>
-          </article>
+            <div class="problem-grid">
+              <article class="problem-card reveal">
+                <p class="card-index">01</p>
+                <h3>Beslutningen er der, men pengene blir værende i omløp.</h3>
+                <p>
+                  Du hopper over et kjøp, velger det billigere alternativet eller sier opp et unødvendig abonnement.
+                  Men ingenting tvinger det beløpet over i sparing.
+                </p>
+              </article>
 
-          <article class="problem-card reveal">
-            <p class="card-index">02</p>
-            <h3>Utgiftsapper viser fortiden. De bygger ikke opp sparing.</h3>
-            <p>
-              Ved slutten av måneden vet du hvor pengene gikk, men du ser fortsatt ikke
-              hvor mye du faktisk klarte å legge til side.
-            </p>
-          </article>
+              <article class="problem-card reveal">
+                <p class="card-index">02</p>
+                <h3>Utgiftsapper viser fortiden. De bygger ikke opp sparing.</h3>
+                <p>
+                  Ved slutten av måneden vet du hvor pengene gikk, men du ser fortsatt ikke
+                  hvor mye du faktisk klarte å legge til side.
+                </p>
+              </article>
 
-          <article class="problem-card reveal">
-            <p class="card-index">03</p>
-            <h3>Budsjettering begynner fort å føles som ekstra arbeid.</h3>
-            <p>
-              Jo flere kategorier, tabeller og manuell registrering du legger til, desto større er sjansen
-              for at appen blir liggende etter noen få dager.
-            </p>
-          </article>
-        </div>
-      </div>
+              <article class="problem-card reveal">
+                <p class="card-index">03</p>
+                <h3>Budsjettering begynner fort å føles som ekstra arbeid.</h3>
+                <p>
+                  Jo flere kategorier, tabeller og manuell registrering du legger til, desto større er sjansen
+                  for at appen blir liggende etter noen få dager.
+                </p>
+              </article>
+            </div>
+              </div>
     </section>
 
     <section class="section" id="how">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Hvordan Chrumek virker</p>
-          <h2>Du trenger ikke et fullstendig budsjett. Du trenger bare å fange øyeblikket da du kunne ha brukt pengene.</h2>
-          <p class="section-intro">
-            Chrumek fokuserer på én ting: å sørge for at pengene du ikke brukte, ikke senere forsvinner stille fra brukskontoen din.
-          </p>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Hvordan Chrumek virker</p>
+              <h2>Du trenger ikke et fullstendig budsjett. Du trenger bare å fange øyeblikket da du kunne ha brukt pengene.</h2>
+              <p class="section-intro">
+                Chrumek fokuserer på én ting: å sørge for at pengene du ikke brukte, ikke senere forsvinner stille fra brukskontoen din.
+              </p>
+            </div>
 
-        <div class="steps-grid">
-          <article class="step-card reveal">
-            <div class="step-badge">1</div>
-            <h3>Du merker besparelsen</h3>
-            <p class="step-copy">
-              Du hopper over noe, velger en billigere versjon eller kutter et unødvendig abonnement.
-              Chrumek fanger akkurat det øyeblikket.
-            </p>
-            <p class="step-benefit">Da blir sparing ikke en vag idé, men et konkret beløp å legge til side.</p>
-          </article>
+            <div class="steps-grid">
+              <article class="step-card reveal">
+                <div class="step-badge">1</div>
+                <h3>Du merker besparelsen</h3>
+                <p class="step-copy">
+                  Du hopper over noe, velger en billigere versjon eller kutter et unødvendig abonnement.
+                  Chrumek fanger akkurat det øyeblikket.
+                </p>
+                <p class="step-benefit">Da blir sparing ikke en vag idé, men et konkret beløp å legge til side.</p>
+              </article>
 
-          <article class="step-card reveal">
-            <div class="step-badge">2</div>
-            <h3>Du flytter det med en gang</h3>
-            <p class="step-copy">
-              Beløpet havner på en egen konto, i en konvolutt, i en sparegris eller der du faktisk oppbevarer sparingen din.
-            </p>
-            <p class="step-benefit">Slik blir besparelsen ikke bare værende i hodet ditt.</p>
-          </article>
+              <article class="step-card reveal">
+                <div class="step-badge">2</div>
+                <h3>Du flytter det med en gang</h3>
+                <p class="step-copy">
+                  Beløpet havner på en egen konto, i en konvolutt, i en sparegris eller der du faktisk oppbevarer sparingen din.
+                </p>
+                <p class="step-benefit">Slik blir besparelsen ikke bare værende i hodet ditt.</p>
+              </article>
 
-          <article class="step-card reveal">
-            <div class="step-badge">3</div>
-            <h3>Du bekrefter det med ett trykk</h3>
-            <p class="step-copy">
-              Først da går posten inn i historikken, bygger målet ditt og blir en del av grafene.
-            </p>
-            <p class="step-benefit">Du ser fremgang du kan stole på, fordi den er støttet av reelle pengebevegelser.</p>
-          </article>
-        </div>
-      </div>
+              <article class="step-card reveal">
+                <div class="step-badge">3</div>
+                <h3>Du bekrefter det med ett trykk</h3>
+                <p class="step-copy">
+                  Først da går posten inn i historikken, bygger målet ditt og blir en del av grafene.
+                </p>
+                <p class="step-benefit">Du ser fremgang du kan stole på, fordi den er støttet av reelle pengebevegelser.</p>
+              </article>
+            </div>
+              </div>
+    </section>
+
+
+    <section class="section benefit-section">
+      <div class="container">
+            <div class="benefit-layout">
+              <div class="benefit-copy reveal">
+                <p class="eyebrow">Etter en uke med bruk</p>
+                <h2>I stedet for å gjette, kan du se hvor mye du faktisk klarte å spare.</h2>
+              </div>
+
+              <div class="benefit-grid">
+                <article class="benefit-card reveal">
+                  <h3>Du ser endelig ekte sparing</h3>
+                  <p>Historikken teller bare bekreftede beløp. Ingen falsk fremgang. Ingen oppblåste totaler.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Du får et enkelt ritual i stedet for tung budsjettering</h3>
+                  <p>Tre raske måter å registrere det på: jeg kjøpte det ikke, jeg kjøpte det billigere, jeg sa opp et abonnement.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Det blir lettere å holde motivasjonen oppe</h3>
+                  <p>Målet ditt vokser først etter overføringen, så hvert steg endrer noe reelt.</p>
+                </article>
+
+                <article class="benefit-card reveal">
+                  <h3>Du bytter ikke bort personvern for økonomisk disiplin</h3>
+                  <p>Ingen konto, ingen sporere, ingen plikt til å koble banken din.</p>
+                </article>
+              </div>
+            </div>
+              </div>
     </section>
 
     <section class="section app-proof-section" id="screens">
       <div class="container">
-        <div class="app-proof-layout">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Slik ser virkelig gjennomføring ut</p>
-            <h2>Fra det første «jeg kjøpte det ikke» til et mål som faktisk vokser.</h2>
-            <p class="section-intro">
-              Du registrerer beløpet, flytter det ut av brukskontoen og bekrefter det først når pengene faktisk er satt til side.
-              Dagbok, historikk, mål og grafer viser bare det som virkelig havnet i sparingen din.
-            </p>
-          </div>
+            <div class="app-proof-layout">
+              <div class="section-heading reveal">
+                <p class="eyebrow">Slik ser virkelig gjennomføring ut</p>
+                <h2>Fra det første «jeg kjøpte det ikke» til et mål som faktisk vokser.</h2>
+                <p class="section-intro">
+                  Du registrerer beløpet, flytter det ut av brukskontoen og bekrefter det først når pengene faktisk er satt til side.
+                  Dagbok, historikk, mål og grafer viser bare det som virkelig havnet i sparingen din.
+                </p>
+              </div>
 
-          <div class="screenshots-grid" aria-label="Forhåndsvisning av Chrumek-appens skjermer">
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/no/journal.webp" alt="Dagbokskjerm i Chrumek-appen" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Dagbok</figcaption>
-            </figure>
+              <div class="screenshots-grid" aria-label="Forhåndsvisning av Chrumek-appens skjermer">
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/no/journal.webp" alt="Dagbokskjerm i Chrumek-appen" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Dagbok</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/no/history.webp" alt="Historikkskjerm med bekreftede besparelser" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Historikk</figcaption>
-            </figure>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/no/history.webp" alt="Historikkskjerm med bekreftede besparelser" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Historikk</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/no/goals.webp" alt="Målskjerm for sparing i appen" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Mål</figcaption>
-            </figure>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/no/goals.webp" alt="Målskjerm for sparing i appen" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Mål</figcaption>
+                </figure>
 
-            <figure class="screenshot-card reveal">
-              <img src="../assets/screenshots/no/calendar.webp" alt="Kalenderskjerm med overføringer i appen" loading="lazy" decoding="async" width="1178" height="2556">
-              <figcaption>Grafer</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section benefit-section">
-      <div class="container">
-        <div class="benefit-layout">
-          <div class="benefit-copy reveal">
-            <p class="eyebrow">Etter en uke med bruk</p>
-            <h2>I stedet for å gjette, kan du se hvor mye du faktisk klarte å spare.</h2>
-          </div>
-
-          <div class="benefit-grid">
-            <article class="benefit-card reveal">
-              <h3>Du ser endelig ekte sparing</h3>
-              <p>Historikken teller bare bekreftede beløp. Ingen falsk fremgang. Ingen oppblåste totaler.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Du får et enkelt ritual i stedet for tung budsjettering</h3>
-              <p>Tre raske måter å registrere det på: jeg kjøpte det ikke, jeg kjøpte det billigere, jeg sa opp et abonnement.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Det blir lettere å holde motivasjonen oppe</h3>
-              <p>Målet ditt vokser først etter overføringen, så hvert steg endrer noe reelt.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Du bytter ikke bort personvern for økonomisk disiplin</h3>
-              <p>Ingen konto, ingen sporere, ingen plikt til å koble banken din.</p>
-            </article>
-          </div>
-        </div>
-      </div>
+                <figure class="screenshot-card reveal">
+                  <img src="../assets/screenshots/no/calendar.webp" alt="Kalenderskjerm med overføringer i appen" loading="lazy" decoding="async" width="1178" height="2556">
+                  <figcaption>Kalender</figcaption>
+                </figure>
+              </div>
+            </div>
+              </div>
     </section>
 
     <section class="section spotlights">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Hverdagslige situasjoner</p>
-          <h2>Chrumek virker i øyeblikkene der penger vanligvis glipper stille bort.</h2>
-        </div>
-
-        <div class="spotlight-list">
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 01</p>
-              <h3>Et billigere valg i hyllen blir straks til et reelt beløp å sette til side.</h3>
-              <p>
-                Du velger et produkt til 4,50 € i stedet for 6,50 €. Chrumek fanger forskjellen
-                før de 2,00 € forsvinner på noe annet.
-              </p>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Hverdagslige situasjoner</p>
+              <h2>Chrumek virker i øyeblikkene der penger vanligvis glipper stille bort.</h2>
             </div>
-            <figure class="spotlight-photo" id="store-photo">
-              <img
-                src="../assets/photos/store-cheaper-choice-en.jpg"
-                alt="En telefon med Chrumek-appen ved siden av en butikkhylle som viser et registrert avvik på 2,00 € etter å ha valgt et billigere produkt"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Forskjellen fra et handlingsvalg blir ikke værende i hodet ditt. Den går inn i Chrumek.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 02</p>
-              <h3>Den latten på veien kan bli igjen i lommeboken og finansiere et mål med en gang.</h3>
-              <p>
-                I stedet for å betale 4,50 € ved disken, registrerer du den overhoppede latten i Chrumek.
-                Den lille beslutningen slutter å være usynlig.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="cafe-photo">
-              <img
-                src="../assets/photos/cafe-skipped-latte-en.jpg"
-                alt="En telefon med Chrumek-appen i en cafe ved siden av en meny som viser en overhoppet latte verdt 4,50 €"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Du hopper over latten. Chrumek gjør den beslutningen om til et konkret beløp.</figcaption>
-            </figure>
-          </article>
+            <div class="spotlight-list">
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 03</p>
-              <h3>Et oppsagt abonnement glir ikke tilbake inn i hverdagsforbruket. Det begynner å jobbe mot målet ditt.</h3>
-              <p>
-                Du kutter en månedlig tjeneste på 12,99 € og registrerer det beløpet i Chrumek.
-                En fast kostnad kan bli noe som bringer deg nærmere målet ditt hver måned.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="subscription-photo">
-              <img
-                src="../assets/photos/subscription-cancelled-en.jpg"
-                alt="En telefon med Chrumek-appen ved siden av en bærbar PC med et skjermbilde for abonnementsadministrasjon som viser en oppsagt abonnementspost"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Å si opp et abonnement blir et fast grep på vei mot målet ditt.</figcaption>
-            </figure>
-          </article>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>Et billigere valg i hyllen blir straks til et reelt beløp å sette til side.</h3>
+                </div>
+                <figure class="spotlight-photo" id="store-photo">
+                  <img
+                    src="../assets/photos/store-cheaper-choice-en.jpg"
+                    alt="En telefon med Chrumek-appen ved siden av en butikkhylle som viser et registrert avvik på 2,00 € etter å ha valgt et billigere produkt"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Forskjellen fra et handlingsvalg blir ikke værende i hodet ditt. Den går inn i Chrumek.</figcaption>
+                </figure>
+              </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 04</p>
-              <h3>Et mål føles reelt fordi det ikke vokser bare av å taste inn tall.</h3>
-              <p>
-                Sykkelen slutter å være en løs idé. Du ser beløpet, fremgangen
-                og de bekreftede overføringene som faktisk bringer kjøpet nærmere.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="bike-goal-photo">
-              <img
-                src="../assets/photos/bike-goal-progress-en.jpg"
-                alt="En telefon som viser sykkelmålet i Chrumek-appen ved siden av en hjelm, et sykkellys og en sykkel i bakgrunnen"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Et mål har et navn, et beløp og reell fremgang. Det er ikke lenger bare et ønske.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 05</p>
-              <h3>Historikk er ikke en dagbok over forsakelser. Det er bevis på at du faktisk setter penger til side.</h3>
-              <p>
-                Du ser beslutningene dine og beløpene som virkelig havnet i sparing.
-                Det er et enkelt bevis på at systemet virker.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="history-photo">
-              <img
-                src="../assets/photos/history-proof-en.jpg"
-                alt="En telefon med historikkskjermen i Chrumek ved siden av en konvolutt merket Sykkel, en notatbok med overhoppede kjøp og sparte kontanter"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>947,00 € er ikke en erklæring. Det er summen av beslutninger du faktisk satte til side.</figcaption>
-            </figure>
-          </article>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>Den latten på veien kan bli igjen i lommeboken og finansiere et mål med en gang.</h3>
+                </div>
+                <figure class="spotlight-photo" id="cafe-photo">
+                  <img
+                    src="../assets/photos/cafe-skipped-latte-en.jpg"
+                    alt="En telefon med Chrumek-appen i en cafe ved siden av en meny som viser en overhoppet latte verdt 4,50 €"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Du hopper over latten. Chrumek gjør den beslutningen om til et konkret beløp.</figcaption>
+                </figure>
+              </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 06</p>
-              <h3>Konsekvens blir synlig før den rekker å blekne igjen.</h3>
-              <p>
-                Hver overføring til målet ditt setter spor. Chrumek viser rekken din og dagene
-                da du faktisk satte penger til side, så det er lettere å komme tilbake i morgen.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="streak-photo">
-              <img
-                src="../assets/photos/transfer-streak-calendar-en.jpg"
-                alt="En telefon med kalenderskjermen i Chrumek ved siden av en notatbok med en overføringsplan og en påminnelseslapp"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Du trenger ikke lure på om det virker. Du kan se rekken og de nøyaktige sparedagene.</figcaption>
-            </figure>
-          </article>
 
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 07</p>
-              <h3>Hvis dagen glipper, minner Chrumek deg på å fullføre overføringen.</h3>
-              <p>
-                Du setter en rolig påminnelse for kvelden.
-                Når det dukker opp et beløp som skal settes til side, hjelper appen deg tilbake til dette enkle ritualet uten at du må holde alt i hodet.
-              </p>
+              <article class="spotlight-card spotlight-card-photo reveal">
+                <div class="spotlight-copy">
+                  <h3>Et oppsagt abonnement glir ikke tilbake inn i hverdagsforbruket. Det begynner å jobbe mot målet ditt.</h3>
+                </div>
+                <figure class="spotlight-photo" id="subscription-photo">
+                  <img
+                    src="../assets/photos/subscription-cancelled-en.jpg"
+                    alt="En telefon med Chrumek-appen ved siden av en bærbar PC med et skjermbilde for abonnementsadministrasjon som viser en oppsagt abonnementspost"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <figcaption>Å si opp et abonnement blir et fast grep på vei mot målet ditt.</figcaption>
+                </figure>
+              </article>
             </div>
-            <figure class="spotlight-photo" id="reminder-photo">
-              <img
-                src="../assets/photos/transfer-reminder-evening-en.jpg"
-                alt="En telefon med skjermen for overføringspåminnelse i Chrumek-appen ved siden av en sparegris, en konvolutt merket Sykkel, te, et lys og en notatbok"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Påminnelsen planlegger ikke for deg. Den hjelper bare med at en god beslutning ikke går tapt.</figcaption>
-            </figure>
-          </article>
-
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 08</p>
-              <h3>Du ser hvilke små beslutninger som gjør størst forskjell.</h3>
-              <p>
-                Kaffe, levering, spill, elektronikk. Chrumek viser hvor sparingen din faktisk kom fra
-                slik at det blir lettere å gjenta valgene som hjelper mest.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="categories-photo">
-              <img
-                src="../assets/photos/savings-categories-en.jpg"
-                alt="En telefon med et kategoridiagram for sparing i Chrumek ved siden av kaffe, en kvittering, en notatbok, en bærbar datamaskin, en spillkontroller og en handlepose"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Du analyserer ikke hver utgift. Du ser hvor du faktisk vinner penger tilbake.</figcaption>
-            </figure>
-          </article>
-
-          <article class="spotlight-card spotlight-card-photo reveal">
-            <div class="spotlight-copy">
-              <p class="spotlight-tag">Scene 09</p>
-              <h3>Du har dataene dine for hånden når du vil få orden på dem.</h3>
-              <p>
-                Du eksporterer overføringer og fullførte mål til CSV.
-                Uten konto, uten å låse dataene dine inne i appen og uten å be noen om tilgang til din egen historikk.
-              </p>
-            </div>
-            <figure class="spotlight-photo" id="export-photo">
-              <img
-                src="../assets/photos/export-data-control-en.jpg"
-                alt="En telefon med CSV-eksportskjermen i Chrumek-appen ved siden av en bærbar PC med et regneark og en notatbok med en sjekkliste for data"
-                width="1536"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-              >
-              <figcaption>Du sparer enkelt, men dataene er fortsatt dine.</figcaption>
-            </figure>
-          </article>
-        </div>
-      </div>
+              </div>
     </section>
 
-    <section class="section quote-section">
+<section class="section quote-section">
       <div class="container quote-grid">
-        <blockquote class="quote-card reveal">
-          <div class="rating-stars" aria-label="Vurdert til 5 av 5">
-            <span aria-hidden="true">★★★★★</span>
-          </div>
-          <p>
-            "For første gang kan jeg svart på hvitt se hvor mye jeg faktisk sparte, ikke bare hvor mye jeg hadde tenkt å spare."
-          </p>
-          <footer>Ola</footer>
-        </blockquote>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Anmeldelser</p>
+              <h2>Over 800 personer sparer allerede med Chrumek.</h2>
+            </div>
 
-        <blockquote class="quote-card reveal">
-          <div class="rating-stars" aria-label="Vurdert til 5 av 5">
-            <span aria-hidden="true">★★★★★</span>
-          </div>
-          <p>
-            "Chrumek belønner ikke gode intensjoner. Det teller bare det du faktisk setter til side."
-          </p>
-          <footer>Mateusz</footer>
-        </blockquote>
-      </div>
+            <blockquote class="quote-card reveal">
+              <div class="rating-stars" aria-label="Vurdert til 5 av 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <p>
+                "For første gang kan jeg svart på hvitt se hvor mye jeg faktisk sparte, ikke bare hvor mye jeg hadde tenkt å spare."
+              </p>
+              <footer>Ola</footer>
+            </blockquote>
+
+            <blockquote class="quote-card reveal">
+              <div class="rating-stars" aria-label="Vurdert til 5 av 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <p>
+                "Chrumek belønner ikke gode intensjoner. Det teller bare det du faktisk setter til side."
+              </p>
+              <footer>Mateusz</footer>
+            </blockquote>
+              </div>
     </section>
 
-    <section class="section moments-section" id="moments">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Øyeblikk for øyeblikk</p>
-          <h2>Sparing starter på vanlige steder: i en butikk, på en cafe, i sofaen.</h2>
-          <p class="section-intro">
-            Chrumek hjelper deg med å fange de små beslutningene som vanligvis forsvinner uten spor.
-          </p>
-        </div>
 
-        <div class="shots-grid">
-          <article class="shot-card reveal">
-            <p class="shot-number">01</p>
-            <h3>I butikken</h3>
-            <p class="shot-copy">
-              Du velger det billigere produktet og registrerer forskjellen før du bruker den på noe annet.
-            </p>
-            <p class="shot-meta">I stedet for «jeg sparte vel litt», ser du det nøyaktige beløpet.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">02</p>
-            <h3>På cafeen</h3>
-            <p class="shot-copy">
-              Du hopper over kaffen på veien og registrerer straks beløpet som burde gå til sparing.
-            </p>
-            <p class="shot-meta">En liten beslutning slutter å være usynlig.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">03</p>
-            <h3>Med abonnementer</h3>
-            <p class="shot-copy">
-              Du sier opp et abonnement du ikke bruker og gjør den månedlige kostnaden om til fast sparing.
-            </p>
-            <p class="shot-meta">Én beslutning kan jobbe for deg hver måned.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">04</p>
-            <h3>Med et mål</h3>
-            <p class="shot-copy">
-              Hver bekreftede overføring bringer deg nærmere det du virkelig vil spare til.
-            </p>
-            <p class="shot-meta">Målet vokser bare når pengene faktisk er satt til side.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">05</p>
-            <h3>I historikken</h3>
-            <p class="shot-copy">
-              Du kommer tilbake til en liste over beløp som faktisk havnet i sparing, ikke bare beløp du planla.
-            </p>
-            <p class="shot-meta">Du får bevis på at små beslutninger kan bli til et reelt resultat.</p>
-          </article>
-
-          <article class="shot-card reveal">
-            <p class="shot-number">06</p>
-            <h3>Uten å koble banken din</h3>
-            <p class="shot-copy">
-              Du bruker Chrumek uten konto og uten å koble banken. Du bestemmer hvor pengene skal.
-            </p>
-            <p class="shot-meta">Et enkelt ritual, minimale data, maksimal kontroll.</p>
-          </article>
-        </div>
+    <section class="section pricing-section">
+      <div class="container pricing-card reveal">
+            <div class="pricing-copy">
+              <p class="eyebrow">Premium</p>
+              <h2>Du har begynt å legge penger til side. Ikke stopp nå.</h2>
+              <p>De første 5 overføringene er gratis. Velg deretter det som passer best:</p>
+            </div>
+            <div class="pricing-grid">
+              <div class="price-card">
+                <p class="price-label">Månedlig</p>
+                <p class="price-amount">9 kr<span>/mnd.</span></p>
+                <p class="price-note">Fornyes hver måned via App Store.</p>
+              </div>
+              <div class="price-card price-card-highlight">
+                <p class="price-badge">Best verdi</p>
+                <p class="price-label">For alltid</p>
+                <p class="price-amount">129 kr</p>
+                <p class="price-note">Engangskjøp. Betal én gang og bruk uten grense.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-large" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener">
+          Start gratis
+        </a>
       </div>
     </section>
 
     <section class="section fit-section">
       <div class="container fit-grid">
-        <article class="fit-card reveal">
-          <p class="eyebrow">Hvem den passer for</p>
-          <h2>Chrumek er for deg hvis:</h2>
-          <ul>
-            <li>"Jeg vet at jeg kunne spart mer, men jeg får det ikke til i virkeligheten."</li>
-            <li>"Jeg vil ikke ha enda en app for å logge hver eneste utgift."</li>
-            <li>"Jeg trenger et enkelt ritual som virker fra første dag."</li>
-          </ul>
-        </article>
+            <article class="fit-card reveal">
+              <p class="eyebrow">Hvem den passer for</p>
+              <h2>Chrumek er for deg hvis:</h2>
+              <ul>
+                <li>"Jeg vet at jeg kunne spart mer, men jeg får det ikke til i virkeligheten."</li>
+                <li>"Jeg vil ikke ha enda en app for å logge hver eneste utgift."</li>
+                <li>"Jeg trenger et enkelt ritual som virker fra første dag."</li>
+              </ul>
+            </article>
 
-        <article class="fit-card fit-card-muted reveal">
-          <p class="eyebrow">Ikke hvis</p>
-          <h2>Chrumek er ikke for deg hvis:</h2>
-          <ul>
-            <li>du vil ha automatisk banksynkronisering,</li>
-            <li>du trenger et komplekst økonomiplanleggingsverktøy,</li>
-            <li>du vil ha en app som gjør alt uten bekreftelsen din.</li>
-          </ul>
-        </article>
-      </div>
+            <article class="fit-card fit-card-muted reveal">
+              <p class="eyebrow">Ikke hvis</p>
+              <h2>Chrumek er ikke for deg hvis:</h2>
+              <ul>
+                <li>du vil ha automatisk banksynkronisering,</li>
+                <li>du trenger et komplekst økonomiplanleggingsverktøy,</li>
+                <li>du vil ha en app som gjør alt uten bekreftelsen din.</li>
+              </ul>
+            </article>
+              </div>
     </section>
 
     <section class="section faq-section" id="faq">
       <div class="container faq-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">FAQ</p>
-          <h2>Vanlige spørsmål før du laster ned Chrumek.</h2>
-          <p class="section-intro">
-            Du vet nøyaktig hva du installerer: Chrumek hjelper deg å følge opp reell sparing,
-            men kobler ikke banken din, utfører ikke overføringer og krever ingen konto.
-          </p>
-        </div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">FAQ</p>
+              <h2>Vanlige spørsmål før du laster ned Chrumek.</h2>
+              <p class="section-intro">
+                Du vet nøyaktig hva du installerer: Chrumek hjelper deg å følge opp reell sparing,
+                men kobler ikke banken din, utfører ikke overføringer og krever ingen konto.
+              </p>
+            </div>
 
         <div class="faq-list">
           <details class="faq-item reveal">
@@ -750,69 +571,62 @@
             <summary>Blir dataene mine sendt til en server?</summary>
             <p>Dataene du legger inn i appen blir værende lokalt på enheten din. Du oppretter ingen konto, og du gir ikke beslutningshistorikken din til et eksternt dashbord.</p>
           </details>
-
-          <details class="faq-item reveal">
-            <summary>Hvordan fungerer Premium og gratis prøveperiode?</summary>
-            <p>Du kan prøve appen før du betaler. Videre tilgang til betalte funksjoner håndteres gjennom App Store, og eventuelle prøveperioder avhenger av tilbudet som er tilgjengelig for den aktuelle brukeren.</p>
-          </details>
+              <details class="faq-item reveal" open>
+                <summary>Hvordan fungerer Premium?</summary>
+                <p>Du kan bekrefte de første 5 overføringene gratis. Deretter kan du velge Premium: 9 kr per måned eller 129 kr for alltid.</p>
+              </details>
 
           <details class="faq-item reveal">
             <summary>Kan jeg eksportere dataene mine?</summary>
             <p>Ja. Chrumek støtter CSV-eksport, slik at du kan ta med deg bekreftet sparing og mål ut av appen.</p>
           </details>
         </div>
-      </div>
+              </div>
     </section>
 
     <section class="section contact-section" aria-labelledby="contact-title-no">
       <div class="container contact-panel reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">Kontakt</p>
-          <h2 id="contact-title-no">Har du et spørsmål før du starter?</h2>
-          <p>
-            Skriv til meg hvis du vil spørre om Chrumek, personvern, Premium eller noe som ikke fikk plass i FAQ-en.
-          </p>
-        </div>
+            <div class="contact-copy">
+              <p class="eyebrow">Kontakt</p>
+              <h2 id="contact-title-no">Har du et spørsmål før du starter?</h2>
+              <p>
+                Skriv til meg hvis du vil spørre om Chrumek, personvern, Premium eller noe som ikke fikk plass i FAQ-en.
+              </p>
+            </div>
 
-        <div class="contact-action">
-          <a class="contact-mail" href="mailto:chrumek@chrumek.app?subject=Chrumek" aria-label="Send e-post til chrumek@chrumek.app">
-            <span class="contact-mail-icon" aria-hidden="true">@</span>
-            <span>
-              <span class="contact-mail-label">Skriv til meg</span>
-              <span class="contact-mail-address">chrumek@chrumek.app</span>
-            </span>
-          </a>
-          <p>Ingen skjema, ingen konto, ingen automatisk sak.</p>
-        </div>
-      </div>
+            <div class="contact-action">
+              <a class="contact-mail" href="mailto:chrumek@chrumek.app?subject=Chrumek" aria-label="Send e-post til chrumek@chrumek.app">
+                <span class="contact-mail-icon" aria-hidden="true">@</span>
+                <span>
+                  <span class="contact-mail-label">Skriv til meg</span>
+                  <span class="contact-mail-address">chrumek@chrumek.app</span>
+                </span>
+              </a>
+              <p>Ingen skjema, ingen konto, ingen automatisk sak.</p>
+            </div>
+              </div>
     </section>
 
     <section class="section start-section" id="start">
       <div class="container start-card reveal">
-        <div class="start-copy">
-          <p class="eyebrow">Det siste steget</p>
-          <h2>Ikke lov deg selv at du skal begynne å spare. Gi deg selv en prosess som faktisk lukker sirkelen.</h2>
-          <p>
-            Chrumek måler ikke intensjoner. Den hjelper deg å fullføre øyeblikket når pengene virkelig havner på din side.
-          </p>
-        </div>
+            <div class="start-copy">
+              <p class="eyebrow">Det siste steget</p>
+              <h2>Ikke lov deg selv at du skal begynne å spare. Gi deg selv en prosess som faktisk lukker sirkelen.</h2>
+              <p>
+                Chrumek måler ikke intensjoner. Den hjelper deg å fullføre øyeblikket når pengene virkelig havner på din side.
+              </p>
+            </div>
 
-        <div class="start-actions">
-          <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Last ned Chrumek i App Store">
-            <img class="app-store-badge" src="../assets/app-store-badge-no.svg" alt="Last ned i App Store" width="180" height="60">
-          </a>
-          <p class="start-note">
-            Ingen konto. Ingen bankkobling. Start med det første beløpet du ikke bruker i dag.
-          </p>
-        </div>
+            <div class="start-actions">
+              <a class="app-store-badge-link" href="https://apps.apple.com/us/app/chrumek-savings-tracker/id6759116351" target="_blank" rel="noreferrer noopener" aria-label="Last ned Chrumek i App Store">
+                <img class="app-store-badge" src="../assets/app-store-badge-no.svg" alt="Last ned i App Store" width="180" height="60">
+              </a>
+              <p class="start-note">
+                Ingen konto. Ingen bankkobling. Start med det første beløpet du ikke bruker i dag.
+              </p>
+            </div>
 
-        <div class="trust-row" aria-label="Tillitssignaler">
-          <span>ingen konto</span>
-          <span>ingen annonsesporere</span>
-          <span>data blir på enheten din</span>
-          <span>ingen bankkobling</span>
-        </div>
-      </div>
+              </div>
     </section>
   </main>
 
