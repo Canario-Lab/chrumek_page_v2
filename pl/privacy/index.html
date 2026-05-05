@@ -200,24 +200,26 @@
       </section>
 
       <section class="legal-section">
-        <h2>6) Zakupy i subskrypcje (Apple + RevenueCat)</h2>
-        <p>Jeżeli w aplikacji dostępne są płatne funkcje (subskrypcje):</p>
+        <h2>6) Zakupy i dostęp Premium (Apple + RevenueCat)</h2>
+        <p>Jeżeli w aplikacji dostępne są płatne funkcje (subskrypcje lub jednorazowy zakup dostępu dożywotniego):</p>
         <ul>
           <li>płatności są realizowane przez Apple (App Store / In-App Purchases / StoreKit),</li>
-          <li>aplikacja korzysta z RevenueCat jako dostawcy infrastruktury do zarządzania subskrypcjami (m.in. prezentowanie ofert, weryfikacja statusu subskrypcji, przyznawanie dostępu premium).</li>
+          <li>aplikacja korzysta z RevenueCat jako dostawcy infrastruktury do obsługi zakupów i dostępu Premium (m.in. prezentowanie ofert, weryfikacja statusu dostępu, rozpoznawanie aktywnej subskrypcji lub zakupu dożywotniego, przyznawanie dostępu premium).</li>
         </ul>
-        <p>W ramach obsługi subskrypcji mogą być przetwarzane dane techniczne związane z zakupem, takie jak:</p>
+        <p>W ramach obsługi zakupów i dostępu Premium mogą być przetwarzane dane techniczne związane z zakupem, takie jak:</p>
         <ul>
           <li>identyfikatory transakcji/zakupu i informacje o produkcie,</li>
-          <li>status subskrypcji (aktywny/nieaktywny, odnowienia),</li>
-          <li>techniczny identyfikator użytkownika używany do powiązania statusu subskrypcji (np. anonimowy App User ID generowany przez SDK).</li>
+          <li>status dostępu Premium (aktywny/nieaktywny), status subskrypcji (np. odnowienia) albo informacja o zakupie jednorazowym,</li>
+          <li>techniczny identyfikator użytkownika używany do powiązania statusu dostępu Premium (np. anonimowy App User ID generowany przez SDK).</li>
         </ul>
-        <p>RevenueCat przetwarza te dane w celu świadczenia usługi obsługi subskrypcji (jako podmiot przetwarzający), a Apple przetwarza dane związane z płatnością zgodnie ze swoimi zasadami.</p>
+        <p>RevenueCat przetwarza te dane w celu świadczenia usługi obsługi zakupów i dostępu Premium (jako podmiot przetwarzający), a Apple przetwarza dane związane z płatnością zgodnie ze swoimi zasadami.</p>
       </section>
 
       <section class="legal-section">
         <h2>7) Analityka i śledzenie</h2>
-        <p>Aplikacja nie używa narzędzi analitycznych ani reklamowych SDK w celu śledzenia użytkowników oraz nie sprzedaje danych.</p>
+        <p>Aplikacja może korzystać z Firebase Analytics do zbierania anonimowych danych o sposobie korzystania z aplikacji (np. dodanie wpisu, wykonanie transferu, osiągnięcie limitu darmowych transferów, wyświetlenie ekranu oferty Premium albo kliknięcie głównego przycisku na tym ekranie).</p>
+        <p>Te dane nie zawierają treści wpisów, kwot, nazw celów, kategorii, cen, planów zakupowych, danych płatniczych ani informacji pozwalających Cię bezpośrednio zidentyfikować. Dane nie są powiązane z tożsamością użytkownika ani konkretnym urządzeniem. Używamy ich wyłącznie do analizy działania aplikacji, poprawy stabilności i ulepszania funkcji.</p>
+        <p>Nie używamy danych analitycznych do sprzedaży danych ani reklamowego profilowania użytkowników.</p>
       </section>
 
       <section class="legal-section">
@@ -229,7 +231,8 @@
         <h2>9) Odbiorcy danych</h2>
         <p>Dane mogą być ujawniane wyłącznie:</p>
         <ul>
-          <li>dostawcom usług płatności i subskrypcji: Apple oraz RevenueCat (obsługa subskrypcji),</li>
+          <li>dostawcom usług płatności i obsługi dostępu Premium: Apple oraz RevenueCat (obsługa zakupów i statusu dostępu),</li>
+          <li>dostawcom usług analitycznych: Google Firebase Analytics (anonimowa analityka zdarzeń aplikacji),</li>
           <li>organom publicznym, jeśli wymagają tego przepisy prawa.</li>
         </ul>
       </section>
