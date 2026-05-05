@@ -1108,6 +1108,7 @@ body.lang-sheet-open .site-header {
 }
 
 .price-card {
+  position: relative;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -1115,13 +1116,30 @@ body.lang-sheet-open .site-header {
 }
 
 .price-card-highlight {
+  border: 2px solid var(--accent);
   background: var(--accent-card-bg);
+  box-shadow: 0 24px 60px rgba(236, 64, 122, 0.22);
 }
 
+.price-badge,
 .price-label,
 .price-amount,
 .price-note {
   margin: 0;
+}
+
+.price-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .price-label {
